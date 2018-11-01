@@ -1,0 +1,1155 @@
+10-23-2018 09:16:29.748: db connect !! 
+10-23-2018 09:16:29.842: 'C:\Users\User\source\repos\TIIZChatBotV3\LOG\2018-10-23.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+10-23-2018 09:16:29.843: db SelectConfig start !! 
+10-23-2018 09:16:31.534: db conn SelectConfig !!
+10-23-2018 09:16:31.717: * cnfNm : 루이스제한 || cnfValue : 3000
+10-23-2018 09:16:31.718: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-23-2018 09:16:31.722: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-23-2018 09:16:31.724: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-23-2018 09:16:31.724: db SelectConfig end!! 
+10-23-2018 09:16:31.726: * DB conn : conversationUpdate
+10-23-2018 09:16:31.908:  db SelectInitDialog !! 
+10-23-2018 09:16:34.929: * activity.Type : 
+10-23-2018 09:16:34.929: * activity.Recipient.Id : e0cid5gmggma
+10-23-2018 09:16:34.930: * activity.ServiceUrl : http://localhost:49258
+10-23-2018 09:18:17.034: db connect !! 
+10-23-2018 09:18:17.042: orgMent : 타임디스플레이 종류는?
+10-23-2018 09:18:17.419: luisId : timeSolution01
+10-23-2018 09:18:17.420: luisIntent : timeSolution01_11
+10-23-2018 09:18:17.420: luisEntities : 디스플레이,종류,타임
+10-23-2018 09:18:17.603: fullentity : 디스플레이,종류,타임
+10-23-2018 09:18:17.788: relationList 조건 in 
+10-23-2018 09:18:17.788: relationList[0].dlgApiDefine : D
+10-23-2018 09:18:18.338: dlg.dlgType : 3
+10-23-2018 09:18:18.339: tempcard.card_order_no : 1
+10-23-2018 09:18:18.341: CARD IMG START
+10-23-2018 09:18:18.341: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-450.png
+10-23-2018 09:18:18.342: CARD BTN1 START
+10-23-2018 09:18:18.342: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 09:18:18.343: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 09:18:18.343: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 09:18:18.344: tempcard.card_order_no : 2
+10-23-2018 09:18:18.345: CARD IMG START
+10-23-2018 09:18:18.346: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-210.png
+10-23-2018 09:18:18.346: CARD BTN1 START
+10-23-2018 09:18:18.347: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 09:18:18.347: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 09:18:18.348: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 09:18:18.882: dlg.dlgType : 3
+10-23-2018 09:18:18.882: tempcard.card_order_no : 1
+10-23-2018 09:18:18.883: CARD IMG START
+10-23-2018 09:18:18.884: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-450.png
+10-23-2018 09:18:18.884: CARD BTN1 START
+10-23-2018 09:18:18.884: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 09:18:18.885: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 09:18:18.885: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 09:18:18.885: tempcard.card_order_no : 2
+10-23-2018 09:18:18.886: CARD IMG START
+10-23-2018 09:18:18.886: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-210.png
+10-23-2018 09:18:18.886: CARD BTN1 START
+10-23-2018 09:18:18.887: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 09:18:18.887: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 09:18:18.887: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 10:19:23.141: db connect !! 
+10-23-2018 10:19:23.146: db SelectConfig start !! 
+10-23-2018 10:19:23.208: 'C:\Users\User\source\repos\TIIZChatBotV3\LOG\2018-10-23.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+10-23-2018 10:19:24.128: db conn SelectConfig !!
+10-23-2018 10:19:24.306: * cnfNm : 루이스제한 || cnfValue : 3000
+10-23-2018 10:19:24.312: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-23-2018 10:19:24.317: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-23-2018 10:19:24.318: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-23-2018 10:19:24.319: db SelectConfig end!! 
+10-23-2018 10:19:24.321: * DB conn : conversationUpdate
+10-23-2018 10:19:24.494:  db SelectInitDialog !! 
+10-23-2018 10:19:26.811: * activity.Type : 
+10-23-2018 10:19:26.815: * activity.Recipient.Id : e0cid5gmggma
+10-23-2018 10:19:26.818: * activity.ServiceUrl : http://localhost:49258
+10-23-2018 10:19:29.862: db connect !! 
+10-23-2018 10:19:29.869: orgMent : 타임디스플레이 종류는?
+10-23-2018 10:19:30.228: luisId : timeSolution01
+10-23-2018 10:19:30.232: luisIntent : timeSolution01_11
+10-23-2018 10:19:30.235: luisEntities : 디스플레이,종류,타임
+10-23-2018 10:19:30.412: fullentity : 디스플레이,종류,타임
+10-23-2018 10:19:30.597: relationList 조건 in 
+10-23-2018 10:19:30.598: relationList[0].dlgApiDefine : D
+10-23-2018 10:19:31.142: dlg.dlgType : 3
+10-23-2018 10:19:31.142: tempcard.card_order_no : 1
+10-23-2018 10:19:31.145: CARD IMG START
+10-23-2018 10:19:31.146: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-450.png
+10-23-2018 10:19:31.146: CARD BTN1 START
+10-23-2018 10:19:31.147: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 10:19:31.147: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 10:19:31.148: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 10:19:31.149: tempcard.card_order_no : 2
+10-23-2018 10:19:31.150: CARD IMG START
+10-23-2018 10:19:31.150: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-210.png
+10-23-2018 10:19:31.150: CARD BTN1 START
+10-23-2018 10:19:31.151: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 10:19:31.151: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 10:19:31.151: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 10:19:31.683: dlg.dlgType : 3
+10-23-2018 10:19:31.684: tempcard.card_order_no : 1
+10-23-2018 10:19:31.684: CARD IMG START
+10-23-2018 10:19:31.685: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-450.png
+10-23-2018 10:19:31.685: CARD BTN1 START
+10-23-2018 10:19:31.685: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 10:19:31.686: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 10:19:31.686: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 10:19:31.686: tempcard.card_order_no : 2
+10-23-2018 10:19:31.687: CARD IMG START
+10-23-2018 10:19:31.687: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-210.png
+10-23-2018 10:19:31.688: CARD BTN1 START
+10-23-2018 10:19:31.688: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 10:19:31.688: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 10:19:31.689: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 10:31:43.320: db connect !! 
+10-23-2018 10:31:43.321: db SelectConfig start !! 
+10-23-2018 10:31:43.522: db connect !! 
+10-23-2018 10:31:44.273: db conn SelectConfig !!
+10-23-2018 10:31:44.458: * cnfNm : 루이스제한 || cnfValue : 3000
+10-23-2018 10:31:44.459: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-23-2018 10:31:44.460: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-23-2018 10:31:44.464: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-23-2018 10:31:44.465: db SelectConfig end!! 
+10-23-2018 10:31:44.466: * DB conn : conversationUpdate
+10-23-2018 10:31:44.642:  db SelectInitDialog !! 
+10-23-2018 10:31:45.786: * activity.Type : 
+10-23-2018 10:31:45.787: * activity.Recipient.Id : e0cid5gmggma
+10-23-2018 10:31:45.787: * activity.ServiceUrl : http://localhost:49258
+10-23-2018 10:31:53.361: db connect !! 
+10-23-2018 10:31:53.365: orgMent : 동영상 보여줘
+10-23-2018 10:31:53.735: cache none : 동영상 보여줘
+10-23-2018 10:31:56.229: luisId : 
+10-23-2018 10:31:56.233: luisIntent : 
+10-23-2018 10:31:56.237: luisEntities : 
+10-23-2018 10:31:56.419: fullentity : 동영상
+10-23-2018 10:32:08.811: db connect !! 
+10-23-2018 10:32:08.827: orgMent : 동영상
+10-23-2018 10:32:09.199: cache none : 동영상
+10-23-2018 10:32:10.419: luisId : 
+10-23-2018 10:32:10.420: luisIntent : 
+10-23-2018 10:32:10.424: luisEntities : 
+10-23-2018 10:32:10.605: fullentity : 동영상
+10-23-2018 10:37:34.976: db connect !! 
+10-23-2018 10:37:34.993: orgMent : 동영상 보기
+10-23-2018 10:37:35.520: cache none : 동영상 보기
+10-23-2018 10:37:37.800: luisId : 
+10-23-2018 10:37:37.804: luisIntent : 
+10-23-2018 10:37:37.808: luisEntities : 
+10-23-2018 10:37:37.987: fullentity : 동영상
+10-23-2018 10:44:03.934: db connect !! 
+10-23-2018 10:44:04.307: db connect !! 
+10-23-2018 10:44:04.313: db SelectConfig start !! 
+10-23-2018 10:44:05.252: db conn SelectConfig !!
+10-23-2018 10:44:05.438: * cnfNm : 루이스제한 || cnfValue : 3000
+10-23-2018 10:44:05.442: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-23-2018 10:44:05.447: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-23-2018 10:44:05.449: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-23-2018 10:44:05.450: db SelectConfig end!! 
+10-23-2018 10:44:05.451: * DB conn : conversationUpdate
+10-23-2018 10:44:05.628:  db SelectInitDialog !! 
+10-23-2018 10:44:06.773: * activity.Type : 
+10-23-2018 10:44:06.773: * activity.Recipient.Id : e0cid5gmggma
+10-23-2018 10:44:06.773: * activity.ServiceUrl : http://localhost:49258
+10-23-2018 10:44:39.823: db connect !! 
+10-23-2018 10:44:39.825: orgMent : 동영상 보기
+10-23-2018 10:44:40.209: luisId : tiizChatBotV3
+10-23-2018 10:44:40.212: luisIntent : view
+10-23-2018 10:44:40.215: luisEntities : 동영상
+10-23-2018 10:44:40.396: fullentity : 동영상
+10-23-2018 10:44:40.574: relationList 조건 in 
+10-23-2018 10:44:40.575: relationList[0].dlgApiDefine : D
+10-23-2018 10:44:40.923: dlg.dlgType : 3
+10-23-2018 10:44:40.927: tempcard.card_order_no : 1
+10-23-2018 10:44:40.933: CARD IMG START
+10-23-2018 10:44:40.947: FB CARD IMG http://www.taihoinst.com/image/ai_cont02.gif
+10-23-2018 10:44:40.947: CARD BTN1 START
+10-23-2018 10:44:40.948: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 10:44:40.948: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 10:44:40.949: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 01:48:26.593: db connect !! 
+10-23-2018 01:48:26.599: orgMent : 안테나는 어떻게 생겼나요?
+10-23-2018 01:48:28.475: luisId : timeSolution01
+10-23-2018 01:48:28.478: luisIntent : timeSolution01_29
+10-23-2018 01:48:28.486: luisEntities : 안테나
+10-23-2018 01:48:28.715: fullentity : 안테나
+10-23-2018 01:48:28.943: relationList 조건 in 
+10-23-2018 01:48:28.947: relationList[0].dlgApiDefine : D
+10-23-2018 01:48:30.557: dlg.dlgType : 3
+10-23-2018 01:48:30.558: tempcard.card_order_no : 1
+10-23-2018 01:48:30.562: CARD IMG START
+10-23-2018 01:48:30.565: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/timeServer_inner.jpg
+10-23-2018 01:48:30.569: CARD BTN1 START
+10-23-2018 01:48:30.569: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 01:48:30.569: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 01:48:30.570: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 01:48:30.570: tempcard.card_order_no : 1
+10-23-2018 01:48:30.571: CARD IMG START
+10-23-2018 01:48:30.571: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/timeServer_outer.png
+10-23-2018 01:48:30.571: CARD BTN1 START
+10-23-2018 01:48:30.572: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 01:48:30.572: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 01:48:30.572: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 01:49:36.788: db connect !! 
+10-23-2018 01:49:36.804: orgMent : 타임서버가 무엇입니까?
+10-23-2018 01:49:37.262: luisId : timeSolution01
+10-23-2018 01:49:37.267: luisIntent : timeSolution01_67
+10-23-2018 01:49:37.272: luisEntities : 무엇,서버,타임
+10-23-2018 01:49:37.501: fullentity : 무엇,서버,타임
+10-23-2018 01:49:37.729: relationList 조건 in 
+10-23-2018 01:49:37.734: relationList[0].dlgApiDefine : D
+10-23-2018 01:49:38.180: dlg.dlgType : 2
+10-23-2018 01:49:38.183: * activity.ChannelId : emulator
+10-23-2018 01:54:43.721: db connect !! 
+10-23-2018 01:54:43.749: orgMent : 타임서버 종류?
+10-23-2018 01:54:45.766: cache none : 타임서버 종류?
+10-23-2018 01:54:48.131: luisId : 
+10-23-2018 01:54:48.135: luisIntent : 
+10-23-2018 01:54:48.139: luisEntities : 
+10-23-2018 01:54:48.345: fullentity : 서버,종류,타임
+10-23-2018 02:31:24.392: db connect !! 
+10-23-2018 02:31:24.392: db SelectConfig start !! 
+10-23-2018 02:31:24.592: db connect !! 
+10-23-2018 02:31:25.657: db conn SelectConfig !!
+10-23-2018 02:31:25.834: * cnfNm : 루이스제한 || cnfValue : 3000
+10-23-2018 02:31:25.839: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-23-2018 02:31:25.844: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-23-2018 02:31:25.845: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-23-2018 02:31:25.846: db SelectConfig end!! 
+10-23-2018 02:31:25.847: * DB conn : conversationUpdate
+10-23-2018 02:31:26.021:  db SelectInitDialog !! 
+10-23-2018 02:31:28.868: * activity.Type : 
+10-23-2018 02:31:28.874: * activity.Recipient.Id : e0cid5gmggma
+10-23-2018 02:31:28.880: * activity.ServiceUrl : http://localhost:49258
+10-23-2018 02:31:32.059: db connect !! 
+10-23-2018 02:31:32.068: orgMent : 타임서버가 무엇입니까?
+10-23-2018 02:31:32.428: luisId : timeSolution01
+10-23-2018 02:31:32.432: luisIntent : timeSolution01_67
+10-23-2018 02:31:32.435: luisEntities : 무엇,서버,타임
+10-23-2018 02:31:32.614: fullentity : 무엇,서버,타임
+10-23-2018 02:31:32.791: relationList 조건 in 
+10-23-2018 02:31:32.792: relationList[0].dlgApiDefine : D
+10-23-2018 02:31:33.181: dlg.dlgType : 2
+10-23-2018 02:31:33.184: * activity.ChannelId : emulator
+10-23-2018 03:19:23.918: db connect !! 
+10-23-2018 03:19:23.929: orgMent : 타임모니터가 무엇입니까?
+10-23-2018 03:19:25.372: luisId : timeSolution01
+10-23-2018 03:19:25.376: luisIntent : timeSolution01_9
+10-23-2018 03:19:25.380: luisEntities : 모니터,무엇,타임
+10-23-2018 03:19:25.559: fullentity : 모니터,무엇,타임
+10-23-2018 03:19:25.735: relationList 조건 in 
+10-23-2018 03:19:25.735: relationList[0].dlgApiDefine : D
+10-23-2018 03:19:27.201: dlg.dlgType : 2
+10-23-2018 03:19:27.201: * activity.ChannelId : emulator
+10-23-2018 03:22:37.652: db connect !! 
+10-23-2018 03:22:37.683: orgMent : 타임서버 종류?
+10-23-2018 03:22:38.049: cache none : 타임서버 종류?
+10-23-2018 03:22:40.137: luisId : 
+10-23-2018 03:22:40.143: luisIntent : 
+10-23-2018 03:22:40.147: luisEntities : 
+10-23-2018 03:22:40.325: fullentity : 서버,종류,타임
+10-23-2018 03:27:31.605: db connect !! 
+10-23-2018 03:27:31.611: orgMent : 타임서버 종류?
+10-23-2018 03:27:33.982: luisId : timeSolution01
+10-23-2018 03:27:33.986: luisIntent : timeSolution01_6
+10-23-2018 03:27:33.990: luisEntities : 서버,종류,타임
+10-23-2018 03:27:34.169: fullentity : 서버,종류,타임
+10-23-2018 03:27:34.348: relationList 조건 in 
+10-23-2018 03:27:34.348: relationList[0].dlgApiDefine : D
+10-23-2018 03:27:35.860: dlg.dlgType : 3
+10-23-2018 03:27:35.864: tempcard.card_order_no : 1
+10-23-2018 03:27:35.868: CARD IMG START
+10-23-2018 03:27:35.872: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2550_front.jpg
+10-23-2018 03:27:35.872: CARD BTN1 START
+10-23-2018 03:27:35.873: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 03:27:35.874: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 03:27:35.875: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 03:27:35.875: tempcard.card_order_no : 2
+10-23-2018 03:27:35.876: CARD IMG START
+10-23-2018 03:27:35.876: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2550_back.jpg
+10-23-2018 03:27:35.877: CARD BTN1 START
+10-23-2018 03:27:35.877: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 03:27:35.878: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 03:27:35.878: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 03:27:35.878: tempcard.card_order_no : 3
+10-23-2018 03:27:35.879: CARD IMG START
+10-23-2018 03:27:35.880: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2210_front.jpg
+10-23-2018 03:27:35.880: CARD BTN1 START
+10-23-2018 03:27:35.881: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 03:27:35.881: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 03:27:35.881: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 03:27:35.882: tempcard.card_order_no : 4
+10-23-2018 03:27:35.882: CARD IMG START
+10-23-2018 03:27:35.883: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2210_back.jpg
+10-23-2018 03:27:35.883: CARD BTN1 START
+10-23-2018 03:27:35.883: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 03:27:35.883: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 03:27:35.884: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 03:33:33.474: db connect !! 
+10-23-2018 03:33:33.475: db connect !! 
+10-23-2018 03:33:33.479: db SelectConfig start !! 
+10-23-2018 03:33:34.437: db conn SelectConfig !!
+10-23-2018 03:33:34.615: * cnfNm : 루이스제한 || cnfValue : 3000
+10-23-2018 03:33:34.616: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-23-2018 03:33:34.618: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-23-2018 03:33:34.619: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-23-2018 03:33:34.621: db SelectConfig end!! 
+10-23-2018 03:33:34.622: * DB conn : conversationUpdate
+10-23-2018 03:33:34.800:  db SelectInitDialog !! 
+10-23-2018 03:33:36.746: * activity.Type : 
+10-23-2018 03:33:36.747: * activity.Recipient.Id : e0cid5gmggma
+10-23-2018 03:33:36.751: * activity.ServiceUrl : http://localhost:49258
+10-23-2018 03:33:40.302: db connect !! 
+10-23-2018 03:33:40.304: orgMent : 타임서버 종류?
+10-23-2018 03:33:40.669: luisId : timeSolution01
+10-23-2018 03:33:40.673: luisIntent : timeSolution01_6
+10-23-2018 03:33:40.676: luisEntities : 서버,종류,타임
+10-23-2018 03:33:40.853: fullentity : 서버,종류,타임
+10-23-2018 03:33:41.031: relationList 조건 in 
+10-23-2018 03:33:41.032: relationList[0].dlgApiDefine : D
+10-23-2018 03:33:41.380: dlg.dlgType : 3
+10-23-2018 03:33:41.381: tempcard.card_order_no : 1
+10-23-2018 03:33:41.383: CARD IMG START
+10-23-2018 03:33:41.383: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2550_front.jpg
+10-23-2018 03:33:41.384: CARD BTN1 START
+10-23-2018 03:33:41.384: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 03:33:41.384: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 03:33:41.385: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 03:33:41.385: tempcard.card_order_no : 2
+10-23-2018 03:33:41.386: CARD IMG START
+10-23-2018 03:33:41.386: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2550_back.jpg
+10-23-2018 03:33:41.387: CARD BTN1 START
+10-23-2018 03:33:41.387: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 03:33:41.387: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 03:33:41.388: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 03:33:41.388: tempcard.card_order_no : 3
+10-23-2018 03:33:41.389: CARD IMG START
+10-23-2018 03:33:41.389: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2210_front.jpg
+10-23-2018 03:33:41.389: CARD BTN1 START
+10-23-2018 03:33:41.390: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 03:33:41.390: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 03:33:41.390: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 03:33:41.391: tempcard.card_order_no : 4
+10-23-2018 03:33:41.392: CARD IMG START
+10-23-2018 03:33:41.392: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2210_back.jpg
+10-23-2018 03:33:41.392: CARD BTN1 START
+10-23-2018 03:33:41.393: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 03:33:41.393: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 03:33:41.393: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 04:09:00.647: db connect !! 
+10-23-2018 04:09:00.673: orgMent : TS-2210 특징
+10-23-2018 04:09:02.208: cache none : TS-2210 특징
+10-23-2018 04:09:04.734: luisId : 
+10-23-2018 04:09:04.738: luisIntent : 
+10-23-2018 04:09:04.742: luisEntities : 
+10-23-2018 04:09:04.934: fullentity : 특징,TS-2210
+10-23-2018 04:10:20.274: db connect !! 
+10-23-2018 04:10:20.288: orgMent : TS-2210 특징
+10-23-2018 04:10:20.672: cache none : TS-2210 특징
+10-23-2018 04:10:21.917: luisId : 
+10-23-2018 04:10:21.922: luisIntent : 
+10-23-2018 04:10:21.926: luisEntities : 
+10-23-2018 04:10:22.115: fullentity : 특징,TS-2210
+10-23-2018 04:12:36.288: db connect !! 
+10-23-2018 04:12:36.313: db SelectConfig start !! 
+10-23-2018 04:12:36.338: db conn SelectConfig !!
+10-23-2018 04:12:36.422: 'C:\Users\User\source\repos\TIIZChatBotV3\LOG\2018-10-23.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+10-23-2018 04:12:36.615: * cnfNm : 루이스제한 || cnfValue : 3000
+10-23-2018 04:12:36.620: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-23-2018 04:12:36.625: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-23-2018 04:12:36.626: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-23-2018 04:12:36.627: db SelectConfig end!! 
+10-23-2018 04:12:36.628: * DB conn : conversationUpdate
+10-23-2018 04:12:36.812:  db SelectInitDialog !! 
+10-23-2018 04:12:38.983: * activity.Type : 
+10-23-2018 04:12:38.984: * activity.Recipient.Id : e0cid5gmggma
+10-23-2018 04:12:38.985: * activity.ServiceUrl : http://localhost:49258
+10-23-2018 04:12:43.034: db connect !! 
+10-23-2018 04:12:43.044: orgMent : TS-2210 특징
+10-23-2018 04:12:43.598: cache none : TS-2210 특징
+10-23-2018 04:12:45.755: luisId : 
+10-23-2018 04:12:45.758: luisIntent : 
+10-23-2018 04:12:45.762: luisEntities : 
+10-23-2018 04:12:45.947: fullentity : 특징,TS-2210
+10-23-2018 05:09:36.640: db connect !! 
+10-23-2018 05:09:36.642: orgMent : TS-2210 특징
+10-23-2018 05:09:38.146: luisId : timeSolution01
+10-23-2018 05:09:38.150: luisIntent : timeSolution01_7
+10-23-2018 05:09:38.154: luisEntities : 특징,TS-2210
+10-23-2018 05:09:38.341: fullentity : 특징,TS-2210
+10-23-2018 05:09:38.537: relationList 조건 in 
+10-23-2018 05:09:38.537: relationList[0].dlgApiDefine : D
+10-23-2018 05:09:40.075: dlg.dlgType : 3
+10-23-2018 05:09:40.080: tempcard.card_order_no : 1
+10-23-2018 05:09:40.083: CARD IMG START
+10-23-2018 05:09:40.087: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2210_front.jpg
+10-23-2018 05:09:40.087: CARD BTN1 START
+10-23-2018 05:09:40.088: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:09:40.088: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:09:40.088: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:10:33.321: db connect !! 
+10-23-2018 05:10:33.337: orgMent : TS-2550 특징
+10-23-2018 05:10:33.718: cache none : TS-2550 특징
+10-23-2018 05:10:35.840: luisId : 
+10-23-2018 05:10:35.844: luisIntent : 
+10-23-2018 05:10:35.848: luisEntities : 
+10-23-2018 05:10:36.034: fullentity : 특징,TS-2550
+10-23-2018 05:11:23.342: db connect !! 
+10-23-2018 05:11:23.348: orgMent : TS-2550 특징
+10-23-2018 05:11:23.747: luisId : timeSolution01
+10-23-2018 05:11:23.752: luisIntent : timeSolution01_8
+10-23-2018 05:11:23.757: luisEntities : 특징,TS-2550
+10-23-2018 05:11:23.964: fullentity : 특징,TS-2550
+10-23-2018 05:11:24.168: relationList 조건 in 
+10-23-2018 05:11:24.172: relationList[0].dlgApiDefine : D
+10-23-2018 05:11:24.590: dlg.dlgType : 3
+10-23-2018 05:11:24.593: tempcard.card_order_no : 1
+10-23-2018 05:11:24.597: CARD IMG START
+10-23-2018 05:11:24.597: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2550_front.jpg
+10-23-2018 05:11:24.598: CARD BTN1 START
+10-23-2018 05:11:24.598: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:11:24.598: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:11:24.599: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:11:42.928: db connect !! 
+10-23-2018 05:11:42.952: orgMent : TM-2110 특징
+10-23-2018 05:11:43.335: cache none : TM-2110 특징
+10-23-2018 05:11:44.630: luisId : 
+10-23-2018 05:11:44.630: luisIntent : 
+10-23-2018 05:11:44.635: luisEntities : 
+10-23-2018 05:11:44.825: fullentity : 특징,TM-2110
+10-23-2018 05:13:32.269: db connect !! 
+10-23-2018 05:13:32.271: orgMent : TM-2110 특징
+10-23-2018 05:13:32.733: luisId : timeSolution01
+10-23-2018 05:13:32.737: luisIntent : timeSolution01_10
+10-23-2018 05:13:32.740: luisEntities : 특징,TM-2110
+10-23-2018 05:13:32.974: fullentity : 특징,TM-2110
+10-23-2018 05:13:33.194: relationList 조건 in 
+10-23-2018 05:13:33.199: relationList[0].dlgApiDefine : D
+10-23-2018 05:13:33.601: dlg.dlgType : 3
+10-23-2018 05:13:33.605: tempcard.card_order_no : 1
+10-23-2018 05:13:33.609: CARD IMG START
+10-23-2018 05:13:33.613: CARD BTN1 START
+10-23-2018 05:13:33.613: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:13:33.614: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:13:33.614: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:23:46.697: db connect !! 
+10-23-2018 05:23:46.729: orgMent : 타임디스플레이 종류는?
+10-23-2018 05:23:48.594: luisId : timeSolution01
+10-23-2018 05:23:48.594: luisIntent : timeSolution01_11
+10-23-2018 05:23:48.601: luisEntities : 디스플레이,종류,타임
+10-23-2018 05:23:48.831: fullentity : 디스플레이,종류,타임
+10-23-2018 05:23:49.061: relationList 조건 in 
+10-23-2018 05:23:49.065: relationList[0].dlgApiDefine : D
+10-23-2018 05:23:50.428: dlg.dlgType : 3
+10-23-2018 05:23:50.429: tempcard.card_order_no : 1
+10-23-2018 05:23:50.433: CARD IMG START
+10-23-2018 05:23:50.436: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-450.png
+10-23-2018 05:23:50.440: CARD BTN1 START
+10-23-2018 05:23:50.440: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:23:50.440: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:23:50.441: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:23:50.441: tempcard.card_order_no : 2
+10-23-2018 05:23:50.442: CARD IMG START
+10-23-2018 05:23:50.442: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-210.png
+10-23-2018 05:23:50.442: CARD BTN1 START
+10-23-2018 05:23:50.443: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:23:50.443: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:23:50.443: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:24:00.549: db connect !! 
+10-23-2018 05:24:00.570: orgMent : TD-450 특징
+10-23-2018 05:24:01.046: cache none : TD-450 특징
+10-23-2018 05:24:02.920: luisId : 
+10-23-2018 05:24:02.921: luisIntent : 
+10-23-2018 05:24:02.925: luisEntities : 
+10-23-2018 05:24:03.166: fullentity : 특징,TD-450
+10-23-2018 05:25:52.638: db connect !! 
+10-23-2018 05:25:52.658: orgMent : TD-450 특징
+10-23-2018 05:25:53.121: cache none : TD-450 특징
+10-23-2018 05:25:55.254: luisId : 
+10-23-2018 05:25:55.254: luisIntent : 
+10-23-2018 05:25:55.259: luisEntities : 
+10-23-2018 05:25:55.490: fullentity : 특징,TD-450
+10-23-2018 05:26:45.135: db connect !! 
+10-23-2018 05:26:45.148: orgMent : TD-450 특징
+10-23-2018 05:26:45.517: luisId : timeSolution01
+10-23-2018 05:26:45.521: luisIntent : timeSolution01_12
+10-23-2018 05:26:45.524: luisEntities : 특징,TD-450
+10-23-2018 05:26:45.729: fullentity : 특징,TD-450
+10-23-2018 05:26:45.915: relationList 조건 in 
+10-23-2018 05:26:45.915: relationList[0].dlgApiDefine : D
+10-23-2018 05:26:46.318: dlg.dlgType : 3
+10-23-2018 05:26:46.319: tempcard.card_order_no : 1
+10-23-2018 05:26:46.319: CARD IMG START
+10-23-2018 05:26:46.320: CARD BTN1 START
+10-23-2018 05:26:46.320: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:26:46.320: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:26:46.321: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:34:53.784: db connect !! 
+10-23-2018 05:34:53.828: orgMent : TD-450 특징
+10-23-2018 05:34:55.306: luisId : timeSolution01
+10-23-2018 05:34:55.311: luisIntent : timeSolution01_12
+10-23-2018 05:34:55.314: luisEntities : 특징,td-450
+10-23-2018 05:34:55.492: fullentity : 특징,TD-450
+10-23-2018 05:34:55.672: relationList 조건 in 
+10-23-2018 05:34:55.673: relationList[0].dlgApiDefine : D
+10-23-2018 05:34:57.255: dlg.dlgType : 3
+10-23-2018 05:34:57.261: tempcard.card_order_no : 1
+10-23-2018 05:34:57.266: CARD IMG START
+10-23-2018 05:34:57.269: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-450.png
+10-23-2018 05:34:57.270: CARD BTN1 START
+10-23-2018 05:34:57.270: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:34:57.271: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:34:57.271: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:35:07.623: db connect !! 
+10-23-2018 05:35:07.637: orgMent : td-210특징
+10-23-2018 05:35:07.998: cache none : td-210특징
+10-23-2018 05:35:09.713: luisId : 
+10-23-2018 05:35:09.717: luisIntent : 
+10-23-2018 05:35:09.721: luisEntities : 
+10-23-2018 05:35:09.904: fullentity : 특징,TD-210
+10-23-2018 05:36:05.066: db connect !! 
+10-23-2018 05:36:05.081: orgMent : td-210특징
+10-23-2018 05:36:05.440: luisId : timeSolution01
+10-23-2018 05:36:05.443: luisIntent : timeSolution01_13
+10-23-2018 05:36:05.447: luisEntities : 특징,TD-210
+10-23-2018 05:36:05.623: fullentity : 특징,TD-210
+10-23-2018 05:36:05.796: relationList 조건 in 
+10-23-2018 05:36:05.797: relationList[0].dlgApiDefine : D
+10-23-2018 05:36:06.201: dlg.dlgType : 3
+10-23-2018 05:36:06.205: tempcard.card_order_no : 1
+10-23-2018 05:36:06.210: CARD IMG START
+10-23-2018 05:36:06.214: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-210.png
+10-23-2018 05:36:06.214: CARD BTN1 START
+10-23-2018 05:36:06.215: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:36:06.215: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:36:06.215: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:36:32.939: db connect !! 
+10-23-2018 05:36:32.942: orgMent : TS-2550 과 TS-2210 차이점이 무엇입니까?
+10-23-2018 05:36:33.322: luisId : timeSolution01
+10-23-2018 05:36:33.328: luisIntent : timeSolution01_14
+10-23-2018 05:36:33.331: luisEntities : 무엇,차이점,ts-2210,ts-2550
+10-23-2018 05:36:33.511: fullentity : 무엇,차이점,TS-2210,TS-2550
+10-23-2018 05:36:33.692: relationList 조건 in 
+10-23-2018 05:36:33.692: relationList[0].dlgApiDefine : D
+10-23-2018 05:36:34.091: dlg.dlgType : 3
+10-23-2018 05:36:34.095: tempcard.card_order_no : 1
+10-23-2018 05:36:34.100: CARD IMG START
+10-23-2018 05:36:34.104: CARD BTN1 START
+10-23-2018 05:36:34.105: CARD BTN2 START
+10-23-2018 05:36:34.105: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:36:34.106: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:36:34.106: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:36:40.548: db connect !! 
+10-23-2018 05:36:40.559: orgMent : TS-2550 규격서 보여주세요
+10-23-2018 05:36:40.986: luisId : timeSolution01
+10-23-2018 05:36:40.987: luisIntent : timeSolution01_15
+10-23-2018 05:36:40.987: luisEntities : 규격서,ts-2550
+10-23-2018 05:36:41.161: fullentity : 규격서,TS-2550
+10-23-2018 05:36:41.336: relationList 조건 in 
+10-23-2018 05:36:41.336: relationList[0].dlgApiDefine : D
+10-23-2018 05:36:41.736: dlg.dlgType : 3
+10-23-2018 05:36:41.736: tempcard.card_order_no : 1
+10-23-2018 05:36:41.737: CARD IMG START
+10-23-2018 05:36:41.738: CARD BTN1 START
+10-23-2018 05:36:41.738: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:36:41.739: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:36:41.740: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:36:46.896: db connect !! 
+10-23-2018 05:36:46.900: orgMent : TS-2210 규격서 보여주세요
+10-23-2018 05:36:47.259: luisId : timeSolution01
+10-23-2018 05:36:47.259: luisIntent : timeSolution01_16
+10-23-2018 05:36:47.260: luisEntities : 규격서,ts-2210
+10-23-2018 05:36:47.437: fullentity : 규격서,TS-2210
+10-23-2018 05:36:47.614: relationList 조건 in 
+10-23-2018 05:36:47.614: relationList[0].dlgApiDefine : D
+10-23-2018 05:36:48.013: dlg.dlgType : 3
+10-23-2018 05:36:48.014: tempcard.card_order_no : 1
+10-23-2018 05:36:48.015: CARD IMG START
+10-23-2018 05:36:48.015: CARD BTN1 START
+10-23-2018 05:36:48.016: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:36:48.016: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:36:48.016: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:36:53.563: db connect !! 
+10-23-2018 05:36:53.573: orgMent : TD-450과 TD-210 차이점이 무엇입니까?
+10-23-2018 05:36:54.026: luisId : timeSolution01
+10-23-2018 05:36:54.026: luisIntent : timeSolution01_17
+10-23-2018 05:36:54.027: luisEntities : 무엇,차이점,td-210,td-450
+10-23-2018 05:36:54.203: fullentity : 무엇,차이점,TD-210,TD-450
+10-23-2018 05:36:54.395: relationList 조건 in 
+10-23-2018 05:36:54.396: relationList[0].dlgApiDefine : D
+10-23-2018 05:36:54.803: dlg.dlgType : 3
+10-23-2018 05:36:54.803: tempcard.card_order_no : 1
+10-23-2018 05:36:54.804: CARD IMG START
+10-23-2018 05:36:54.805: CARD BTN1 START
+10-23-2018 05:36:54.805: CARD BTN2 START
+10-23-2018 05:36:54.805: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:36:54.806: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:36:54.806: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:36:58.699: db connect !! 
+10-23-2018 05:36:58.702: orgMent : TD-450 규격서 보여주세요
+10-23-2018 05:36:59.069: luisId : timeSolution01
+10-23-2018 05:36:59.072: luisIntent : timeSolution01_18
+10-23-2018 05:36:59.076: luisEntities : 규격서,td-450
+10-23-2018 05:36:59.259: fullentity : 규격서,TD-450
+10-23-2018 05:36:59.435: relationList 조건 in 
+10-23-2018 05:36:59.435: relationList[0].dlgApiDefine : D
+10-23-2018 05:36:59.833: dlg.dlgType : 3
+10-23-2018 05:36:59.836: tempcard.card_order_no : 1
+10-23-2018 05:36:59.841: CARD IMG START
+10-23-2018 05:36:59.844: CARD BTN1 START
+10-23-2018 05:36:59.845: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:36:59.845: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:36:59.846: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:37:02.165: db connect !! 
+10-23-2018 05:37:02.174: orgMent : TD-210 규격서 보여주세요
+10-23-2018 05:37:02.546: luisId : timeSolution01
+10-23-2018 05:37:02.549: luisIntent : timeSolution01_19
+10-23-2018 05:37:02.564: luisEntities : 규격서,td-210
+10-23-2018 05:37:02.744: fullentity : 규격서,TD-210
+10-23-2018 05:37:02.918: relationList 조건 in 
+10-23-2018 05:37:02.918: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:03.321: dlg.dlgType : 3
+10-23-2018 05:37:03.336: tempcard.card_order_no : 1
+10-23-2018 05:37:03.343: CARD IMG START
+10-23-2018 05:37:03.346: CARD BTN1 START
+10-23-2018 05:37:03.347: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:37:03.347: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:37:03.348: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:37:07.093: db connect !! 
+10-23-2018 05:37:07.104: orgMent : 타사 제품과 차이점이 있나요?
+10-23-2018 05:37:07.479: luisId : timeSolution01
+10-23-2018 05:37:07.482: luisIntent : timeSolution01_20
+10-23-2018 05:37:07.486: luisEntities : 제품,차이점,타사
+10-23-2018 05:37:07.663: fullentity : 제품,차이점,타사
+10-23-2018 05:37:07.840: relationList 조건 in 
+10-23-2018 05:37:07.840: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:08.240: dlg.dlgType : 2
+10-23-2018 05:37:08.243: * activity.ChannelId : emulator
+10-23-2018 05:37:12.709: db connect !! 
+10-23-2018 05:37:12.714: orgMent : 타사 제품 비교자료 주세요
+10-23-2018 05:37:13.140: luisId : timeSolution01
+10-23-2018 05:37:13.144: luisIntent : timeSolution01_21
+10-23-2018 05:37:13.147: luisEntities : 비교자료,제품,타사
+10-23-2018 05:37:13.324: fullentity : 비교자료,제품,타사
+10-23-2018 05:37:13.501: relationList 조건 in 
+10-23-2018 05:37:13.501: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:13.910: dlg.dlgType : 2
+10-23-2018 05:37:13.913: * activity.ChannelId : emulator
+10-23-2018 05:37:21.752: db connect !! 
+10-23-2018 05:37:21.769: orgMent : TS-2550 구성품은 어떻게 되나요
+10-23-2018 05:37:22.278: luisId : timeSolution01
+10-23-2018 05:37:22.283: luisIntent : timeSolution01_22
+10-23-2018 05:37:22.289: luisEntities : 구성품,ts-2550
+10-23-2018 05:37:22.466: fullentity : 구성품,TS-2550
+10-23-2018 05:37:22.644: relationList 조건 in 
+10-23-2018 05:37:22.645: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:23.042: dlg.dlgType : 2
+10-23-2018 05:37:23.046: * activity.ChannelId : emulator
+10-23-2018 05:37:27.931: db connect !! 
+10-23-2018 05:37:27.934: orgMent : TS-2210 구성품은 어떻게 되나요
+10-23-2018 05:37:28.356: luisId : timeSolution01
+10-23-2018 05:37:28.359: luisIntent : timeSolution01_23
+10-23-2018 05:37:28.364: luisEntities : 구성품,ts-2210
+10-23-2018 05:37:28.544: fullentity : 구성품,TS-2210
+10-23-2018 05:37:28.723: relationList 조건 in 
+10-23-2018 05:37:28.723: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:29.120: dlg.dlgType : 2
+10-23-2018 05:37:29.125: * activity.ChannelId : emulator
+10-23-2018 05:37:36.039: db connect !! 
+10-23-2018 05:37:36.042: orgMent : TD-450 구성품은 어떻게 되나요
+10-23-2018 05:37:36.740: luisId : timeSolution01
+10-23-2018 05:37:36.740: luisIntent : timeSolution01_24
+10-23-2018 05:37:36.745: luisEntities : 구성품,td-450
+10-23-2018 05:37:36.949: fullentity : 구성품,TD-450
+10-23-2018 05:37:37.138: relationList 조건 in 
+10-23-2018 05:37:37.143: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:37.565: dlg.dlgType : 2
+10-23-2018 05:37:37.565: * activity.ChannelId : emulator
+10-23-2018 05:37:42.382: db connect !! 
+10-23-2018 05:37:42.395: orgMent : TD-210 구성품은 어떻게 되나요
+10-23-2018 05:37:42.762: luisId : timeSolution01
+10-23-2018 05:37:42.766: luisIntent : timeSolution01_25
+10-23-2018 05:37:42.770: luisEntities : 구성품,td-210
+10-23-2018 05:37:42.952: fullentity : 구성품,TD-210
+10-23-2018 05:37:43.130: relationList 조건 in 
+10-23-2018 05:37:43.131: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:43.536: dlg.dlgType : 2
+10-23-2018 05:37:43.541: * activity.ChannelId : emulator
+10-23-2018 05:37:45.865: db connect !! 
+10-23-2018 05:37:45.872: orgMent : 타임서버는 어떻게 설치하나요?
+10-23-2018 05:37:46.248: luisId : timeSolution01
+10-23-2018 05:37:46.251: luisIntent : timeSolution01_26
+10-23-2018 05:37:46.260: luisEntities : 서버,설치,타임
+10-23-2018 05:37:46.445: fullentity : 서버,설치,타임
+10-23-2018 05:37:46.630: relationList 조건 in 
+10-23-2018 05:37:46.631: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:47.058: dlg.dlgType : 2
+10-23-2018 05:37:47.062: * activity.ChannelId : emulator
+10-23-2018 05:37:51.611: db connect !! 
+10-23-2018 05:37:51.614: orgMent : GPS신호는 어떻게 받나요?
+10-23-2018 05:37:51.984: luisId : timeSolution01
+10-23-2018 05:37:51.989: luisIntent : timeSolution01_27
+10-23-2018 05:37:51.992: luisEntities : 신호,gps
+10-23-2018 05:37:52.173: fullentity : 신호,GPS
+10-23-2018 05:37:52.350: relationList 조건 in 
+10-23-2018 05:37:52.350: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:52.755: dlg.dlgType : 2
+10-23-2018 05:37:52.758: * activity.ChannelId : emulator
+10-23-2018 05:37:55.114: db connect !! 
+10-23-2018 05:37:55.121: orgMent : 타임서버와 GPS 연결은 어떻게 하나요?
+10-23-2018 05:37:55.493: luisId : timeSolution01
+10-23-2018 05:37:55.496: luisIntent : timeSolution01_28
+10-23-2018 05:37:55.496: luisEntities : 서버,연결,타임,gps
+10-23-2018 05:37:55.674: fullentity : 서버,연결,타임,GPS
+10-23-2018 05:37:55.871: relationList 조건 in 
+10-23-2018 05:37:55.871: relationList[0].dlgApiDefine : D
+10-23-2018 05:37:56.267: dlg.dlgType : 2
+10-23-2018 05:37:56.268: * activity.ChannelId : emulator
+10-23-2018 05:37:59.484: db connect !! 
+10-23-2018 05:37:59.490: orgMent : 안테나는 어떻게 생겼나요?
+10-23-2018 05:37:59.861: luisId : timeSolution01
+10-23-2018 05:37:59.864: luisIntent : timeSolution01_29
+10-23-2018 05:37:59.868: luisEntities : 안테나
+10-23-2018 05:38:00.047: fullentity : 안테나
+10-23-2018 05:38:00.223: relationList 조건 in 
+10-23-2018 05:38:00.223: relationList[0].dlgApiDefine : D
+10-23-2018 05:38:00.621: dlg.dlgType : 3
+10-23-2018 05:38:00.625: tempcard.card_order_no : 1
+10-23-2018 05:38:00.630: CARD IMG START
+10-23-2018 05:38:00.633: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/timeServer_inner.jpg
+10-23-2018 05:38:00.634: CARD BTN1 START
+10-23-2018 05:38:00.634: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:38:00.635: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:38:00.635: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:38:00.635: tempcard.card_order_no : 1
+10-23-2018 05:38:00.636: CARD IMG START
+10-23-2018 05:38:00.636: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/timeServer_outer.png
+10-23-2018 05:38:00.637: CARD BTN1 START
+10-23-2018 05:38:00.637: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:38:00.637: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:38:00.637: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:38:15.330: db connect !! 
+10-23-2018 05:38:15.335: orgMent : GPS 신호를 못 받을 시 동기화가 되나요?
+10-23-2018 05:38:15.709: luisId : timeSolution01
+10-23-2018 05:38:15.713: luisIntent : timeSolution01_31
+10-23-2018 05:38:15.720: luisEntities : 동기화,신호,gps
+10-23-2018 05:38:15.897: fullentity : 동기화,신호,GPS
+10-23-2018 05:38:16.084: relationList 조건 in 
+10-23-2018 05:38:16.085: relationList[0].dlgApiDefine : D
+10-23-2018 05:38:16.482: dlg.dlgType : 2
+10-23-2018 05:38:16.486: * activity.ChannelId : emulator
+10-23-2018 05:38:28.020: db connect !! 
+10-23-2018 05:38:28.032: orgMent : GPS 신호의 감도는 어떻게 체크하나요?
+10-23-2018 05:38:28.391: luisId : timeSolution01
+10-23-2018 05:38:28.410: luisIntent : timeSolution01_32
+10-23-2018 05:38:28.414: luisEntities : 감도,신호,체크,gps
+10-23-2018 05:38:28.614: fullentity : 감도,신호,체크,GPS
+10-23-2018 05:38:28.789: relationList 조건 in 
+10-23-2018 05:38:28.790: relationList[0].dlgApiDefine : D
+10-23-2018 05:38:29.188: dlg.dlgType : 2
+10-23-2018 05:38:29.191: * activity.ChannelId : emulator
+10-23-2018 05:38:32.300: db connect !! 
+10-23-2018 05:38:32.309: orgMent : 타임서버 OS는 머에요?
+10-23-2018 05:38:32.672: luisId : timeSolution01
+10-23-2018 05:38:32.676: luisIntent : timeSolution01_33
+10-23-2018 05:38:32.682: luisEntities : 서버,타임,os
+10-23-2018 05:38:32.861: fullentity : 서버,타임,OS
+10-23-2018 05:38:33.034: relationList 조건 in 
+10-23-2018 05:38:33.034: relationList[0].dlgApiDefine : D
+10-23-2018 05:38:33.432: dlg.dlgType : 2
+10-23-2018 05:38:33.436: * activity.ChannelId : emulator
+10-23-2018 05:40:03.954: db connect !! 
+10-23-2018 05:40:03.985: orgMent : 어떤환경에서 타임서버가 필요한가요?
+10-23-2018 05:40:04.467: luisId : timeSolution01
+10-23-2018 05:40:04.470: luisIntent : timeSolution01_34
+10-23-2018 05:40:04.474: luisEntities : 서버,타임,환경
+10-23-2018 05:40:04.704: fullentity : 서버,타임,환경
+10-23-2018 05:40:04.936: relationList 조건 in 
+10-23-2018 05:40:04.940: relationList[0].dlgApiDefine : D
+10-23-2018 05:40:05.340: dlg.dlgType : 2
+10-23-2018 05:40:05.346: * activity.ChannelId : emulator
+10-23-2018 05:40:10.483: db connect !! 
+10-23-2018 05:40:10.525: orgMent : 타임서버가 왜 필요한가요?
+10-23-2018 05:40:10.990: luisId : timeSolution01
+10-23-2018 05:40:11.001: luisIntent : timeSolution01_35
+10-23-2018 05:40:11.006: luisEntities : 서버,타임
+10-23-2018 05:40:11.236: fullentity : 서버,타임
+10-23-2018 05:40:11.473: relationList 조건 in 
+10-23-2018 05:40:11.477: relationList[0].dlgApiDefine : D
+10-23-2018 05:40:11.881: dlg.dlgType : 2
+10-23-2018 05:40:11.884: * activity.ChannelId : emulator
+10-23-2018 05:40:18.630: db connect !! 
+10-23-2018 05:40:18.637: orgMent : 타사비교자료는 있나요?
+10-23-2018 05:40:19.111: luisId : timeSolution01
+10-23-2018 05:40:19.118: luisIntent : timeSolution01_36
+10-23-2018 05:40:19.122: luisEntities : 비교자료,타사
+10-23-2018 05:40:19.356: fullentity : 비교자료,타사
+10-23-2018 05:40:19.587: relationList 조건 in 
+10-23-2018 05:40:19.591: relationList[0].dlgApiDefine : D
+10-23-2018 05:40:20.016: dlg.dlgType : 2
+10-23-2018 05:40:20.020: * activity.ChannelId : emulator
+10-23-2018 05:40:26.583: db connect !! 
+10-23-2018 05:40:26.590: orgMent : 세이코제품만의 특장점이 있나요?
+10-23-2018 05:40:27.139: luisId : timeSolution01
+10-23-2018 05:40:27.143: luisIntent : timeSolution01_37
+10-23-2018 05:40:27.146: luisEntities : 세이코,제품,특장점
+10-23-2018 05:40:27.382: fullentity : 세이코,제품,특장점
+10-23-2018 05:40:27.617: relationList 조건 in 
+10-23-2018 05:40:27.621: relationList[0].dlgApiDefine : D
+10-23-2018 05:40:28.022: dlg.dlgType : 2
+10-23-2018 05:40:28.026: * activity.ChannelId : emulator
+10-23-2018 05:40:35.640: db connect !! 
+10-23-2018 05:40:35.646: orgMent : TS-2550 가격은 얼마에요?
+10-23-2018 05:40:36.285: luisId : timeSolution01
+10-23-2018 05:40:36.289: luisIntent : timeSolution01_38
+10-23-2018 05:40:36.293: luisEntities : 가격,ts-2550
+10-23-2018 05:40:36.523: fullentity : 가격,TS-2550
+10-23-2018 05:40:36.755: relationList 조건 in 
+10-23-2018 05:40:36.759: relationList[0].dlgApiDefine : D
+10-23-2018 05:40:37.160: dlg.dlgType : 2
+10-23-2018 05:40:37.165: * activity.ChannelId : emulator
+10-23-2018 05:40:44.837: db connect !! 
+10-23-2018 05:40:44.839: orgMent : TS-2210 가격은 얼마에요?
+10-23-2018 05:40:45.417: luisId : timeSolution01
+10-23-2018 05:40:45.418: luisIntent : timeSolution01_39
+10-23-2018 05:40:45.422: luisEntities : 가격,ts-2210
+10-23-2018 05:40:45.653: fullentity : 가격,TS-2210
+10-23-2018 05:40:45.889: relationList 조건 in 
+10-23-2018 05:40:45.893: relationList[0].dlgApiDefine : D
+10-23-2018 05:40:46.294: dlg.dlgType : 2
+10-23-2018 05:40:46.299: * activity.ChannelId : emulator
+10-23-2018 05:40:54.450: db connect !! 
+10-23-2018 05:40:54.462: orgMent : TD-450 가격은 얼마에요?
+10-23-2018 05:40:54.835: luisId : timeSolution01
+10-23-2018 05:40:54.839: luisIntent : timeSolution01_40
+10-23-2018 05:40:54.842: luisEntities : 가격,td-450
+10-23-2018 05:40:55.023: fullentity : 가격,TD-450
+10-23-2018 05:40:55.201: relationList 조건 in 
+10-23-2018 05:40:55.202: relationList[0].dlgApiDefine : D
+10-23-2018 05:40:55.611: dlg.dlgType : 2
+10-23-2018 05:40:55.614: * activity.ChannelId : emulator
+10-23-2018 05:41:00.266: db connect !! 
+10-23-2018 05:41:00.272: orgMent : TD-210 가격은 얼마에요?
+10-23-2018 05:41:00.655: luisId : timeSolution01
+10-23-2018 05:41:00.659: luisIntent : timeSolution01_41
+10-23-2018 05:41:00.662: luisEntities : 가격,td-210
+10-23-2018 05:41:00.851: fullentity : 가격,TD-210
+10-23-2018 05:41:01.026: relationList 조건 in 
+10-23-2018 05:41:01.026: relationList[0].dlgApiDefine : D
+10-23-2018 05:41:01.424: dlg.dlgType : 2
+10-23-2018 05:41:01.428: * activity.ChannelId : emulator
+10-23-2018 05:41:04.290: db connect !! 
+10-23-2018 05:41:04.295: orgMent : 타임서버 구축기간은 얼마나 걸리나요?
+10-23-2018 05:41:04.661: luisId : timeSolution01
+10-23-2018 05:41:04.666: luisIntent : timeSolution01_42
+10-23-2018 05:41:04.670: luisEntities : 구축,기간,서버,타임
+10-23-2018 05:41:04.852: fullentity : 구축,기간,서버,타임
+10-23-2018 05:41:05.030: relationList 조건 in 
+10-23-2018 05:41:05.031: relationList[0].dlgApiDefine : D
+10-23-2018 05:41:05.443: dlg.dlgType : 2
+10-23-2018 05:41:05.446: * activity.ChannelId : emulator
+10-23-2018 05:41:08.239: db connect !! 
+10-23-2018 05:41:08.245: orgMent : 공사비 없이 타임서버만 판매 가능하나요?
+10-23-2018 05:41:08.726: luisId : timeSolution01
+10-23-2018 05:41:08.730: luisIntent : timeSolution01_43
+10-23-2018 05:41:08.734: luisEntities : 공사비,서버,타임,판매
+10-23-2018 05:41:08.923: fullentity : 공사비,서버,타임,판매
+10-23-2018 05:41:09.096: relationList 조건 in 
+10-23-2018 05:41:09.097: relationList[0].dlgApiDefine : D
+10-23-2018 05:41:09.496: dlg.dlgType : 2
+10-23-2018 05:41:09.501: * activity.ChannelId : emulator
+10-23-2018 05:41:14.164: db connect !! 
+10-23-2018 05:41:14.166: orgMent : 타임서버 설치비는 얼마나 하나요?
+10-23-2018 05:41:14.526: luisId : timeSolution01
+10-23-2018 05:41:14.530: luisIntent : timeSolution01_44
+10-23-2018 05:41:14.533: luisEntities : 서버,설치비,타임
+10-23-2018 05:41:14.712: fullentity : 서버,설치비,타임
+10-23-2018 05:41:14.893: relationList 조건 in 
+10-23-2018 05:41:14.894: relationList[0].dlgApiDefine : D
+10-23-2018 05:41:15.290: dlg.dlgType : 2
+10-23-2018 05:41:15.294: * activity.ChannelId : emulator
+10-23-2018 05:41:21.228: db connect !! 
+10-23-2018 05:41:21.240: orgMent : 서버 및 클라이언트 동기화 수는 몇대정도 되나요?
+10-23-2018 05:41:21.626: luisId : timeSolution01
+10-23-2018 05:41:21.630: luisIntent : timeSolution01_45
+10-23-2018 05:41:21.634: luisEntities : 동기화,서버,클라이언트
+10-23-2018 05:41:21.832: fullentity : 동기화,서버,클라이언트
+10-23-2018 05:41:22.023: relationList 조건 in 
+10-23-2018 05:41:22.024: relationList[0].dlgApiDefine : D
+10-23-2018 05:41:22.431: dlg.dlgType : 3
+10-23-2018 05:41:22.435: tempcard.card_order_no : 1
+10-23-2018 05:41:22.439: CARD IMG START
+10-23-2018 05:41:22.442: CARD BTN1 START
+10-23-2018 05:41:22.442: CARD BTN2 START
+10-23-2018 05:41:22.443: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:41:22.443: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:41:22.443: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:45:22.170: db connect !! 
+10-23-2018 05:45:22.186: orgMent : TS-2550 최대 동기화 수
+10-23-2018 05:45:23.686: luisId : timeSolution01
+10-23-2018 05:45:23.690: luisIntent : timeSolution01_46
+10-23-2018 05:45:23.693: luisEntities : 동기화,최대,ts-2550
+10-23-2018 05:45:23.872: fullentity : 동기화,최대,TS-2550
+10-23-2018 05:45:24.049: relationList 조건 in 
+10-23-2018 05:45:24.050: relationList[0].dlgApiDefine : D
+10-23-2018 05:45:25.573: dlg.dlgType : 2
+10-23-2018 05:45:25.577: * activity.ChannelId : emulator
+10-23-2018 05:45:31.684: db connect !! 
+10-23-2018 05:45:31.689: orgMent : TS-2210 최대 동기화 수
+10-23-2018 05:45:32.048: luisId : timeSolution01
+10-23-2018 05:45:32.052: luisIntent : timeSolution01_47
+10-23-2018 05:45:32.056: luisEntities : 동기화,최대,ts-2210
+10-23-2018 05:45:32.234: fullentity : 동기화,최대,TS-2210
+10-23-2018 05:45:32.410: relationList 조건 in 
+10-23-2018 05:45:32.410: relationList[0].dlgApiDefine : D
+10-23-2018 05:45:32.803: dlg.dlgType : 2
+10-23-2018 05:45:32.807: * activity.ChannelId : emulator
+10-23-2018 05:45:38.686: db connect !! 
+10-23-2018 05:45:38.688: orgMent : 타임서버는 모든 기기와 연결이 되나요?
+10-23-2018 05:45:39.062: luisId : timeSolution01
+10-23-2018 05:45:39.067: luisIntent : timeSolution01_48
+10-23-2018 05:45:39.070: luisEntities : 기기,서버,연결,타임
+10-23-2018 05:45:39.258: fullentity : 기기,서버,연결,타임
+10-23-2018 05:45:39.435: relationList 조건 in 
+10-23-2018 05:45:39.435: relationList[0].dlgApiDefine : D
+10-23-2018 05:45:39.825: dlg.dlgType : 2
+10-23-2018 05:45:39.829: * activity.ChannelId : emulator
+10-23-2018 05:45:46.686: db connect !! 
+10-23-2018 05:45:46.695: orgMent : 구축 실적 볼 수 있어요?
+10-23-2018 05:45:47.065: luisId : timeSolution01
+10-23-2018 05:45:47.070: luisIntent : timeSolution01_49
+10-23-2018 05:45:47.073: luisEntities : 구축,실적
+10-23-2018 05:45:47.253: fullentity : 구축,실적
+10-23-2018 05:45:47.435: relationList 조건 in 
+10-23-2018 05:45:47.435: relationList[0].dlgApiDefine : D
+10-23-2018 05:45:47.837: dlg.dlgType : 3
+10-23-2018 05:45:47.841: tempcard.card_order_no : 1
+10-23-2018 05:45:47.845: CARD IMG START
+10-23-2018 05:45:47.849: CARD BTN1 START
+10-23-2018 05:45:47.849: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:45:47.850: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:45:47.850: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:48:23.050: db connect !! 
+10-23-2018 05:48:23.059: orgMent : 유지보수는 어떤 형식으로 하나요?
+10-23-2018 05:48:23.510: luisId : timeSolution01
+10-23-2018 05:48:23.513: luisIntent : timeSolution01_50
+10-23-2018 05:48:23.517: luisEntities : 유지보수
+10-23-2018 05:48:23.739: fullentity : 유지보수
+10-23-2018 05:48:23.965: relationList 조건 in 
+10-23-2018 05:48:23.968: relationList[0].dlgApiDefine : D
+10-23-2018 05:48:24.384: dlg.dlgType : 2
+10-23-2018 05:48:24.387: * activity.ChannelId : emulator
+10-23-2018 05:48:31.529: db connect !! 
+10-23-2018 05:48:31.541: orgMent : 무상 유지보수 기간이 언제까지에요?
+10-23-2018 05:48:31.992: luisId : timeSolution01
+10-23-2018 05:48:32.009: luisIntent : timeSolution01_51
+10-23-2018 05:48:32.018: luisEntities : 기간,무상,유지보수
+10-23-2018 05:48:32.247: fullentity : 기간,무상,유지보수
+10-23-2018 05:48:32.467: relationList 조건 in 
+10-23-2018 05:48:32.472: relationList[0].dlgApiDefine : D
+10-23-2018 05:48:32.873: dlg.dlgType : 2
+10-23-2018 05:48:32.877: * activity.ChannelId : emulator
+10-23-2018 05:48:36.639: db connect !! 
+10-23-2018 05:48:36.643: orgMent : 유지보수 비용은 어떻게 되나요?
+10-23-2018 05:48:37.095: luisId : timeSolution01
+10-23-2018 05:48:37.100: luisIntent : timeSolution01_52
+10-23-2018 05:48:37.108: luisEntities : 비용,유지보수
+10-23-2018 05:48:37.334: fullentity : 비용,유지보수
+10-23-2018 05:48:37.559: relationList 조건 in 
+10-23-2018 05:48:37.562: relationList[0].dlgApiDefine : D
+10-23-2018 05:48:37.963: dlg.dlgType : 2
+10-23-2018 05:48:37.966: * activity.ChannelId : emulator
+10-23-2018 05:48:40.820: db connect !! 
+10-23-2018 05:48:40.827: orgMent : 윤초가 머에요?
+10-23-2018 05:48:41.282: luisId : timeSolution01
+10-23-2018 05:48:41.288: luisIntent : timeSolution01_53
+10-23-2018 05:48:41.293: luisEntities : 윤초
+10-23-2018 05:48:41.520: fullentity : 윤초
+10-23-2018 05:48:41.749: relationList 조건 in 
+10-23-2018 05:48:41.753: relationList[0].dlgApiDefine : D
+10-23-2018 05:48:42.157: dlg.dlgType : 2
+10-23-2018 05:48:42.161: * activity.ChannelId : emulator
+10-23-2018 05:48:46.802: db connect !! 
+10-23-2018 05:48:46.826: orgMent : 현장 실사는 가능한가요?
+10-23-2018 05:48:47.293: luisId : timeSolution01
+10-23-2018 05:48:47.296: luisIntent : timeSolution01_54
+10-23-2018 05:48:47.301: luisEntities : 실사,현장
+10-23-2018 05:48:47.524: fullentity : 실사,현장
+10-23-2018 05:48:47.743: relationList 조건 in 
+10-23-2018 05:48:47.747: relationList[0].dlgApiDefine : D
+10-23-2018 05:48:48.142: dlg.dlgType : 2
+10-23-2018 05:48:48.146: * activity.ChannelId : emulator
+10-23-2018 05:48:53.792: db connect !! 
+10-23-2018 05:48:53.798: orgMent : 견적서 보내 줄 수 있어요?
+10-23-2018 05:48:54.247: luisId : timeSolution01
+10-23-2018 05:48:54.251: luisIntent : timeSolution01_55
+10-23-2018 05:48:54.255: luisEntities : 견적서
+10-23-2018 05:48:54.477: fullentity : 견적서
+10-23-2018 05:48:54.696: relationList 조건 in 
+10-23-2018 05:48:54.699: relationList[0].dlgApiDefine : D
+10-23-2018 05:48:55.092: dlg.dlgType : 2
+10-23-2018 05:48:55.096: * activity.ChannelId : emulator
+10-23-2018 05:49:02.719: db connect !! 
+10-23-2018 05:49:02.722: orgMent : GPS 안테나를 설치 할 수 없는 환경에서도 구축할 수 있나요?
+10-23-2018 05:49:03.189: luisId : timeSolution01
+10-23-2018 05:49:03.193: luisIntent : timeSolution01_56
+10-23-2018 05:49:03.197: luisEntities : 구축,설치,안테나,환경,gps
+10-23-2018 05:49:03.421: fullentity : 구축,설치,안테나,환경,GPS
+10-23-2018 05:49:03.644: relationList 조건 in 
+10-23-2018 05:49:03.649: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:04.049: dlg.dlgType : 2
+10-23-2018 05:49:04.053: * activity.ChannelId : emulator
+10-23-2018 05:49:08.973: db connect !! 
+10-23-2018 05:49:08.976: orgMent : TS-2550 제품 사진 보여주세요
+10-23-2018 05:49:09.427: luisId : timeSolution01
+10-23-2018 05:49:09.431: luisIntent : timeSolution01_57
+10-23-2018 05:49:09.435: luisEntities : 사진,제품,ts-2550
+10-23-2018 05:49:09.657: fullentity : 사진,제품,TS-2550
+10-23-2018 05:49:09.881: relationList 조건 in 
+10-23-2018 05:49:09.886: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:10.282: dlg.dlgType : 3
+10-23-2018 05:49:10.286: tempcard.card_order_no : 1
+10-23-2018 05:49:10.290: CARD IMG START
+10-23-2018 05:49:10.293: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2550_front.jpg
+10-23-2018 05:49:10.294: CARD BTN1 START
+10-23-2018 05:49:10.294: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:49:10.295: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:49:10.295: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:49:10.295: tempcard.card_order_no : 2
+10-23-2018 05:49:10.296: CARD IMG START
+10-23-2018 05:49:10.297: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2550_back.jpg
+10-23-2018 05:49:10.298: CARD BTN1 START
+10-23-2018 05:49:10.298: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:49:10.298: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:49:10.299: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:49:15.817: db connect !! 
+10-23-2018 05:49:15.823: orgMent : TS-2210 제품 사진 보여주세요
+10-23-2018 05:49:16.277: luisId : timeSolution01
+10-23-2018 05:49:16.280: luisIntent : timeSolution01_58
+10-23-2018 05:49:16.285: luisEntities : 사진,제품,ts-2210
+10-23-2018 05:49:16.509: fullentity : 사진,제품,TS-2210
+10-23-2018 05:49:16.735: relationList 조건 in 
+10-23-2018 05:49:16.739: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:17.144: dlg.dlgType : 3
+10-23-2018 05:49:17.148: tempcard.card_order_no : 1
+10-23-2018 05:49:17.152: CARD IMG START
+10-23-2018 05:49:17.152: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2210_front.jpg
+10-23-2018 05:49:17.153: CARD BTN1 START
+10-23-2018 05:49:17.153: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:49:17.154: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:49:17.154: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:49:17.155: tempcard.card_order_no : 2
+10-23-2018 05:49:17.155: CARD IMG START
+10-23-2018 05:49:17.156: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TS-2210_back.jpg
+10-23-2018 05:49:17.156: CARD BTN1 START
+10-23-2018 05:49:17.157: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:49:17.157: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:49:17.158: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:49:19.753: db connect !! 
+10-23-2018 05:49:19.756: orgMent : TD-450 제품 사진 보여주세요
+10-23-2018 05:49:20.207: luisId : timeSolution01
+10-23-2018 05:49:20.213: luisIntent : timeSolution01_59
+10-23-2018 05:49:20.217: luisEntities : 사진,제품,td-450
+10-23-2018 05:49:20.438: fullentity : 사진,제품,TD-450
+10-23-2018 05:49:20.662: relationList 조건 in 
+10-23-2018 05:49:20.665: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:21.059: dlg.dlgType : 3
+10-23-2018 05:49:21.063: tempcard.card_order_no : 1
+10-23-2018 05:49:21.067: CARD IMG START
+10-23-2018 05:49:21.070: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-450.png
+10-23-2018 05:49:21.070: CARD BTN1 START
+10-23-2018 05:49:21.071: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:49:21.071: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:49:21.072: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:49:26.072: db connect !! 
+10-23-2018 05:49:26.075: orgMent : TD-210 제품 사진 보여주세요
+10-23-2018 05:49:26.440: luisId : timeSolution01
+10-23-2018 05:49:26.444: luisIntent : timeSolution01_60
+10-23-2018 05:49:26.447: luisEntities : 사진,제품,td-210
+10-23-2018 05:49:26.627: fullentity : 사진,제품,TD-210
+10-23-2018 05:49:26.809: relationList 조건 in 
+10-23-2018 05:49:26.810: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:27.205: dlg.dlgType : 3
+10-23-2018 05:49:27.209: tempcard.card_order_no : 1
+10-23-2018 05:49:27.213: CARD IMG START
+10-23-2018 05:49:27.216: FB CARD IMG https://timesolutionweb.azurewebsites.net/assets/image/product/TD-210.png
+10-23-2018 05:49:27.216: CARD BTN1 START
+10-23-2018 05:49:27.216: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:49:27.217: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:49:27.217: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-23-2018 05:49:32.143: db connect !! 
+10-23-2018 05:49:32.148: orgMent : 타임서버와 타임디스플레이는 어떻게 연동하나요?
+10-23-2018 05:49:32.542: luisId : timeSolution01
+10-23-2018 05:49:32.549: luisIntent : timeSolution01_61
+10-23-2018 05:49:32.553: luisEntities : 디스플레이,서버,연동,타임
+10-23-2018 05:49:32.735: fullentity : 디스플레이,서버,연동,타임
+10-23-2018 05:49:32.915: relationList 조건 in 
+10-23-2018 05:49:32.916: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:33.307: dlg.dlgType : 2
+10-23-2018 05:49:33.311: * activity.ChannelId : emulator
+10-23-2018 05:49:40.756: db connect !! 
+10-23-2018 05:49:40.764: orgMent : OCXO가 머에요?
+10-23-2018 05:49:41.124: luisId : timeSolution01
+10-23-2018 05:49:41.129: luisIntent : timeSolution01_62
+10-23-2018 05:49:41.132: luisEntities : ocxo
+10-23-2018 05:49:41.311: fullentity : OCXO
+10-23-2018 05:49:41.487: relationList 조건 in 
+10-23-2018 05:49:41.488: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:41.880: dlg.dlgType : 2
+10-23-2018 05:49:41.883: * activity.ChannelId : emulator
+10-23-2018 05:49:46.342: db connect !! 
+10-23-2018 05:49:46.347: orgMent : TCXO가 머에요?
+10-23-2018 05:49:46.704: luisId : timeSolution01
+10-23-2018 05:49:46.707: luisIntent : timeSolution01_63
+10-23-2018 05:49:46.716: luisEntities : tcxo
+10-23-2018 05:49:46.893: fullentity : TCXO
+10-23-2018 05:49:47.074: relationList 조건 in 
+10-23-2018 05:49:47.074: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:47.467: dlg.dlgType : 2
+10-23-2018 05:49:47.470: * activity.ChannelId : emulator
+10-23-2018 05:49:50.303: db connect !! 
+10-23-2018 05:49:50.309: orgMent : 타임서버 오실레이터가 머에요?
+10-23-2018 05:49:50.676: luisId : timeSolution01
+10-23-2018 05:49:50.679: luisIntent : timeSolution01_64
+10-23-2018 05:49:50.683: luisEntities : 서버,오실레이터,타임
+10-23-2018 05:49:50.860: fullentity : 서버,오실레이터,타임
+10-23-2018 05:49:51.036: relationList 조건 in 
+10-23-2018 05:49:51.036: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:51.427: dlg.dlgType : 2
+10-23-2018 05:49:51.430: * activity.ChannelId : emulator
+10-23-2018 05:49:57.051: db connect !! 
+10-23-2018 05:49:57.060: orgMent : 타임서버 긴급장애시 응급조치가  무엇인가요?
+10-23-2018 05:49:57.433: luisId : timeSolution01
+10-23-2018 05:49:57.436: luisIntent : timeSolution01_65
+10-23-2018 05:49:57.439: luisEntities : 긴급,무엇,서버,응급조치,장애,타임
+10-23-2018 05:49:57.625: fullentity : 긴급,무엇,서버,응급조치,장애,타임
+10-23-2018 05:49:57.802: relationList 조건 in 
+10-23-2018 05:49:57.803: relationList[0].dlgApiDefine : D
+10-23-2018 05:49:58.193: dlg.dlgType : 2
+10-23-2018 05:49:58.198: * activity.ChannelId : emulator
+10-23-2018 05:50:15.118: db connect !! 
+10-23-2018 05:50:15.123: orgMent : 타임서버가 무엇입니까?
+10-23-2018 05:50:15.491: luisId : timeSolution01
+10-23-2018 05:50:15.495: luisIntent : timeSolution01_67
+10-23-2018 05:50:15.498: luisEntities : 무엇,서버,타임
+10-23-2018 05:50:15.678: fullentity : 무엇,서버,타임
+10-23-2018 05:50:15.856: relationList 조건 in 
+10-23-2018 05:50:15.856: relationList[0].dlgApiDefine : D
+10-23-2018 05:50:16.250: dlg.dlgType : 2
+10-23-2018 05:50:16.254: * activity.ChannelId : emulator
+10-23-2018 05:50:22.289: db connect !! 
+10-23-2018 05:50:22.304: orgMent : 동영상보여줘
+10-23-2018 05:50:22.665: luisId : tiizChatBotV3
+10-23-2018 05:50:22.668: luisIntent : view
+10-23-2018 05:50:22.674: luisEntities : 동영상
+10-23-2018 05:50:22.853: fullentity : 동영상
+10-23-2018 05:50:23.031: relationList 조건 in 
+10-23-2018 05:50:23.032: relationList[0].dlgApiDefine : D
+10-23-2018 05:50:23.424: dlg.dlgType : 3
+10-23-2018 05:50:23.429: tempcard.card_order_no : 1
+10-23-2018 05:50:23.433: CARD IMG START
+10-23-2018 05:50:23.436: FB CARD IMG http://www.taihoinst.com/image/ai_cont02.gif
+10-23-2018 05:50:23.436: CARD BTN1 START
+10-23-2018 05:50:23.437: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-23-2018 05:50:23.437: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-23-2018 05:50:23.437: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)

@@ -1,0 +1,59 @@
+C:\Users\User\Source\Repos\cjAzitChatBot\obj\Debug\cjAzitChatBot.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\cjAzitChatBot\obj\Debug\cjAzitChatBot.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\cjAzitChatBot\obj\Debug\Bot Application.dll
+C:\Users\User\Source\Repos\cjAzitChatBot\obj\Debug\Bot Application.pdb
+C:\Users\User\source\repos\cjAzitChatBot\bin\Bot Application.dll.config
+C:\Users\User\source\repos\cjAzitChatBot\bin\Bot Application.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Bot Application.pdb
+C:\Users\User\source\repos\cjAzitChatBot\bin\Autofac.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Castle.Core.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Chronic.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.Bot.Builder.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.Bot.Connector.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Moq.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Newtonsoft.Json.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\System.Net.Http.Formatting.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\System.Web.Http.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\System.Web.Http.WebHost.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\Autofac.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Castle.Core.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.Bot.Builder.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.Bot.Connector.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Moq.pdb
+C:\Users\User\source\repos\cjAzitChatBot\bin\Moq.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\Newtonsoft.Json.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\System.Net.Http.Formatting.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\System.Web.Http.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\System.Web.Http.WebHost.xml
+C:\Users\User\source\repos\cjAzitChatBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\it\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\nl\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\pt-BR\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot\obj\Debug\cjAzitChatBot.csproj.CopyComplete

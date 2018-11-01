@@ -1,0 +1,14 @@
+11-01-2018 10:52:34.858: db connect !! 
+11-01-2018 10:52:34.996: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-11-01.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+11-01-2018 10:52:34.998: db SelectConfig start !! 
+11-01-2018 10:52:36.438: db conn SelectConfig !!
+11-01-2018 10:52:36.649: * cnfNm : 루이스제한 || cnfValue : 3000
+11-01-2018 10:52:36.651: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+11-01-2018 10:52:36.653: * cnfNm : 루이스스코어 || cnfValue : 0.1
+11-01-2018 10:52:36.654: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+11-01-2018 10:52:36.655: db SelectConfig end!! 
+11-01-2018 10:52:36.657: * DB conn : conversationUpdate
+11-01-2018 10:52:36.862:  db SelectInitDialog !! 
+11-01-2018 10:52:39.875: * activity.Type : 
+11-01-2018 10:52:39.876: * activity.Recipient.Id : e0cid5gmggma
+11-01-2018 10:52:39.877: * activity.ServiceUrl : http://localhost:55497

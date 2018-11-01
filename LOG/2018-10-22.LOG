@@ -1,0 +1,40 @@
+10-22-2018 06:47:43.159: db connect !! 
+10-22-2018 06:47:43.245: db SelectConfig start !! 
+10-22-2018 06:47:43.271: 'C:\Users\User\source\repos\TIIZChatBotV3\LOG\2018-10-22.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+10-22-2018 06:47:45.184: db conn SelectConfig !!
+10-22-2018 06:47:45.412: * cnfNm : 루이스제한 || cnfValue : 3000
+10-22-2018 06:47:45.413: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-22-2018 06:47:45.414: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-22-2018 06:47:45.417: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-22-2018 06:47:45.418: db SelectConfig end!! 
+10-22-2018 06:47:45.420: * DB conn : conversationUpdate
+10-22-2018 06:47:45.644:  db SelectInitDialog !! 
+10-22-2018 06:47:48.318: * activity.Type : 
+10-22-2018 06:47:48.320: * activity.Recipient.Id : e0cid5gmggma
+10-22-2018 06:47:48.320: * activity.ServiceUrl : http://localhost:56250
+10-22-2018 06:48:01.491: db connect !! 
+10-22-2018 06:48:01.502: orgMent : 타임서버가 무엇입니까?
+10-22-2018 06:48:01.973: luisId : timeSolution01
+10-22-2018 06:48:01.974: luisIntent : timeSolution01_67
+10-22-2018 06:48:01.974: luisEntities : 무엇,서버,타임
+10-22-2018 06:48:02.197: fullentity : 무엇,서버,타임
+10-22-2018 06:48:02.423: relationList 조건 in 
+10-22-2018 06:48:02.424: relationList[0].dlgApiDefine : D
+10-22-2018 06:48:03.005: dlg.dlgType : 2
+10-22-2018 06:48:03.006: * activity.ChannelId : emulator
+10-22-2018 06:48:03.596: dlg.dlgType : 2
+10-22-2018 06:48:03.597: * activity.ChannelId : emulator
+10-22-2018 06:48:10.091: db connect !! 
+10-22-2018 06:48:10.095: orgMent : 동영상 보여줘
+10-22-2018 06:48:10.546: cache none : 동영상 보여줘
+10-22-2018 06:48:13.174: luisId : 
+10-22-2018 06:48:13.174: luisIntent : 
+10-22-2018 06:48:13.175: luisEntities : 
+10-22-2018 06:48:13.397: fullentity : 동영상
+10-22-2018 06:49:27.724: db connect !! 
+10-22-2018 06:49:27.728: orgMent : 동영상
+10-22-2018 06:49:28.187: cache none : 동영상
+10-22-2018 06:49:29.305: luisId : 
+10-22-2018 06:49:29.305: luisIntent : 
+10-22-2018 06:49:29.306: luisEntities : 
+10-22-2018 06:49:29.530: fullentity : 동영상

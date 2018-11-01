@@ -1,0 +1,93 @@
+10-24-2018 11:55:14.615: db connect !! 
+10-24-2018 11:55:14.699: db SelectConfig start !! 
+10-24-2018 11:55:14.727: 'C:\Users\User\source\repos\TIIZChatBotV3\LOG\2018-10-24.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+10-24-2018 11:55:15.753: db conn SelectConfig !!
+10-24-2018 11:55:15.936: * cnfNm : 루이스제한 || cnfValue : 3000
+10-24-2018 11:55:15.937: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-24-2018 11:55:15.939: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-24-2018 11:55:15.940: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-24-2018 11:55:15.941: db SelectConfig end!! 
+10-24-2018 11:55:15.943: * DB conn : conversationUpdate
+10-24-2018 11:55:16.126:  db SelectInitDialog !! 
+10-24-2018 11:55:19.304: * activity.Type : 
+10-24-2018 11:55:19.304: * activity.Recipient.Id : e0cid5gmggma
+10-24-2018 11:55:19.305: * activity.ServiceUrl : http://localhost:59753
+10-24-2018 11:55:21.066: db connect !! 
+10-24-2018 11:55:21.068: orgMent : 릴보여줘
+10-24-2018 11:55:21.438: cache none : 릴보여줘
+10-24-2018 11:55:23.157: luisId : 
+10-24-2018 11:55:23.158: luisIntent : 
+10-24-2018 11:55:23.159: luisEntities : 
+10-24-2018 11:55:23.339: fullentity : 
+10-24-2018 01:18:00.172: db connect !! 
+10-24-2018 01:18:00.176: db SelectConfig start !! 
+10-24-2018 01:18:00.234: db connect !! 
+10-24-2018 01:18:01.120: db conn SelectConfig !!
+10-24-2018 01:18:01.310: * cnfNm : 루이스제한 || cnfValue : 3000
+10-24-2018 01:18:01.312: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-24-2018 01:18:01.315: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-24-2018 01:18:01.317: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-24-2018 01:18:01.317: db SelectConfig end!! 
+10-24-2018 01:18:01.319: * DB conn : conversationUpdate
+10-24-2018 01:18:01.500:  db SelectInitDialog !! 
+10-24-2018 01:18:03.446: * activity.Type : 
+10-24-2018 01:18:03.452: * activity.Recipient.Id : e0cid5gmggma
+10-24-2018 01:18:03.452: * activity.ServiceUrl : http://localhost:59753
+10-24-2018 01:18:13.520: db connect !! 
+10-24-2018 01:18:13.523: orgMent : 릴보여줘
+10-24-2018 01:18:13.885: cache none : 릴보여줘
+10-24-2018 01:18:15.750: luisId : 
+10-24-2018 01:18:15.755: luisIntent : 
+10-24-2018 01:18:15.755: luisEntities : 
+10-24-2018 01:18:15.928: fullentity : 
+10-24-2018 01:18:28.491: db connect !! 
+10-24-2018 01:18:28.508: orgMent : reel 보여줘
+10-24-2018 01:18:28.887: luisId : tiizChatBotV3
+10-24-2018 01:18:28.887: luisIntent : view
+10-24-2018 01:18:28.887: luisEntities : reel
+10-24-2018 01:18:29.072: fullentity : REEL
+10-24-2018 01:18:29.251: relationList 조건 in 
+10-24-2018 01:24:30.606: db connect !! 
+10-24-2018 01:24:30.609: db SelectConfig start !! 
+10-24-2018 01:24:30.610: db conn SelectConfig !!
+10-24-2018 01:24:30.791: * cnfNm : 루이스제한 || cnfValue : 3000
+10-24-2018 01:24:30.792: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-24-2018 01:24:30.793: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-24-2018 01:24:30.795: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-24-2018 01:24:30.796: db SelectConfig end!! 
+10-24-2018 01:24:30.797: * DB conn : conversationUpdate
+10-24-2018 01:24:30.977:  db SelectInitDialog !! 
+10-24-2018 01:24:31.107: db connect !! 
+10-24-2018 01:24:31.194: * activity.Type : 
+10-24-2018 01:24:31.195: * activity.Recipient.Id : e0cid5gmggma
+10-24-2018 01:24:31.195: * activity.ServiceUrl : http://localhost:59753
+10-24-2018 01:24:34.247: db connect !! 
+10-24-2018 01:24:34.262: orgMent : reel 보여줘
+10-24-2018 01:24:34.631: luisId : tiizChatBotV3
+10-24-2018 01:24:34.632: luisIntent : view
+10-24-2018 01:24:34.632: luisEntities : reel
+10-24-2018 01:24:34.812: fullentity : REEL
+10-24-2018 01:24:34.996: relationList 조건 in 
+10-24-2018 01:24:34.997: relationList[0].dlgApiDefine : D
+10-24-2018 01:24:35.357: dlg.dlgType : 3
+10-24-2018 01:24:35.358: tempcard.card_order_no : 1
+10-24-2018 01:24:35.360: CARD IMG START
+10-24-2018 01:24:35.361: FB CARD IMG http://tiizchatbotv3web.azurewebsites.net/assets/image/car/00001.jpg
+10-24-2018 01:24:35.361: CARD BTN1 START
+10-24-2018 01:24:35.362: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+10-24-2018 01:24:35.362: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+10-24-2018 01:24:35.363: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+10-24-2018 03:56:53.506: db connect !! 
+10-24-2018 03:56:53.607: 'C:\Users\User\source\repos\cjEmployeeChatBot\LOG\2018-10-24.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+10-24-2018 03:56:53.612: db SelectConfig start !! 
+10-24-2018 03:56:54.761: db conn SelectConfig !!
+10-24-2018 03:56:54.958: * cnfNm : 루이스제한 || cnfValue : 3000
+10-24-2018 03:56:54.971: * cnfNm : 루이스구독 || cnfValue : d15fa855582c4acead2bb41437971625
+10-24-2018 03:56:54.976: * cnfNm : 루이스스코어 || cnfValue : 0.1
+10-24-2018 03:56:54.991: * cnfNm : tiizChatbot || cnfValue : af0d72b2-af0b-4b5e-b69c-8bc40447a44e
+10-24-2018 03:56:54.996: db SelectConfig end!! 
+10-24-2018 03:56:55.002: * DB conn : conversationUpdate
+10-24-2018 03:56:55.189:  db SelectInitDialog !! 
+10-24-2018 03:56:57.630: * activity.Type : 
+10-24-2018 03:56:57.644: * activity.Recipient.Id : e0cid5gmggma
+10-24-2018 03:56:57.650: * activity.ServiceUrl : http://localhost:59753
