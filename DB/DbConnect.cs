@@ -38,7 +38,7 @@ namespace cjAzitChatBot.DB
                 conn.Open();
             }
             catch (Exception e)
-            {
+            { 
                 Debug.WriteLine(e);
             }
             finally
@@ -872,16 +872,14 @@ namespace cjAzitChatBot.DB
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText += "SELECT  LUIS_ID, LUIS_INTENT, LUIS_ENTITIES, ISNULL(DLG_ID,0) AS DLG_ID, DLG_API_DEFINE, API_ID ";
-                cmd.CommandText += "  FROM  TBL_DLG_RELATION_LUIS                                                    ";
-                //cmd.CommandText += " WHERE  LUIS_ENTITIES = @entities                                                ";
-                cmd.CommandText += " WHERE  LUIS_INTENT = @intent                                                ";
-                cmd.CommandText += " AND  LUIS_ENTITIES = @entities                                                ";
+                cmd.CommandText += " FROM  TBL_DLG_RELATION_LUIS ";
+                cmd.CommandText += " WHERE  LUIS_INTENT = @intent ";
+                //cmd.CommandText += " AND  LUIS_ENTITIES = @entities ";
 
                 Debug.WriteLine("query : " + cmd.CommandText);
-                Debug.WriteLine("entity : " + entity);
                 Debug.WriteLine("intent : " + intent);
                 cmd.Parameters.AddWithValue("@intent", intent);
-                cmd.Parameters.AddWithValue("@entities", entity);
+                //cmd.Parameters.AddWithValue("@entities", entity);
 
                 rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                 while (rdr.Read())
@@ -889,7 +887,7 @@ namespace cjAzitChatBot.DB
                     RelationList relationList = new RelationList();
                     relationList.luisId = rdr["LUIS_ID"] as string;
                     relationList.luisIntent = rdr["LUIS_INTENT"] as string;
-                    relationList.luisEntities = rdr["LUIS_ENTITIES"] as string;
+                    //relationList.luisEntities = rdr["LUIS_ENTITIES"] as string;
                     relationList.dlgId = Convert.ToInt32(rdr["DLG_ID"]);
                     relationList.dlgApiDefine = rdr["DLG_API_DEFINE"] as string;
                     //relationList.apiId = Convert.ToInt32(rdr["API_ID"] ?? 0);
