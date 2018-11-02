@@ -226,7 +226,7 @@ namespace cjAzitChatBot.DB
                 {
                     //textList.Add(LUIS_APP_ID[i] +"|"+ LUIS_SUBSCRIPTION + "|" + query);
                     textList.Add(new string[] { MessagesController.LUIS_NM[i], MessagesController.LUIS_APP_ID[i], MessagesController.LUIS_SUBSCRIPTION, query });
-
+                    Debug.WriteLine("GetMultiLUIS() LUIS_NM : " + MessagesController.LUIS_NM[i] + " | LUIS_APP_ID : " + MessagesController.LUIS_APP_ID[i]);
                 }
 
                 //병렬처리 시간 체크
@@ -283,6 +283,7 @@ namespace cjAzitChatBot.DB
                 {
                     LuisName = returnLuisName[0];
                     Luis = Luis_before[0];
+                    Debug.WriteLine("GetMultiLUIS() LuisName : " + LuisName);
                 }
                 
                 if (!String.IsNullOrEmpty(LuisName))
@@ -293,13 +294,11 @@ namespace cjAzitChatBot.DB
                         int luisEntityCount = (int)Luis["entities"].Count();
 
                         luisIntent = Luis["topScoringIntent"]["intent"].ToString();//add
-                        Debug.WriteLine("LUIS luisIntent : " + luisIntent);
-
+                        Debug.WriteLine("GetMultiLUIS() LUIS luisIntent : " + luisIntent);
                         
-
-
                         if (MessagesController.relationList != null)
                         {
+                            Debug.WriteLine("GetMultiLUIS() relationList is not NULL");
                             if (MessagesController.relationList.Count() > 0)
                             {
                                 MessagesController.relationList[0].luisScore = (int)Luis["intents"][0]["score"];
@@ -309,11 +308,10 @@ namespace cjAzitChatBot.DB
                                 MessagesController.cacheList.luisScore = Luis["intents"][0]["score"].ToString();
                             }
                         }
-
-
-
+                        /*
                         if (luisScore > Convert.ToDouble(MessagesController.LUIS_SCORE_LIMIT) && luisEntityCount > 0)
                         {
+                            Debug.WriteLine("GetMultiLUIS() luisEntityCount > 0");
                             for (int i = 0; i < luisEntityCount; i++)
                             {
                                 //luisEntities = luisEntities + Luis["entities"][i]["entity"] + ",";
@@ -323,6 +321,7 @@ namespace cjAzitChatBot.DB
                                 //luisEntities = luisEntities + luisType + ",";
                             }
                         }
+                        */
                     }
 
                     if (!string.IsNullOrEmpty(luisEntities) || luisEntities.Length > 0)
