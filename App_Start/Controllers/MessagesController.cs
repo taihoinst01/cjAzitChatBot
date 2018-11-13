@@ -226,7 +226,7 @@ namespace cjAzitChatBot
                     }
                     await connector.Conversations.SendToConversationAsync(initReply);
                 }
-
+                //
                 //현재위치사용승인 테스트
                 //Activity replyLocation = activity.CreateReply();
                 //replyLocation.Recipient = activity.From;
