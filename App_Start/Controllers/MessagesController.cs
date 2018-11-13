@@ -226,21 +226,7 @@ namespace cjAzitChatBot
                     }
                     await connector.Conversations.SendToConversationAsync(initReply);
                 }
-                //
-                //현재위치사용승인 테스트
-                //Activity replyLocation = activity.CreateReply();
-                //replyLocation.Recipient = activity.From;
-                //replyLocation.Type = "message";
-                //replyLocation.Attachments = new List<Attachment>();
-                //replyLocation.AttachmentLayout = AttachmentLayoutTypes.Carousel;
-
-                //replyLocation.Attachments.Add(
-                //    GetHeroCard_facebookMore(
-                //    "", "",
-                //    "현재 위치 사용 승인",
-                //    new CardAction(ActionTypes.ImBack, "현재 위치 사용 승인", value: MessagesController.queryStr))
-                //);
-                //await connector.Conversations.SendToConversationAsync(replyLocation);
+               
 
                 DateTime endTime = DateTime.Now;
                 Debug.WriteLine("프로그램 수행시간 : {0}/ms", ((endTime - startTime).Milliseconds));
@@ -261,55 +247,7 @@ namespace cjAzitChatBot
                     Debug.WriteLine("* activity.Type == ActivityTypes.Message ");
                     channelID = activity.ChannelId;
                     string orgMent = activity.Text;
-
-                    //현재위치사용승인
-                    if (orgMent.Contains("current location") || orgMent.Equals("현재위치사용승인"))
-                    {
-                        if (!orgMent.Contains(':'))
-                        {
-                            //첫번쨰 메세지 출력 x
-                            response = Request.CreateResponse(HttpStatusCode.OK);
-                            return response;
-                        }
-                        else
-                        {
-                            //위도경도에 따른 값 출력
-                            try
-                            {
-                                string location = orgMent.Replace("current location:", "");
-                                //테스트용
-                                //string location = "129.0929788:35.2686635";
-                                string[] location_result = location.Split(':');
-                                //regionStr = db.LocationValue(location_result[1], location_result[2]);
-                                DButil.HistoryLog("*regionStr : " + location_result[0] + " " + location_result[1]);
-                                Debug.WriteLine("*regionStr : " + location_result[0] + " " + location_result[1]);
-                                DButil.mapSave(location_result[0], location_result[1]);
-                                Activity reply_brach = activity.CreateReply();
-                                reply_brach.Recipient = activity.From;
-                                reply_brach.Type = "message";
-                                reply_brach.Attachments = new List<Attachment>();
-                                reply_brach.AttachmentLayout = AttachmentLayoutTypes.Carousel;
-                                reply_brach.Attachments.Add(
-                                    DButil.GetHeroCard_Map(
-                                    "타이호인스트",
-                                    "연락처",
-                                    "주소",
-                                    new CardImage(url: "https://cjAzitChatBot.azurewebsites.net/image/map/"+ location_result[1] + ","+ location_result[0] + ".png"),
-                                    new CardAction(ActionTypes.OpenUrl, "타이호인스트", value: "http://www.taihoinst.com/"),
-                                    location_result[1],
-                                    location_result[0])
-                                    );
-                                var reply_brach1 = await connector.Conversations.SendToConversationAsync(reply_brach);
-                                response = Request.CreateResponse(HttpStatusCode.OK);
-                                return response;
-                            }
-                            catch
-                            {
-                                queryStr = "서울 시승센터";
-                            }
-                        }
-                    }
-
+               
                     apiFlag = "COMMON";
 
                     //대화 시작 시간
