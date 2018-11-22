@@ -334,12 +334,12 @@ namespace cjAzitChatBot
                     }
                     else
                     {
+                        //정규화
+                        orgMent = Regex.Replace(orgMent, @"[^a-zA-Z0-9ㄱ-힣]", "", RegexOptions.Singleline);
+                        orgMent = orgMent.Replace(" ", "");
                         queryStr = orgMent;
-                        //인텐트 엔티티 검출
-                        //캐시 체크
-                        cashOrgMent = Regex.Replace(orgMent, @"[^a-zA-Z0-9ㄱ-힣]", "", RegexOptions.Singleline);
                         //cacheList = db.CacheChk(cashOrgMent.Replace(" ", ""));                     // 캐시 체크 (TBL_QUERY_ANALYSIS_RESULT 조회..)
-                        //intent 초기화
+                        //cacheList.luisIntent 초기화
                         cacheList.luisIntent = null;
 
                         //캐시에 없을 경우

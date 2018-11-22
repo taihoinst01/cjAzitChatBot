@@ -645,6 +645,7 @@ namespace cjAzitChatBot.DB
 
             string cardDiv = "";
             string cardVal = "";
+            string cardMoblieAction = ""; 
 
             List<CardImage> cardImages = new List<CardImage>();
             List<CardAction> cardButtons = new List<CardAction>();
@@ -735,8 +736,14 @@ namespace cjAzitChatBot.DB
                 cardVal = card.cardValue;
             }
 
+            if (!string.IsNullOrEmpty(card.moblieAction))
+            {
+                //cardVal = priceMediaDlgList[i].cardValue.Replace();
+                cardMoblieAction = card.moblieAction;
+            }
 
-            if(activity.ChannelId.Equals("facebook") && cardButtons.Count < 1 && cardImages.Count < 1)
+
+            if (activity.ChannelId.Equals("facebook") && cardButtons.Count < 1 && cardImages.Count < 1)
             {
                 HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1");
                 Activity reply_facebook = activity.CreateReply();
@@ -776,7 +783,8 @@ namespace cjAzitChatBot.DB
                             Buttons = cardButtons,
                             Card_division = cardDiv,
                             Card_value = cardVal,
-                            Gesture = card.gesture //2018-04-24 : 제스처 추가
+                            Gesture = card.gesture, //2018-04-24 : 제스처 추가
+                            Moblie_action = card.moblieAction //2018-11-20 : 제스처 추가
                         };
                         returnAttachment = plCard.ToAttachment();
                     }
@@ -791,7 +799,8 @@ namespace cjAzitChatBot.DB
                             Buttons = cardButtons,
                             Card_division = cardDiv,
                             Card_value = cardVal,
-                            Gesture = card.gesture //2018-04-24 : 제스처 추가
+                            Gesture = card.gesture, //2018-04-24 : 제스처 추가
+                            Moblie_action = card.moblieAction //2018-11-20 : 제스처 추가
                         };
                         returnAttachment = plCard.ToAttachment();
                     }

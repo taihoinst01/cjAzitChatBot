@@ -32,5 +32,9 @@ namespace cjAzitChatBot.Models
 
         [Newtonsoft.Json.JsonProperty(PropertyName = "gesture")]
         public int Gesture { get; set; }
+
+        [Newtonsoft.Json.JsonProperty(PropertyName = "moblie_action")]
+        public string Moblie_action { get; set; }
+        
     }
 }

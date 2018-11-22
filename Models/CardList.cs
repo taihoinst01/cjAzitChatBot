@@ -30,5 +30,6 @@ namespace cjAzitChatBot.Models
         //public String card_order_no;
         public int card_order_no;
         public int gesture; //제스처 추가
+        public string moblieAction; //모바일 버튼 작동여부
     }
 }
