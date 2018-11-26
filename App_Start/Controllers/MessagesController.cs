@@ -73,7 +73,7 @@ namespace cjAzitChatBot
         public static ConversationHistory conversationhistory = new ConversationHistory();
         //추천 컨텍스트 분석용
         public static Dictionary<String, String> recommenddic = new Dictionary<string, String>();
-        //결과 플레그 H : 정상 답변, S : 기사검색 답변, D : 답변 실패
+        //결과 플레그 H : 정상 답변, S : SMALLTALK 답변, D : 답변 실패
         public static String replyresult = "";
         //API 플레그 QUOT : 견적, TESTDRIVE : 시승 RECOMMEND : 추천 COMMON : 일반 SEARCH : 검색
         public static String apiFlag = "";
@@ -358,6 +358,23 @@ namespace cjAzitChatBot
 
 
                         }
+                        // TBL_HISTORY_QUERY 로그인정보, SMALL TALK 여부 컬럼 추가
+                        // SMALL TALK 확인
+                        // 1. 루이스에서 intent가 null OR intent score 낮을경우  small talk 연결
+                        // 2. small talk 결과값 result s로 입력
+                        // 3. 답변 3개등록, 랜덤으로 출력 
+
+
+                        // 테스트용
+                        // small Talk Answer 랜덤
+                        //string test = "111|222|333";
+                        //string[] smallTalkAnswer = test.Split('|');
+
+                        //Random r = new Random();
+
+                        //int smallTalkAnswerOrder = r.Next(0, smallTalkAnswer.Length);
+
+                        //Debug.WriteLine("smallTalkAnswer[smallTalkAnswerOrder] = " + smallTalkAnswer[smallTalkAnswerOrder]);
 
                         luisId = cacheList.luisId;
                         luisIntent = cacheList.luisIntent;
@@ -591,14 +608,14 @@ namespace cjAzitChatBot
                     //sorryReply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
 
                     List<TextList> text = new List<TextList>();
-                    if (sorryMessageCnt == 1)
-                    {
+                    //if (sorryMessageCnt == 1)
+                    //{
                         text = db.SelectSorryDialogText("5");
-                    }
-                    else
-                    {
-                        text = db.SelectSorryDialogText("6");
-                    }
+                    //}
+                    //else
+                    //{
+                    //    text = db.SelectSorryDialogText("6");
+                    //}
 
                     for (int i = 0; i < text.Count; i++)
                     {
