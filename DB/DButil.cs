@@ -252,7 +252,7 @@ namespace cjAzitChatBot.DB
 
                 watch.Stop();
                 //Luis = Luis_before;
-
+                string luisIntent = "";
                 try
                 {
                     for (int i = 0; i < MAX; i++)
@@ -262,11 +262,14 @@ namespace cjAzitChatBot.DB
                         {
                             for (int j = 0; j < (int)Luis_before[i]["entities"].Count(); j++)
                             {
-                                entitiesSum += (string)Luis_before[i]["entities"][j]["entity"].ToString() + ",";
+                                MessagesController.cacheList.luisEntities += (string)Luis_before[i]["entities"][j]["type"].ToString() + ",";
                             }
                         }
 
                     }
+                    luisIntent = Luis_before[0]["topScoringIntent"]["intent"].ToString();
+                    MessagesController.cacheList.luisEntities = MessagesController.cacheList.luisEntities.Substring(0, MessagesController.cacheList.luisEntities.LastIndexOf(","));
+                    MessagesController.cacheList.luisScore = Luis_before[0]["intents"][0]["score"].ToString();
                 }
                 catch (IndexOutOfRangeException e)
                 {
@@ -274,79 +277,78 @@ namespace cjAzitChatBot.DB
                     return "";
                 }
 
+                //string luisEntities = "";
+                //string luisType = "";
+                //string luisIntent = "";
 
-                string luisEntities = "";
-                string luisType = "";
-                string luisIntent = "";
-
-                if (MAX > 0)
-                {
-                    LuisName = returnLuisName[0];
-                    Luis = Luis_before[0];
-                    Debug.WriteLine("GetMultiLUIS() LuisName : " + LuisName);
-                }
+                //if (MAX > 0)
+                //{
+                //    LuisName = returnLuisName[0];
+                //    Luis = Luis_before[0];
+                //    Debug.WriteLine("GetMultiLUIS() LuisName : " + LuisName);
+                //}
                 
-                if (!String.IsNullOrEmpty(LuisName))
-                {
-                    if (Luis != null || Luis.Count > 0)
-                    {
-                        float luisScore = (float)Luis["intents"][0]["score"];
-                        int luisEntityCount = (int)Luis["entities"].Count();
+                //if (!String.IsNullOrEmpty(LuisName))
+                //{
+                //    if (Luis != null || Luis.Count > 0)
+                //    {
+                //        float luisScore = (float)Luis["intents"][0]["score"];
+                //        int luisEntityCount = (int)Luis["entities"].Count();
 
-                        luisIntent = Luis["topScoringIntent"]["intent"].ToString();//add
-                        Debug.WriteLine("GetMultiLUIS() LUIS luisIntent : " + luisIntent);
+                //        luisIntent = Luis["topScoringIntent"]["intent"].ToString();//add
+                //        Debug.WriteLine("GetMultiLUIS() LUIS luisIntent : " + luisIntent);
                         
-                        if (MessagesController.relationList != null)
-                        {
-                            Debug.WriteLine("GetMultiLUIS() relationList is not NULL");
-                            if (MessagesController.relationList.Count() > 0)
-                            {
-                                MessagesController.relationList[0].luisScore = (int)Luis["intents"][0]["score"];
-                            }
-                            else
-                            {
-                                MessagesController.cacheList.luisScore = Luis["intents"][0]["score"].ToString();
-                            }
-                        }
-                        /*
-                        if (luisScore > Convert.ToDouble(MessagesController.LUIS_SCORE_LIMIT) && luisEntityCount > 0)
-                        {
-                            Debug.WriteLine("GetMultiLUIS() luisEntityCount > 0");
-                            for (int i = 0; i < luisEntityCount; i++)
-                            {
-                                //luisEntities = luisEntities + Luis["entities"][i]["entity"] + ",";
+                //        if (MessagesController.relationList != null)
+                //        {
+                //            Debug.WriteLine("GetMultiLUIS() relationList is not NULL");
+                //            if (MessagesController.relationList.Count() > 0)
+                //            {
+                //                MessagesController.relationList[0].luisScore = (int)Luis["intents"][0]["score"];
+                //            }
+                //            else
+                //            {
+                //                MessagesController.cacheList.luisScore = Luis["intents"][0]["score"].ToString();
+                //            }
+                //        }
+                //        /*
+                //        if (luisScore > Convert.ToDouble(MessagesController.LUIS_SCORE_LIMIT) && luisEntityCount > 0)
+                //        {
+                //            Debug.WriteLine("GetMultiLUIS() luisEntityCount > 0");
+                //            for (int i = 0; i < luisEntityCount; i++)
+                //            {
+                //                //luisEntities = luisEntities + Luis["entities"][i]["entity"] + ",";
 
-                                //luisType = (string)Luis["entities"][i]["type"];
-                                //luisType = Regex.Split(luisType, "::")[1];
-                                //luisEntities = luisEntities + luisType + ",";
-                            }
-                        }
-                        */
-                    }
+                //                //luisType = (string)Luis["entities"][i]["type"];
+                //                //luisType = Regex.Split(luisType, "::")[1];
+                //                //luisEntities = luisEntities + luisType + ",";
+                //            }
+                //        }
+                //        */
+                //    }
 
-                    if (!string.IsNullOrEmpty(luisEntities) || luisEntities.Length > 0)
-                    {
-                        luisEntities = luisEntities.Substring(0, luisEntities.LastIndexOf(","));
-                        luisEntities = Regex.Replace(luisEntities, " ", "");
+                //    if (!string.IsNullOrEmpty(luisEntities) || luisEntities.Length > 0)
+                //    {
+                //        luisEntities = luisEntities.Substring(0, luisEntities.LastIndexOf(","));
+                //        luisEntities = Regex.Replace(luisEntities, " ", "");
 
 
-                        luisEntities = MessagesController.db.SelectArray(luisEntities);
+                //        luisEntities = MessagesController.db.SelectArray(luisEntities);
 
-                        if (Luis["intents"] == null)
-                        {
-                            MessagesController.cacheList.luisIntent = "";
-                        }
-                        else
-                        {
-                            MessagesController.cacheList.luisIntent = (string)Luis["intents"][0]["intent"];
-                        }
+                //        if (Luis["intents"] == null)
+                //        {
+                //            MessagesController.cacheList.luisIntent = "";
+                //        }
+                //        else
+                //        {
+                //            MessagesController.cacheList.luisIntent = (string)Luis["intents"][0]["intent"];
+                //        }
 
-                        MessagesController.cacheList.luisEntities = luisEntities;
-                    }
+                //        MessagesController.cacheList.luisEntities = luisEntities;
+                //    }
 
-                    //MessagesController.cacheList.luisEntities = LuisName;
+                //    //MessagesController.cacheList.luisEntities = LuisName;
 
-                }
+                //}
                 //return LuisName;
                 return luisIntent;
             }
@@ -364,7 +366,8 @@ namespace cjAzitChatBot.DB
             query = Uri.EscapeDataString(query);
 
             //string url = string.Format("https://southeastasia.api.cognitive.microsoft.com/luis/v2.0/apps/{0}?subscription-key={1}&timezoneOffset=0&verbose=true&q={2}", luis_app_id, luis_subscription, query);
-            string url = string.Format("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/{0}?subscription-key={1}&timezoneOffset=0&verbose=true&q={2}", luis_app_id, luis_subscription, query);
+            //string url = string.Format("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/{0}?subscription-key={1}&timezoneOffset=0&verbose=true&q={2}", luis_app_id, luis_subscription, query);
+            string url = string.Format("https://eastasia.api.cognitive.microsoft.com/luis/v2.0/apps/{0}?subscription-key={1}&timezoneOffset=0&verbose=true&q={2}", luis_app_id, luis_subscription, query);
             Debug.WriteLine("-----LUIS URL 보기");
             Debug.WriteLine("-----LUIS URL : " + url);
 

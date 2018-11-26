@@ -861,11 +861,12 @@ namespace cjAzitChatBot.DB
             return result;
         }
 
-        public List<RelationList> DefineTypeChkSpare(string intent, string entity)
+        //public List<RelationList> DefineTypeChkSpare(string intent, string entity)
+        public List<RelationList> DefineTypeChkSpare(string intent)
         {
             SqlDataReader rdr = null;
             List<RelationList> result = new List<RelationList>();
-            entity = Regex.Replace(entity, " ", "");
+            //entity = Regex.Replace(entity, " ", "");
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
@@ -1187,7 +1188,7 @@ namespace cjAzitChatBot.DB
 
 
 
-        public int insertHistory(string userNumber, string channel, int responseTime, string luis_intent, string luis_entities, string luis_intent_score, string dlg_id)
+        public int insertHistory(string userNumber, string channel, int responseTime, string luis_intent, string luis_entities, string luis_intent_score, string dlg_id, string replyr_result)
         {
             //SqlDataReader rdr = null;
             int appID = 0;
@@ -1254,9 +1255,9 @@ namespace cjAzitChatBot.DB
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText += " INSERT INTO TBL_HISTORY_QUERY ";
-                cmd.CommandText += " (USER_NUMBER, CUSTOMER_COMMENT_KR, CHATBOT_COMMENT_CODE, CHANNEL, RESPONSE_TIME, REG_DATE, ACTIVE_FLAG, APP_ID, LUIS_INTENT, LUIS_ENTITIES, LUIS_INTENT_SCORE, DLG_ID) ";
+                cmd.CommandText += " (USER_NUMBER, CUSTOMER_COMMENT_KR, CHATBOT_COMMENT_CODE, CHANNEL, RESPONSE_TIME, REG_DATE, ACTIVE_FLAG, APP_ID, LUIS_INTENT, LUIS_ENTITIES, LUIS_INTENT_SCORE, DLG_ID, RESULT) ";
                 cmd.CommandText += " VALUES ";
-                cmd.CommandText += " (@userNumber, @customerCommentKR, @chatbotCommentCode, @channel, @responseTime, CONVERT(VARCHAR,  GETDATE(), 101) + ' ' + CONVERT(VARCHAR,  DATEADD( HH, 9, GETDATE() ), 24), 0, @appID, @luis_intent, @luis_entities, @luis_intent_score, @dlg_id) ";
+                cmd.CommandText += " (@userNumber, @customerCommentKR, @chatbotCommentCode, @channel, @responseTime, CONVERT(VARCHAR,  GETDATE(), 101) + ' ' + CONVERT(VARCHAR,  DATEADD( HH, 9, GETDATE() ), 24), 0, @appID, @luis_intent, @luis_entities, @luis_intent_score, @dlg_id, @result) ";
 
                 cmd.Parameters.AddWithValue("@userNumber", userNumber);
                 cmd.Parameters.AddWithValue("@customerCommentKR", MessagesController.queryStr);
@@ -1282,6 +1283,8 @@ namespace cjAzitChatBot.DB
                 cmd.Parameters.AddWithValue("@luis_entities", luis_entities);
                 cmd.Parameters.AddWithValue("@luis_intent_score", luis_intent_score);
                 cmd.Parameters.AddWithValue("@dlg_id", dlg_id);
+                cmd.Parameters.AddWithValue("@result", replyr_result);
+                
 
                 try
                 {
@@ -1811,6 +1814,40 @@ namespace cjAzitChatBot.DB
                 return result;
             }
         }
+
+        public string SmallTalkFirst(string query, string fullentity)
+        {
+
+            SqlDataReader rdr = null;
+            string s_answer = "" ;
+            //userID = arg.Replace("'", "''");
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+
+                cmd.CommandText += " SELECT TOP 1 S_ANSWER ";
+                cmd.CommandText += " FROM ( ";
+                cmd.CommandText += " 	SELECT  S_ANSWER  ";
+                cmd.CommandText += " 	FROM    TBL_SMALLTALK  ";
+                cmd.CommandText += " 	WHERE   ENTITY = '12345'  ";
+                cmd.CommandText += " 	UNION ALL  ";
+                cmd.CommandText += " 	SELECT  S_ANSWER  ";
+                cmd.CommandText += " 	FROM    TBL_SMALLTALK  ";
+                cmd.CommandText += " 	WHERE   S_QUERY = '12345' ";
+                cmd.CommandText += " ) A ";
+
+                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+
+                while (rdr.Read())
+                {
+                    s_answer = rdr["S_ANSWER"] as string;
+                }
+            }
+            return s_answer;
+        }
+
     }
 
 
