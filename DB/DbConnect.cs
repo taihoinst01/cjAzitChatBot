@@ -137,6 +137,7 @@ namespace cjAzitChatBot.DB
                                 dlgCard.btn4Context = rdr2["BTN_4_CONTEXT"] as string;
                                 dlgCard.cardDivision = rdr2["CARD_DIVISION"] as string;
                                 dlgCard.cardValue = rdr2["CARD_VALUE"] as string;
+                                dlgCard.card_order_no = Convert.ToInt32(rdr2["CARD_ORDER_NO"]);
                                 dialogCards.Add(dlgCard);
                             }
                             dlg.dialogCard = dialogCards;
