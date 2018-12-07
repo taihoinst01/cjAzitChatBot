@@ -106,7 +106,7 @@ namespace cjAzitChatBot.DB
                         {
                             cmd2.CommandText = "SELECT CARD_TITLE, CARD_SUBTITLE, CARD_TEXT, IMG_URL," +
                                     "BTN_1_TYPE, BTN_1_TITLE, BTN_1_CONTEXT, BTN_2_TYPE, BTN_2_TITLE, BTN_2_CONTEXT, BTN_3_TYPE, BTN_3_TITLE, BTN_3_CONTEXT, BTN_4_TYPE, BTN_4_TITLE, BTN_4_CONTEXT, " +
-                                    "CARD_DIVISION, CARD_VALUE " +
+                                    "CARD_DIVISION, CARD_VALUE, CARD_ORDER_NO " +
                                     "FROM TBL_DLG_CARD WHERE DLG_ID = @dlgID AND USE_YN = 'Y' ";
                             //if (channel.Equals("facebook"))
                             //{
