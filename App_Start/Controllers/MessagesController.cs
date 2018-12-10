@@ -66,6 +66,7 @@ namespace cjAzitChatBot
         public static string luisIntentScore = "";
         public static string dlgId = "";        
         public static string queryStr = "";
+        public static string luisQuery = "";
         public static DateTime startTime;
 
         public static CacheList cacheList = new CacheList();
@@ -269,54 +270,54 @@ namespace cjAzitChatBot
                     string orgMent = activity.Text;
 
                     //현재위치사용승인
-                    if (orgMent.Contains("current location") || orgMent.Equals("현재위치사용승인"))
-                    {
-                        if (!orgMent.Contains(':'))
-                        {
-                            //첫번쨰 메세지 출력 x
-                            response = Request.CreateResponse(HttpStatusCode.OK);
-                            return response;
-                        }
-                        else
-                        {
-                            //위도경도에 따른 값 출력
-                            try
-                            {
-                                string location = orgMent.Replace("current location:", "");
-                                //테스트용
-                                //string location = "129.0929788:35.2686635";
-                                string[] location_result = location.Split(':');
-                                //regionStr = db.LocationValue(location_result[1], location_result[2]);
-                                DButil.HistoryLog("*regionStr : " + location_result[0] + " " + location_result[1]);
-                                Debug.WriteLine("*regionStr : " + location_result[0] + " " + location_result[1]);
-                                DButil.mapSave(location_result[0], location_result[1]);
-                                Activity reply_brach = activity.CreateReply();
-                                reply_brach.Recipient = activity.From;
-                                reply_brach.Type = "message";
-                                reply_brach.Attachments = new List<Attachment>();
-                                reply_brach.AttachmentLayout = AttachmentLayoutTypes.Carousel;
-                                reply_brach.Attachments.Add(
-                                    DButil.GetHeroCard_Map(
-                                    "타이호인스트",
-                                    "연락처",
-                                    "주소",
-                                    new CardImage(url: "https://cjAzitChatBot.azurewebsites.net/image/map/"+ location_result[1] + ","+ location_result[0] + ".png"),
-                                    new CardAction(ActionTypes.OpenUrl, "타이호인스트", value: "http://www.taihoinst.com/"),
-                                    location_result[1],
-                                    location_result[0])
-                                    );
-                                var reply_brach1 = await connector.Conversations.SendToConversationAsync(reply_brach);
-                                response = Request.CreateResponse(HttpStatusCode.OK);
-                                return response;
-                            }
-                            catch
-                            {
-                                queryStr = "서울 시승센터";
-                            }
-                        }
-                    }
+                    //if (orgMent.Contains("current location") || orgMent.Equals("현재위치사용승인"))
+                    //{
+                    //    if (!orgMent.Contains(':'))
+                    //    {
+                    //        //첫번쨰 메세지 출력 x
+                    //        response = Request.CreateResponse(HttpStatusCode.OK);
+                    //        return response;
+                    //    }
+                    //    else
+                    //    {
+                    //        //위도경도에 따른 값 출력
+                    //        try
+                    //        {
+                    //            string location = orgMent.Replace("current location:", "");
+                    //            //테스트용
+                    //            //string location = "129.0929788:35.2686635";
+                    //            string[] location_result = location.Split(':');
+                    //            //regionStr = db.LocationValue(location_result[1], location_result[2]);
+                    //            DButil.HistoryLog("*regionStr : " + location_result[0] + " " + location_result[1]);
+                    //            Debug.WriteLine("*regionStr : " + location_result[0] + " " + location_result[1]);
+                    //            DButil.mapSave(location_result[0], location_result[1]);
+                    //            Activity reply_brach = activity.CreateReply();
+                    //            reply_brach.Recipient = activity.From;
+                    //            reply_brach.Type = "message";
+                    //            reply_brach.Attachments = new List<Attachment>();
+                    //            reply_brach.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+                    //            reply_brach.Attachments.Add(
+                    //                DButil.GetHeroCard_Map(
+                    //                "타이호인스트",
+                    //                "연락처",
+                    //                "주소",
+                    //                new CardImage(url: "https://cjAzitChatBot.azurewebsites.net/image/map/"+ location_result[1] + ","+ location_result[0] + ".png"),
+                    //                new CardAction(ActionTypes.OpenUrl, "타이호인스트", value: "http://www.taihoinst.com/"),
+                    //                location_result[1],
+                    //                location_result[0])
+                    //                );
+                    //            var reply_brach1 = await connector.Conversations.SendToConversationAsync(reply_brach);
+                    //            response = Request.CreateResponse(HttpStatusCode.OK);
+                    //            return response;
+                    //        }
+                    //        catch
+                    //        {
+                    //            queryStr = "서울 시승센터";
+                    //        }
+                    //    }
+                    //}
 
-                    apiFlag = "COMMON";
+                    //apiFlag = "COMMON";
 
                     //대화 시작 시간
                     startTime = DateTime.Now;
@@ -341,307 +342,196 @@ namespace cjAzitChatBot
                     else
                     {
                         //정규화
+                        luisQuery = orgMent;
                         orgMent = Regex.Replace(orgMent, @"[^a-zA-Z0-9ㄱ-힣]", "", RegexOptions.Singleline);
-                        orgMent = orgMent.Replace(" ", "");
+                        orgMent = orgMent.Replace(" ", "").ToLower();
                         queryStr = orgMent;
                         //cacheList = db.CacheChk(cashOrgMent.Replace(" ", ""));                     // 캐시 체크 (TBL_QUERY_ANALYSIS_RESULT 조회..)
                         //cacheList.luisIntent 초기화
                         cacheList.luisIntent = null;
-                        cacheList.luisIntent = dbutil.GetMultiLUIS(orgMent);
-                        //캐시에 없을 경우
-                        //if (cacheList.luisIntent == null || cacheList.luisEntities == null)
-                        //{
-                        //    DButil.HistoryLog("cache none : " + orgMent);
-                        //    Debug.WriteLine("cache none : " + orgMent);
-                        //    //루이스 체크(intent를 루이스를 통해서 가져옴)
-                        //    //cacheList.luisId = dbutil.GetMultiLUIS(orgMent);
-                        //    //Debug.WriteLine("cacheList.luisId : " + cacheList.luisId);
 
-                        //    cacheList.luisIntent = dbutil.GetMultiLUIS(orgMent);
-                        //    Debug.WriteLine("cacheList.luisIntent : " + cacheList.luisIntent);
-                        //    //Debug.WriteLine("cacheList.luisEntitiesValue : " + cacheList.luisEntitiesValue);
-                        //    cacheList = db.CacheDataFromIntent(cacheList.luisIntent);
+                        //smalltalk 문자 확인                        
+                        String smallTalkSentenceConfirm = db.SmallTalkSentenceConfirm;
 
-
-                        //}
-                        // TBL_HISTORY_QUERY 로그인정보, SMALL TALK 여부 추가
-                        // SMALL TALK 확인
-                        // 1. 루이스에서 intent가 null OR intent score 낮을경우  small talk 연결
-                        // 2. small talk 결과값 result s로 입력
-                        // 3. 답변 3개등록, 랜덤으로 출력 
-
-
-                        // 테스트용
-                        // small Talk Answer 랜덤
-                        //string test = "111|222|333";
-                        //string[] smallTalkAnswer = test.Split('|||');
-
-                        //Random r = new Random();
-
-                        //int smallTalkAnswerOrder = r.Next(0, smallTalkAnswer.Length);
-
-                        //Debug.WriteLine("smallTalkAnswer[smallTalkAnswerOrder] = " + smallTalkAnswer[smallTalkAnswerOrder]);
-
-                        //small talk 확인. score 0.1 미만, entities가 null일때 
-                        if(System.Convert.ToSingle(cacheList.luisScore) < 0.1f || string.IsNullOrEmpty(cacheList.luisEntities))
+                        //smalltalk 답변이 있을경우
+                        if (!string.IsNullOrEmpty(smallTalkSentenceConfirm))
                         {
-                            //Debug.WriteLine("1111");
-                            String fullentity = db.SearchCommonEntities;
-                            String smallTalk_reply;
-
-                            smallTalk_reply = db.SmallTalkFirst(orgMent, fullentity);
-                            string[] smallTalkAnswer = smallTalk_reply.Split('|');
-                            Random r = new Random();
-                            int smallTalkAnswerOrder = r.Next(0, smallTalkAnswer.Length);
-
-                            DialogList dlg = new DialogList();
-
-                            Activity smallTalkReply = activity.CreateReply();
-                            Attachment tempAttachment = new Attachment();
-                            //dlg.cardText = "";
-                            //foreach (CardList tempcard in dlg.dialogCard)
-                            //{
-                            //    tempAttachment = dbutil.getAttachmentFromDialog(tempcard, activity);
-                            //}
-                            dlg.dlgType = "2";
-                            dlg.cardTitle = "cardTitle1";
-                            dlg.cardText = smallTalkAnswer[smallTalkAnswerOrder];
-
-                            tempAttachment = dbutil.getAttachmentFromDialog(dlg, activity);
-                            smallTalkReply.Attachments.Add(tempAttachment);
-
-                            replyresult = "S";
-
-                            SetActivity(smallTalkReply);
-
-                            response = Request.CreateResponse(HttpStatusCode.OK);
-                            return response;
-
-                        } else
+                            luisId = "";
+                        }
+                        //luis 호출
+                        else if (cacheList.luisIntent == null || cacheList.luisEntities == null)
                         {
-                            //Debug.WriteLine("2222");
+                            DButil.HistoryLog("cache none : " + orgMent);
+                            Debug.WriteLine("cache none : " + orgMent);
+                            //루이스 체크(intent를 루이스를 통해서 가져옴)
+                            //cacheList.luisId = dbutil.GetMultiLUIS(orgMent);
+                            //Debug.WriteLine("cacheList.luisId : " + cacheList.luisId);
+
+                            cacheList.luisIntent = dbutil.GetMultiLUIS(luisQuery);
+                            Debug.WriteLine("cacheList.luisIntent : " + cacheList.luisIntent);
+                            //Debug.WriteLine("cacheList.luisEntitiesValue : " + cacheList.luisEntitiesValue);
+                            cacheList = db.CacheDataFromIntent(cacheList.luisIntent);
+
                             luisId = cacheList.luisId;
                             luisIntent = cacheList.luisIntent;
                             luisEntities = cacheList.luisEntities;
                             luisIntentScore = cacheList.luisScore;
 
-                            DButil.HistoryLog("luisId : " + luisId);
-                            DButil.HistoryLog("luisIntent : " + luisIntent);
-                            DButil.HistoryLog("luisEntities : " + luisEntities);
-
-                            //String fullentity = db.SearchCommonEntities;
-                            //DButil.HistoryLog("fullentity : " + fullentity);
-                            if (apiFlag.Equals("COMMON"))
-                            {
-                                //relationList = db.DefineTypeChkSpare(cacheList.luisIntent, cacheList.luisEntities);
-                                // INTENT 만으로 RELATION 찾기, 추후에 ENTITY와 함께 찾기
-                                relationList = db.DefineTypeChkSpare(cacheList.luisIntent);
-                            }
-                            else
-                            {
-                                relationList = null;
-                            }
-                            //if (relationList != null)
-                            ////if (relationList.Count > 0)
-                            //{
-                            //    DButil.HistoryLog("relationList 조건 in ");
-                            //    if (relationList.Count > 0 && relationList[0].dlgApiDefine != null)
-                            //    {
-                            //        if (relationList[0].dlgApiDefine.Equals("api testdrive"))
-                            //        {
-                            //            apiFlag = "TESTDRIVE";
-                            //        }
-                            //        else if (relationList[0].dlgApiDefine.Equals("api quot"))
-                            //        {
-                            //            apiFlag = "QUOT";
-                            //        }
-                            //        else if (relationList[0].dlgApiDefine.Equals("api recommend"))
-                            //        {
-                            //            apiFlag = "RECOMMEND";
-                            //        }
-                            //        else if (relationList[0].dlgApiDefine.Equals("D"))
-                            //        {
-                            //            apiFlag = "COMMON";
-                            //        }
-                            //        DButil.HistoryLog("relationList[0].dlgApiDefine : " + relationList[0].dlgApiDefine);
-                            //    }
-
-                            //}
-                            //else
-                            //{
-
-                            //    if (MessagesController.cacheList.luisIntent == null || apiFlag.Equals("COMMON"))
-                            //    {
-                            //        apiFlag = "";
-                            //    }
-                            //    else if (MessagesController.cacheList.luisId.Equals("cjAzitChatBot_luis_01") && MessagesController.cacheList.luisIntent.Contains("quot"))
-                            //    {
-                            //        apiFlag = "QUOT";
-                            //    }
-                            //    DButil.HistoryLog("apiFlag : " + apiFlag);
-                            //}
-
-
-                            if (apiFlag.Equals("COMMON") && relationList.Count > 0)
-                            {
-
-                                //context.Call(new CommonDialog("", MessagesController.queryStr), this.ResumeAfterOptionDialog);
-                                dlgId = "";
-                                for (int m = 0; m < MessagesController.relationList.Count; m++)
-                                {
-                                    DialogList dlg = db.SelectDialog(MessagesController.relationList[m].dlgId);
-                                    dlgId += Convert.ToString(dlg.dlgId) + ",";
-                                    Activity commonReply = activity.CreateReply();
-                                    Attachment tempAttachment = new Attachment();
-                                    DButil.HistoryLog("dlg.dlgType : " + dlg.dlgType);
-
-                                    if (dlg.dlgType.Equals(CARDDLG))
-                                    {
-                                        foreach (CardList tempcard in dlg.dialogCard)
-                                        {
-                                            //DButil.HistoryLog("tempcard.card_order_no : " + tempcard.card_order_no);
-                                            //if (conversationhistory.facebookPageCount > 0)
-                                            //{
-                                            //    if (tempcard.card_order_no > (MAXFACEBOOKCARDS * facebookpagecount) && tempcard.card_order_no <= (MAXFACEBOOKCARDS * (facebookpagecount + 1)))
-                                            //    {
-                                            //        tempAttachment = dbutil.getAttachmentFromDialog(tempcard, activity);
-                                            //    }
-                                            //    else if (tempcard.card_order_no > (MAXFACEBOOKCARDS * (facebookpagecount + 1)))
-                                            //    {
-                                            //        fbLeftCardCnt++;
-                                            //        tempAttachment = null;
-                                            //    }
-                                            //    else
-                                            //    {
-                                            //        fbLeftCardCnt = 0;
-                                            //        tempAttachment = null;
-                                            //    }
-                                            //}
-                                            //else if (activity.ChannelId.Equals("facebook"))
-                                            //{
-                                            //    DButil.HistoryLog("facebook tempcard.card_order_no : " + tempcard.card_order_no);
-                                            //    if (tempcard.card_order_no <= MAXFACEBOOKCARDS && fbLeftCardCnt == 0)
-                                            //    {
-                                            //        tempAttachment = dbutil.getAttachmentFromDialog(tempcard, activity);
-                                            //    }
-                                            //    else
-                                            //    {
-                                            //        fbLeftCardCnt++;
-                                            //        tempAttachment = null;
-                                            //    }
-                                            //}
-                                            //else
-                                            //{
-                                            tempAttachment = dbutil.getAttachmentFromDialog(tempcard, activity);
-                                            //}
-
-
-
-                                            if (tempAttachment != null)
-                                            {
-                                                commonReply.Attachments.Add(tempAttachment);
-                                            }
-
-                                            //2018-04-19:KSO:Carousel 만드는부분 추가
-                                            if (tempcard.card_order_no > 1)
-                                            {
-                                                commonReply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
-                                            }
-
-                                        }
-                                    }
-                                    else
-                                    {
-                                        //DButil.HistoryLog("* facebook dlg.dlgId : " + dlg.dlgId);
-                                        DButil.HistoryLog("* activity.ChannelId : " + activity.ChannelId);
-
-
-                                        //if (activity.ChannelId.Equals("facebook") && string.IsNullOrEmpty(dlg.cardTitle) && dlg.dlgType.Equals(TEXTDLG))
-                                        //{
-                                        //    commonReply.Recipient = activity.From;
-                                        //    commonReply.Type = "message";
-                                        //    DButil.HistoryLog("facebook card Text : " + dlg.cardText);
-                                        //    commonReply.Text = dlg.cardText;
-                                        //}
-                                        //else
-                                        //{                                        
-                                        tempAttachment = dbutil.getAttachmentFromDialog(dlg, activity);
-                                        commonReply.Attachments.Add(tempAttachment);
-                                        //}
-
-                                    }
-
-                                    if (commonReply.Attachments.Count > 0)
-                                    {
-                                        SetActivity(commonReply);
-                                        //conversationhistory.commonBeforeQustion = orgMent;
-                                        replyresult = "H";
-
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                Debug.WriteLine("no dialogue-------------");
-                                string newUserID = activity.Conversation.Id;
-                                //string beforeUserID = "";
-                                //string beforeMessgaeText = "";
-                                //string messgaeText = "";
-
-                                Activity intentNoneReply = activity.CreateReply();
-
-                                //if (beforeUserID != newUserID)
-                                //{
-                                //    beforeUserID = newUserID;
-                                //    MessagesController.sorryMessageCnt = 0;
-                                //}
-
-                                var message = MessagesController.queryStr;
-                                //beforeMessgaeText = message.ToString();
-
-                                //Debug.WriteLine("SERARCH MESSAGE : " + message);
-
-                                Activity sorryReply = activity.CreateReply();
-                                sorryReply.Recipient = activity.From;
-                                sorryReply.Type = "message";
-                                sorryReply.Attachments = new List<Attachment>();
-                                sorryReply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
-
-                                List<TextList> text = new List<TextList>();
-                                text = db.SelectSorryDialogText("5");
-                                for (int i = 0; i < text.Count; i++)
-                                {
-                                    HeroCard plCard = new HeroCard()
-                                    {
-                                        Title = text[i].cardTitle,
-                                        Text = text[i].cardText
-                                    };
-
-                                    Attachment plAttachment = plCard.ToAttachment();
-                                    sorryReply.Attachments.Add(plAttachment);
-                                }
-
-                                SetActivity(sorryReply);
-                                replyresult = "D";
-
-                            }
                         }
 
-                        
+                        string smallTalkConfirm = "";
 
-                        
+                        if (!string.IsNullOrEmpty(luisIntent))
+                        {
+                            relationList = db.DefineTypeChkSpare(cacheList.luisIntent);
+                        }
+                        else
+                        {
+                            relationList = null;
+                            //smalltalk 답변가져오기
+                            if (orgMent.Length < 9)
+                            {
+                                smallTalkConfirm = db.SmallTalkConfirm;
+                            }
+                            else
+                            {
+                                smallTalkConfirm = "";
+                            }
+
+                        }
+                       
+                        if (relationList != null)
+                        {
+                            dlgId = "";
+                            for (int m = 0; m < MessagesController.relationList.Count; m++)
+                            {
+                                DialogList dlg = db.SelectDialog(MessagesController.relationList[m].dlgId);
+                                dlgId += Convert.ToString(dlg.dlgId) + ",";
+                                Activity commonReply = activity.CreateReply();
+                                Attachment tempAttachment = new Attachment();
+                                DButil.HistoryLog("dlg.dlgType : " + dlg.dlgType);
+
+                                if (dlg.dlgType.Equals(CARDDLG))
+                                {
+                                    foreach (CardList tempcard in dlg.dialogCard)
+                                    {
+
+                                        tempAttachment = dbutil.getAttachmentFromDialog(tempcard, activity);
+
+                                        if (tempAttachment != null)
+                                        {
+                                            commonReply.Attachments.Add(tempAttachment);
+                                        }
+
+                                        //2018-04-19:KSO:Carousel 만드는부분 추가
+                                        if (tempcard.card_order_no > 1)
+                                        {
+                                            commonReply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+                                        }
+
+                                    }
+                                }
+                                else
+                                {
+                                    //DButil.HistoryLog("* facebook dlg.dlgId : " + dlg.dlgId);
+                                    DButil.HistoryLog("* activity.ChannelId : " + activity.ChannelId);
+
+                                    tempAttachment = dbutil.getAttachmentFromDialog(dlg, activity);
+                                    commonReply.Attachments.Add(tempAttachment);
+                                }
+
+                                if (commonReply.Attachments.Count > 0)
+                                {
+                                    SetActivity(commonReply);
+                                    replyresult = "H";
+                                }
+                            }
+                        }
+                        //SMALLTALK 확인
+                        else if (!string.IsNullOrEmpty(smallTalkConfirm))
+                        {
+                            Debug.WriteLine("smalltalk dialogue-------------");
+
+                            Random rand = new Random();
+
+                            //SMALLTALK 구분
+                            string[] smallTalkConfirm_result = smallTalkConfirm.Split('$');
+
+                            int smallTalkConfirmNum = rand.Next(0, smallTalkConfirm_result.Length);
+
+                            Activity smallTalkReply = activity.CreateReply();
+                            smallTalkReply.Recipient = activity.From;
+                            smallTalkReply.Type = "message";
+                            smallTalkReply.Attachments = new List<Attachment>();
+
+                            HeroCard plCard = new HeroCard()
+                            {
+                                Title = "",
+                                Text = smallTalkConfirm_result[smallTalkConfirmNum]
+                            };
+
+                            Attachment plAttachment = plCard.ToAttachment();
+                            smallTalkReply.Attachments.Add(plAttachment);
+
+                            SetActivity(smallTalkReply);
+                            replyresult = "S";
+
+                        }
+                        else
+                        {
+                            Debug.WriteLine("no dialogue-------------");
+                            string newUserID = activity.Conversation.Id;
+                            //string beforeUserID = "";
+                            //string beforeMessgaeText = "";
+                            //string messgaeText = "";
+
+                            Activity intentNoneReply = activity.CreateReply();
+
+                            //if (beforeUserID != newUserID)
+                            //{
+                            //    beforeUserID = newUserID;
+                            //    MessagesController.sorryMessageCnt = 0;
+                            //}
+
+                            var message = MessagesController.queryStr;
+                            //beforeMessgaeText = message.ToString();
+
+                            //Debug.WriteLine("SERARCH MESSAGE : " + message);
+
+                            Activity sorryReply = activity.CreateReply();
+                            sorryReply.Recipient = activity.From;
+                            sorryReply.Type = "message";
+                            sorryReply.Attachments = new List<Attachment>();
+                            //sorryReply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+
+                            List<TextList> text = new List<TextList>();
+                            text = db.SelectSorryDialogText("5");
+                            for (int i = 0; i < text.Count; i++)
+                            {
+                                HeroCard plCard = new HeroCard()
+                                {
+                                    Title = text[i].cardTitle,
+                                    Text = text[i].cardText
+                                };
+
+                                Attachment plAttachment = plCard.ToAttachment();
+                                sorryReply.Attachments.Add(plAttachment);
+                            }
+
+                            SetActivity(sorryReply);
+                            replyresult = "D";
+
+                        }
 
                         DateTime endTime = DateTime.Now;
-                        //analysis table insert
-                        //if (rc != null)
-                        //{
+
                         int dbResult = db.insertUserQuery();
 
                         //}
                         //history table insert
-                        db.insertHistory(activity.Conversation.Id, activity.ChannelId, ((endTime - MessagesController.startTime).Milliseconds), luisIntent, luisEntities, luisIntentScore, dlgId, replyresult);
+                        db.insertHistory(activity.Conversation.Id, activity.ChannelId, ((endTime - MessagesController.startTime).Milliseconds), "", "", "", "", replyresult);
                         replyresult = "";
-                        //recommendResult = "";
+                        luisIntent = "";
                     }
                 }
                 catch (Exception e)

@@ -19,192 +19,6 @@ namespace cjAzitChatBot.DB
         //재시도 횟수 설정
         private static int retryCount = 3;
 
-        public JArray GetCompositEnities(string query)
-        {
-
-            Debug.WriteLine("GetCompositEnities() ::: START");
-            //루이스 json 선언
-            JObject Luis = new JObject();
-            string LuisName = "";
-            
-            //compositEntites 담을 배열 변수
-            JArray compositEntites = new JArray();
-
-            int MAX = MessagesController.LUIS_APP_ID.Count(s => s != null);
-            Array.Resize(ref MessagesController.LUIS_APP_ID, MAX);
-            Array.Resize(ref MessagesController.LUIS_NM, MAX);
-
-            String[] returnLuisName = new string[MAX];
-            JObject[] Luis_before = new JObject[MAX];
-
-            List<string[]> textList = new List<string[]>(MAX);
-
-            for (int i = 0; i < MAX; i++)
-            {
-                //textList.Add(LUIS_APP_ID[i] +"|"+ LUIS_SUBSCRIPTION + "|" + query);
-                textList.Add(new string[] { MessagesController.LUIS_NM[i], MessagesController.LUIS_APP_ID[i], MessagesController.LUIS_SUBSCRIPTION, query });
-
-            }
-
-            //병렬처리 시간 체크
-            //System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();
-            //watch.Start();
-            Parallel.For(0, MAX, new ParallelOptions { MaxDegreeOfParallelism = MAX }, async async =>
-            {
-
-                var task_luis = Task<JObject>.Run(() => GetIntentFromBotLUIS(textList[async][1], textList[async][2], textList[async][3]));
-                try
-                {
-                    Task.WaitAll(task_luis);
-
-                    Luis_before[async] = task_luis.Result;
-                    returnLuisName[async] = textList[async][0];
-
-                }
-                catch (AggregateException e)
-                {
-                }
-            });
-
-            //watch.Stop();
-            
-
-            if (MAX > 0)
-            {
-                LuisName = returnLuisName[0];
-                Luis = Luis_before[0];
-            }
-            Debug.WriteLine("LuisName ::: " + LuisName);
-            if (!String.IsNullOrEmpty(LuisName))
-            {
-                if (Luis != null || Luis.Count > 0)
-                {
-                    int compositeEntitiesCount = 0;
-
-                    if (Luis["compositeEntities"] != null)
-                    {
-                        compositeEntitiesCount = (int)Luis["compositeEntities"].Count();
-                    }
-                    
-                    MessagesController.cacheList.luisIntent = Luis["topScoringIntent"]["intent"].ToString();   //cache에 Intent 담기
-                    for (int i = 0; i < compositeEntitiesCount; i++)
-                    {
-                        Debug.WriteLine("count ::: " + Luis["compositeEntities"][i]["children"].Count());
-                        for (int j = 0; j < Luis["compositeEntities"][i]["children"].Count(); j++)
-                        {
-                            compositEntites.Add(Luis["compositeEntities"][i]["children"][j]);   //compositEntities 담기
-                        }
-                    }
-
-                    if (MessagesController.relationList != null)
-                    {
-                        if (MessagesController.relationList.Count() > 0)
-                        {
-                            MessagesController.relationList[0].luisScore = (int)Luis["intents"][0]["score"];
-                        }
-                        else
-                        {
-                            MessagesController.cacheList.luisScore = Luis["intents"][0]["score"].ToString();
-                        }
-                    }
-                }
-            }
-            return compositEntites;
-        }
-
-
-        public JArray GetEnities(string query)
-        {
-
-            Debug.WriteLine("GetEnities() ::: START");
-            //루이스 json 선언
-            JObject Luis = new JObject();
-            string LuisName = "";
-
-            //entites 담을 배열 변수
-            JArray entities = new JArray();
-
-            int MAX = MessagesController.LUIS_APP_ID.Count(s => s != null);
-            Array.Resize(ref MessagesController.LUIS_APP_ID, MAX);
-            Array.Resize(ref MessagesController.LUIS_NM, MAX);
-
-            String[] returnLuisName = new string[MAX];
-            JObject[] Luis_before = new JObject[MAX];
-
-            List<string[]> textList = new List<string[]>(MAX);
-
-            for (int i = 0; i < MAX; i++)
-            {
-                //textList.Add(LUIS_APP_ID[i] +"|"+ LUIS_SUBSCRIPTION + "|" + query);
-                textList.Add(new string[] { MessagesController.LUIS_NM[i], MessagesController.LUIS_APP_ID[i], MessagesController.LUIS_SUBSCRIPTION, query });
-
-            }
-
-            //병렬처리 시간 체크
-            //System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();
-            //watch.Start();
-            Parallel.For(0, MAX, new ParallelOptions { MaxDegreeOfParallelism = MAX }, async async =>
-            {
-
-                var task_luis = Task<JObject>.Run(() => GetIntentFromBotLUIS(textList[async][1], textList[async][2], textList[async][3]));
-                try
-                {
-                    Task.WaitAll(task_luis);
-
-                    Luis_before[async] = task_luis.Result;
-                    returnLuisName[async] = textList[async][0];
-
-                }
-                catch (AggregateException e)
-                {
-                }
-            });
-
-            //watch.Stop();
-
-
-            if (MAX > 0)
-            {
-                LuisName = returnLuisName[0];
-                Luis = Luis_before[0];
-            }
-            Debug.WriteLine("LuisName ::: " + LuisName);
-            if (!String.IsNullOrEmpty(LuisName))
-            {
-                if (Luis != null || Luis.Count > 0)
-                {
-                    int entitiesCount = 0;
-
-                    if (Luis["entities"] != null)
-                    {
-                        entitiesCount = (int)Luis["entities"].Count();
-                    }
-
-                    MessagesController.cacheList.luisIntent = Luis["topScoringIntent"]["intent"].ToString();   //cache에 Intent 담기
-                    for (int i = 0; i < entitiesCount; i++)
-                    {
-                        Debug.WriteLine("count ::: " + Luis["entities"][i].Count());
-                        entities.Add(Luis["entities"][i]);   //entities 담기
-                    }
-
-                    if (MessagesController.relationList != null)
-                    {
-                        if (MessagesController.relationList.Count() > 0)
-                        {
-                            MessagesController.relationList[0].luisScore = (int)Luis["intents"][0]["score"];
-                        }
-                        else
-                        {
-                            MessagesController.cacheList.luisScore = Luis["intents"][0]["score"].ToString();
-                        }
-                    }
-                }
-            }
-            return entities;
-        }
-
-
-
         public String GetMultiLUIS(string query)
         {
             //루이스 json 선언
@@ -255,21 +69,67 @@ namespace cjAzitChatBot.DB
                 string luisIntent = "";
                 try
                 {
-                    for (int i = 0; i < MAX; i++)
+                    //for (int i = 0; i < MAX; i++)
+                    //{
+                    //    //엔티티 합치기
+                    //    if ((int)Luis_before[i]["entities"].Count() > 0)
+                    //    {
+                    //        for (int j = 0; j < (int)Luis_before[i]["entities"].Count(); j++)
+                    //        {
+                    //            MessagesController.cacheList.luisEntities += (string)Luis_before[i]["entities"][j]["type"].ToString() + ",";
+                    //        }
+                    //    }
+
+                    //}
+                    //luisIntent = Luis_before[0]["topScoringIntent"]["intent"].ToString();
+                    //MessagesController.cacheList.luisEntities = MessagesController.cacheList.luisEntities.Substring(0, MessagesController.cacheList.luisEntities.LastIndexOf(","));
+                    //MessagesController.cacheList.luisScore = Luis_before[0]["intents"][0]["score"].ToString();
+
+                    //string luisIntent = "";
+                    float luisScoreCompare = 0.0f;
+
+                    //intent score이 제일 큰 intent 추출
+                    if (MAX > 0)
                     {
-                        //엔티티 합치기
-                        if ((int)Luis_before[i]["entities"].Count() > 0)
+                        for (int i = 0; i < MAX; i++)
                         {
-                            for (int j = 0; j < (int)Luis_before[i]["entities"].Count(); j++)
+                            //entities 0일 경우 PASS
+                            if ((int)Luis_before[i]["entities"].Count() > 0)
                             {
-                                MessagesController.cacheList.luisEntities += (string)Luis_before[i]["entities"][j]["type"].ToString() + ",";
+                                //intent None일 경우 PASS
+                                if (Luis_before[i]["intents"][0]["intent"].ToString() != "None")
+                                {
+                                    //제한점수 체크
+                                    if ((float)Luis_before[i]["intents"][0]["score"] > Convert.ToDouble(MessagesController.LUIS_SCORE_LIMIT))
+                                    {
+                                        if ((float)Luis_before[i]["intents"][0]["score"] > luisScoreCompare)
+                                        {
+                                            LuisName = returnLuisName[i];
+                                            Luis = Luis_before[i];
+                                            luisScoreCompare = (float)Luis_before[i]["intents"][0]["score"];
+                                            luisIntent = Luis["topScoringIntent"]["intent"].ToString();//add
+                                            Debug.WriteLine("GetMultiLUIS() LuisName1 : " + LuisName);
+                                        }
+                                        else
+                                        {
+                                            //LuisName = returnLuisName[i];
+                                            //Luis = Luis_before[i];
+                                            Debug.WriteLine("GetMultiLUIS() LuisName2 : " + LuisName);
+                                        }
+
+                                    }
+                                }
                             }
                         }
 
+                        Debug.WriteLine("luisScoreCompare : " + luisScoreCompare);
+                        Debug.WriteLine("LuisName : " + LuisName);
                     }
-                    luisIntent = Luis_before[0]["topScoringIntent"]["intent"].ToString();
-                    MessagesController.cacheList.luisEntities = MessagesController.cacheList.luisEntities.Substring(0, MessagesController.cacheList.luisEntities.LastIndexOf(","));
-                    MessagesController.cacheList.luisScore = Luis_before[0]["intents"][0]["score"].ToString();
+
+                    if ((int)Luis["entities"].Count() == 0)
+                    {
+                        luisIntent = "None";
+                    }
                 }
                 catch (IndexOutOfRangeException e)
                 {

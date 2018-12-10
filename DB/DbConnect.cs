@@ -1265,7 +1265,7 @@ namespace cjAzitChatBot.DB
 
                 if (MessagesController.replyresult.Equals("S"))
                 {
-                    cmd.Parameters.AddWithValue("@chatbotCommentCode", "SEARCH");
+                    cmd.Parameters.AddWithValue("@chatbotCommentCode", "SMALLTALK");
                 }
                 else if (MessagesController.replyresult.Equals("D"))
                 {
@@ -1336,8 +1336,6 @@ namespace cjAzitChatBot.DB
             return result;
         }
 
-
-
         public string SelectArray(string entities)
         {
             SqlDataReader rdr = null;
@@ -1376,14 +1374,16 @@ namespace cjAzitChatBot.DB
             return newMsg;
         }
 
-        public String SearchCommonEntities
+        
+        
+
+        public String SmallTalkSentenceConfirm
         {
             get
             {
-                String query = Regex.Replace(MessagesController.queryStr, @"[^a-zA-Z0-9ㄱ-힣-]", "", RegexOptions.Singleline).Replace(" ", "");
+                String query = Regex.Replace(MessagesController.queryStr, @"[^a-zA-Z0-9ㄱ-힣-]", "", RegexOptions.Singleline).Replace(" ", "").ToLower();
                 SqlDataReader rdr = null;
-                //List<RecommendConfirm> rc = new List<RecommendConfirm>();
-                String entityarr = "";
+                String smallTalkAnswer = "";
 
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
@@ -1392,21 +1392,23 @@ namespace cjAzitChatBot.DB
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = conn;
 
-                    //cmd.CommandText += "SELECT  ENTITY_VALUE, ENTITY ";
-                    //cmd.CommandText += "FROM    TBL_COMMON_ENTITY_DEFINE ";
-                    //cmd.CommandText += "WHERE   CHARINDEX(ENTITY_VALUE,@kr_query) > 0";
-
-                    cmd.CommandText += "SELECT RESULT AS ENTITIES FROM FN_ENTITY_ORDERBY_ADD(@kr_query) ";
+                    cmd.CommandText += "SELECT TOP 1 MAX(A.ANSWER) AS ANSWER ";
+                    cmd.CommandText += "FROM ";
+                    cmd.CommandText += "    ( ";
+                    cmd.CommandText += "        SELECT  S_ANSWER AS ANSWER FROM TBL_SMALLTALK ";
+                    cmd.CommandText += "        WHERE  S_QUERY = @kr_query ";
+                    cmd.CommandText += "        AND      USE_YN = 'Y' ";
+                    cmd.CommandText += "    ) A ";
 
                     cmd.Parameters.AddWithValue("@kr_query", query);
 
                     rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-                    //int count = 0;
+
                     try
                     {
                         while (rdr.Read())
                         {
-                            entityarr += rdr["ENTITIES"];
+                            smallTalkAnswer = rdr["ANSWER"] as string;
                         }
                     }
                     catch (Exception e)
@@ -1415,438 +1417,56 @@ namespace cjAzitChatBot.DB
                     }
 
                 }
-                return entityarr;
+                return smallTalkAnswer;
             }
         }
 
-        public List<DeliveryData> SelectDeliveryData(String deliveryParamList)
+        public String SmallTalkConfirm
         {
-            SqlDataReader rdr = null;
-            List<DeliveryData> result = new List<DeliveryData>();
-            /*
-             * Parameter 정리
-             * DATA 예)INVOICE_NUM2=1234,CUSTOMER_NAME=전윤아,ADDRESS_OLD=서울특별시 강서구 화곡3동
-             * 송장번호일 경우 두개 이므로 INVOICE_NUM2='1234' OR  INVOICE_NUM1 = '1234' 요런 식으로(현재는 INVOICE_NUM2='1234' 이거 하나만임)
-             * 금액일 경우 크다 작다 이므로 다시 설정해야 한다
-             */
-            String[] temp_param_full = null;
-
-            if (deliveryParamList == null || deliveryParamList.Equals(""))
+            get
             {
+                String query = Regex.Replace(MessagesController.queryStr, @"[^a-zA-Z0-9ㄱ-힣-]", "", RegexOptions.Singleline).Replace(" ", "").ToLower();
+                SqlDataReader rdr = null;
+                String smallTalkAnswer = "";
 
-            }
-            else
-            {
-                temp_param_full = deliveryParamList.Split(new string[] { "#" }, StringSplitOptions.None);
-            }
-
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText += " SELECT INVOICE_NUM1, INVOICE_NUM2, DELIVERY_TYPE, PART, CUSTOMER_NAME, ADDRESS_OLD, ADDRESS_NEW, ";
-                cmd.CommandText += " PHONE, BOX_TYPE, COMMISSION_PLACE, ETC, CUSTOMER_COMMENT, PAY_TYPE, FEES, QUANTITY, ";
-                cmd.CommandText += " BOOK_TYPE, DELIVERY_TIME, DELIVERY_STATUS, STORE_NUM, STORE_NAME, SM_NUM, SM_NAME, ADDRESS_DETAIL ";
-                cmd.CommandText += "    FROM TBL_DELIVERY_DATA";
-                cmd.CommandText += "    WHERE 1=1";
-                if (deliveryParamList == null || deliveryParamList.Equals(""))
+                using (SqlConnection conn = new SqlConnection(connStr))
                 {
 
-                }
-                else
-                {
-                    for (int ii = 0; ii < temp_param_full.Length; ii++)
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+
+                    cmd.CommandText += "SELECT TOP 1 MAX(A.ANSWER) AS ANSWER ";
+                    cmd.CommandText += "FROM ";
+                    cmd.CommandText += "    ( ";
+                    cmd.CommandText += "        SELECT  S_ANSWER AS ANSWER FROM TBL_SMALLTALK ";
+                    cmd.CommandText += "        WHERE  S_QUERY = @kr_query ";
+                    cmd.CommandText += "        AND      USE_YN = 'Y' ";
+                    cmd.CommandText += "        UNION ALL ";
+                    cmd.CommandText += "        SELECT  S_ANSWER FROM TBL_SMALLTALK ";
+                    cmd.CommandText += "        WHERE  CHARINDEX(ENTITY, @kr_query) > 0 ";
+                    cmd.CommandText += "        AND      USE_YN = 'Y' ";
+                    cmd.CommandText += "    ) A ";
+
+                    cmd.Parameters.AddWithValue("@kr_query", query);
+
+                    rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+
+                    try
                     {
-                        String[] temp_param = null;
-                        temp_param = temp_param_full[ii].Split(new string[] { "," }, StringSplitOptions.None);//사용되는 곳은 없음. 혹시 필요한건가 해서..
-
-                        cmd.CommandText += " AND " + temp_param_full[ii];
+                        while (rdr.Read())
+                        {
+                            smallTalkAnswer = rdr["ANSWER"] as string;
+                        }
                     }
-                }
-
-
-                //cmd.Parameters.AddWithValue("@strTime", strTime);
-
-                Debug.WriteLine("* SelectDeliveryData() CommandText : " + cmd.CommandText);
-
-                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                while (rdr.Read())
-                {
-                    DeliveryData deliveryData = new DeliveryData();
-                    deliveryData.invoice_num1 = rdr["INVOICE_NUM1"] as string;
-                    deliveryData.invoice_num2 = rdr["INVOICE_NUM2"] as string;
-                    deliveryData.delivery_type = rdr["DELIVERY_TYPE"] as string;
-                    deliveryData.part = rdr["PART"] as string;
-                    deliveryData.customer_name = rdr["CUSTOMER_NAME"] as string;
-                    deliveryData.address_old = rdr["ADDRESS_OLD"] as string;
-                    deliveryData.address_new = rdr["ADDRESS_NEW"] as string;
-                    deliveryData.phone = rdr["PHONE"] as string;
-                    deliveryData.box_type = rdr["BOX_TYPE"] as string;
-                    deliveryData.commission_place = rdr["COMMISSION_PLACE"] as string;
-                    deliveryData.etc = rdr["ETC"] as string;
-                    deliveryData.customer_comment = rdr["CUSTOMER_COMMENT"] as string;
-                    deliveryData.pay_type = rdr["PAY_TYPE"] as string;
-                    deliveryData.fees = rdr["FEES"] as string;
-                    deliveryData.quantity = rdr["QUANTITY"] as string;
-                    deliveryData.book_type = rdr["BOOK_TYPE"] as string;
-                    deliveryData.delivery_time = rdr["DELIVERY_TIME"] as string;
-                    deliveryData.delivery_status = rdr["DELIVERY_STATUS"] as string;
-                    deliveryData.store_num = rdr["STORE_NUM"] as string;
-                    deliveryData.store_name = rdr["STORE_NAME"] as string;
-                    deliveryData.sm_num = rdr["SM_NUM"] as string;
-                    deliveryData.sm_name = rdr["SM_NAME"] as string;
-                    deliveryData.address_detail = rdr["ADDRESS_DETAIL"] as string;
-
-                    result.Add(deliveryData);
-                }
-
-                return result;
-            }
-        }
-
-        //KSO
-        public List<DeliveryData> SelectDeliveryData(JArray columnTitle, JArray columnValue, JArray _resultAnswer)
-        {
-            SqlDataReader rdr = null;
-            List<DeliveryData> result = new List<DeliveryData>();
-
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText += " SELECT ";
-                cmd.CommandText += " INVOICE_NUM1, INVOICE_NUM2, DELIVERY_TYPE, PART, CUSTOMER_NAME, ADDRESS_OLD, ADDRESS_NEW, ";
-                cmd.CommandText += " PHONE, BOX_TYPE, COMMISSION_PLACE, ETC, CUSTOMER_COMMENT, PAY_TYPE, FEES, QUANTITY, ";
-                cmd.CommandText += " BOOK_TYPE, DELIVERY_TIME, DELIVERY_STATUS, STORE_NUM, STORE_NAME, SM_NUM, SM_NAME, ADDRESS_DETAIL ";
-                cmd.CommandText += "    FROM TBL_DELIVERY_DATA";
-                cmd.CommandText += "    WHERE 1=1";
-                for (int i = 0; i < columnTitle.Count(); i++)
-                {
-                    Debug.WriteLine("columnTitle : " + columnTitle);
-                    if (columnTitle[i].ToString().Equals("address_old") || columnTitle[i].ToString().Equals("address_new"))
+                    catch (Exception e)
                     {
-                        cmd.CommandText += " and Replace(" + columnTitle[i].ToString().ToUpper() + ",' ', '') LIKE '%" + columnValue[i].ToString() + "%'";
-                    }
-                    else
-                    {
-                        cmd.CommandText += " and " + columnTitle[i] + " = '" + columnValue[i] + "'";
+                        Debug.WriteLine(e.Message);
                     }
 
                 }
-
-                Debug.WriteLine("* SelectDeliveryData() CommandText : " + cmd.CommandText);
-
-                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                while (rdr.Read())
-                {
-                    DeliveryData deliveryData = new DeliveryData();
-                    deliveryData.invoice_num1 = rdr["INVOICE_NUM1"] as string;
-                    deliveryData.invoice_num2 = rdr["INVOICE_NUM2"] as string;
-                    deliveryData.delivery_type = rdr["DELIVERY_TYPE"] as string;
-                    deliveryData.part = rdr["PART"] as string;
-                    deliveryData.customer_name = rdr["CUSTOMER_NAME"] as string;
-                    deliveryData.address_old = rdr["ADDRESS_OLD"] as string;
-                    deliveryData.address_new = rdr["ADDRESS_NEW"] as string;
-                    deliveryData.phone = rdr["PHONE"] as string;
-                    deliveryData.box_type = rdr["BOX_TYPE"] as string;
-                    deliveryData.commission_place = rdr["COMMISSION_PLACE"] as string;
-                    deliveryData.etc = rdr["ETC"] as string;
-                    deliveryData.customer_comment = rdr["CUSTOMER_COMMENT"] as string;
-                    deliveryData.pay_type = rdr["PAY_TYPE"] as string;
-                    deliveryData.fees = rdr["FEES"] as string;
-                    deliveryData.quantity = rdr["QUANTITY"] as string;
-                    deliveryData.book_type = rdr["BOOK_TYPE"] as string;
-                    deliveryData.delivery_time = rdr["DELIVERY_TIME"] as string;
-                    deliveryData.delivery_status = rdr["DELIVERY_STATUS"] as string;
-                    deliveryData.store_num = rdr["STORE_NUM"] as string;
-                    deliveryData.store_name = rdr["STORE_NAME"] as string;
-                    deliveryData.sm_num = rdr["SM_NUM"] as string;
-                    deliveryData.sm_name = rdr["SM_NAME"] as string;
-                    deliveryData.address_detail = rdr["ADDRESS_DETAIL"] as string;
-
-                    result.Add(deliveryData);
-                }
-
-                return result;
+                return smallTalkAnswer;
             }
-        }
-        /*
-         * 등록해줘 일때 update
-         * upateColumn : 컬럼이름(ETC, CUSTOMER_COMMENT)
-         * updateData : 업데이트 내용
-         * paramData : where 조건
-         */
-        public int UpdateDeliveryData(string etcData, string commentData, string paramData)
-        {
-            int dbResult = 0;
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText += " UPDATE TBL_DELIVERY_DATA                     ";
-                cmd.CommandText += " SET ETC = @etcData,  CUSTOMER_COMMENT = @commentData    ";
-                cmd.CommandText += " WHERE " + paramData;
-
-                //cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@etcData", etcData);
-                cmd.Parameters.AddWithValue("@commentData", commentData);
-
-                Debug.WriteLine("* UpdateDeliveryData() CommandText : " + cmd.CommandText);
-                Debug.WriteLine("* UpdateDeliveryData() etcData : " + etcData);
-                Debug.WriteLine("* UpdateDeliveryData() commentData : " + commentData);
-
-                dbResult = cmd.ExecuteNonQuery();
-                Debug.WriteLine("query : " + cmd.CommandText);
-            }
-            return dbResult;
-        }
-
-        /*
-         * 물량정보조회 시에 배달, 집화 건수 보이기
-         * */
-        public List<DeliveryTypeList> SelectDeliveryTypeList(String deliveryParamList)
-        {
-            SqlDataReader rdr = null;
-            List<DeliveryTypeList> result = new List<DeliveryTypeList>();
-
-            String[] temp_param_full = null;
-            if (deliveryParamList == null || deliveryParamList.Equals(""))
-            {
-
-            }
-            else
-            {
-                temp_param_full = deliveryParamList.Split(new string[] { "#" }, StringSplitOptions.None);
-            }
-
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText += " SELECT ISNULL(COUNT(DELIVERY_TYPE),0) AS TYPE_COUNT, DELIVERY_TYPE ";
-                cmd.CommandText += "    FROM TBL_DELIVERY_DATA";
-                cmd.CommandText += "    WHERE 1=1";
-                if (deliveryParamList == null || deliveryParamList.Equals(""))
-                {
-
-                }
-                else
-                {
-                    for (int ii = 0; ii < temp_param_full.Length; ii++)
-                    {
-                        cmd.CommandText += " AND " + temp_param_full[ii];
-                    }
-                }
-
-                cmd.CommandText += "    GROUP BY DELIVERY_TYPE ";
-
-                //cmd.Parameters.AddWithValue("@strTime", strTime);
-
-                Debug.WriteLine("* SelectDeliveryTypeList() CommandText : " + cmd.CommandText);
-
-                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                while (rdr.Read())
-                {
-                    DeliveryTypeList deliveryTypeList = new DeliveryTypeList();
-                    deliveryTypeList.type_count = Convert.ToInt32(rdr["TYPE_COUNT"]);
-                    deliveryTypeList.delivery_type = rdr["DELIVERY_TYPE"] as string;
-
-                    result.Add(deliveryTypeList);
-                }
-
-                return result;
-            }
-        }
-
-        //KSO
-        public List<HistoryList> OldMentChk(string userId)
-        {
-            SqlDataReader rdr = null;
-            List<HistoryList> oldMsg = new List<HistoryList>();
-
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-
-                cmd.CommandText += "	SELECT TOP 5                                                                        ";
-                cmd.CommandText += "           USER_NUMBER, CUSTOMER_COMMENT_KR, CHATBOT_COMMENT_CODE, CHANNEL, REG_DATE    ";
-                cmd.CommandText += "      FROM TBL_HISTORY_QUERY                                                            ";
-                cmd.CommandText += "     WHERE 1 = 1                                                                        ";
-                cmd.CommandText += "       AND USER_NUMBER = @userNumber                                                    ";
-                cmd.CommandText += "  ORDER BY REG_DATE DESC                                                                ";
-
-                cmd.Parameters.AddWithValue("@userNumber", userId);
-                Debug.WriteLine("* history CommandText : " + cmd.CommandText);
-                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                while (rdr.Read())
-                {
-                    HistoryList historyList = new HistoryList();
-                    historyList.customer_comment_kr = rdr["CUSTOMER_COMMENT_KR"] as string;
-
-                    oldMsg.Add(historyList);
-                }
-
-            }
-            return oldMsg;
-        }
-
-        //KSO
-        public List<DeliveryData> InvoiceNumDeliveryData(String invoiceNum)
-        {
-            SqlDataReader rdr = null;
-            List<DeliveryData> result = new List<DeliveryData>();
-
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText += " SELECT ";
-                cmd.CommandText += " INVOICE_NUM1, INVOICE_NUM2, DELIVERY_TYPE, PART, CUSTOMER_NAME, ADDRESS_OLD, ADDRESS_NEW, ";
-                cmd.CommandText += " PHONE, BOX_TYPE, COMMISSION_PLACE, ETC, CUSTOMER_COMMENT, PAY_TYPE, FEES, QUANTITY, ";
-                cmd.CommandText += " BOOK_TYPE, DELIVERY_TIME, DELIVERY_STATUS, STORE_NUM, STORE_NAME, SM_NUM, SM_NAME, ADDRESS_DETAIL ";
-                cmd.CommandText += "    FROM TBL_DELIVERY_DATA";
-                cmd.CommandText += "    WHERE 1=1";
-                cmd.CommandText += "    AND INVOICE_NUM2 = @invoiceNum   ";
-
-                cmd.Parameters.AddWithValue("@invoiceNum", invoiceNum);
-                Debug.WriteLine("* SelectDeliveryData() CommandText : " + cmd.CommandText);
-
-                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                while (rdr.Read())
-                {
-                    DeliveryData deliveryData = new DeliveryData();
-                    deliveryData.invoice_num1 = rdr["INVOICE_NUM1"] as string;
-                    deliveryData.invoice_num2 = rdr["INVOICE_NUM2"] as string;
-                    deliveryData.delivery_type = rdr["DELIVERY_TYPE"] as string;
-                    deliveryData.part = rdr["PART"] as string;
-                    deliveryData.customer_name = rdr["CUSTOMER_NAME"] as string;
-                    deliveryData.address_old = rdr["ADDRESS_OLD"] as string;
-                    deliveryData.address_new = rdr["ADDRESS_NEW"] as string;
-                    deliveryData.phone = rdr["PHONE"] as string;
-                    deliveryData.box_type = rdr["BOX_TYPE"] as string;
-                    deliveryData.commission_place = rdr["COMMISSION_PLACE"] as string;
-                    deliveryData.etc = rdr["ETC"] as string;
-                    deliveryData.customer_comment = rdr["CUSTOMER_COMMENT"] as string;
-                    deliveryData.pay_type = rdr["PAY_TYPE"] as string;
-                    deliveryData.fees = rdr["FEES"] as string;
-                    deliveryData.quantity = rdr["QUANTITY"] as string;
-                    deliveryData.book_type = rdr["BOOK_TYPE"] as string;
-                    deliveryData.delivery_time = rdr["DELIVERY_TIME"] as string;
-                    deliveryData.delivery_status = rdr["DELIVERY_STATUS"] as string;
-                    deliveryData.store_num = rdr["STORE_NUM"] as string;
-                    deliveryData.store_name = rdr["STORE_NAME"] as string;
-                    deliveryData.sm_num = rdr["SM_NUM"] as string;
-                    deliveryData.sm_name = rdr["SM_NAME"] as string;
-                    deliveryData.address_detail = rdr["ADDRESS_DETAIL"] as string;
-
-                    result.Add(deliveryData);
-                }
-
-                return result;
-            }
-        }
-
-        /*
-       * 물량정보그룹건수 조회
-       * */
-        public List<DeliveryTypeList> SelectDeliveryGroupList(String groupByParam, String whereParam)
-        {
-            SqlDataReader rdr = null;
-            List<DeliveryTypeList> result = new List<DeliveryTypeList>();
-
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandText += " SELECT ISNULL(COUNT(DELIVERY_TYPE),0) AS TYPE_COUNT, " + groupByParam + " AS DELIVERY_TYPE";
-                cmd.CommandText += "    FROM TBL_DELIVERY_DATA";
-                cmd.CommandText += "    WHERE 1=1";
-                if (whereParam == null || whereParam.Equals(""))
-                {
-                    //nothing
-                }
-                else
-                {
-                    cmd.CommandText += "    AND " + whereParam;
-                }
-                cmd.CommandText += "    GROUP BY " + groupByParam;
-
-                //cmd.Parameters.AddWithValue("@strTime", strTime);
-
-                Debug.WriteLine("* SelectDeliveryTypeList() CommandText : " + cmd.CommandText);
-
-                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                String nullCheck = "";
-                while (rdr.Read())
-                {
-                    DeliveryTypeList deliveryTypeList = new DeliveryTypeList();
-                    nullCheck = rdr["DELIVERY_TYPE"] as string;
-
-                    if (nullCheck == null || nullCheck.Equals(""))
-                    {
-
-                    }
-                    else
-                    {
-
-                        deliveryTypeList.type_count = Convert.ToInt32(rdr["TYPE_COUNT"]);
-                        deliveryTypeList.delivery_type = rdr["DELIVERY_TYPE"] as string;
-                        result.Add(deliveryTypeList);
-                    }
-
-
-
-                }
-
-                return result;
-            }
-        }
-
-        public string SmallTalkFirst(string query, string fullentity)
-        {
-
-            SqlDataReader rdr = null;
-            string s_answer = "" ;
-            //userID = arg.Replace("'", "''");
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-
-                cmd.CommandText += " SELECT TOP 1 S_ANSWER ";
-                cmd.CommandText += " FROM ( ";
-                cmd.CommandText += " 	SELECT  S_ANSWER  ";
-                cmd.CommandText += " 	FROM    TBL_SMALLTALK  ";
-                cmd.CommandText += " 	WHERE   ENTITY = '12345'  ";
-                cmd.CommandText += " 	UNION ALL  ";
-                cmd.CommandText += " 	SELECT  S_ANSWER  ";
-                cmd.CommandText += " 	FROM    TBL_SMALLTALK  ";
-                cmd.CommandText += " 	WHERE   S_QUERY = '12345' ";
-                cmd.CommandText += " ) A ";
-
-                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                while (rdr.Read())
-                {
-                    s_answer = rdr["S_ANSWER"] as string;
-                }
-            }
-            return s_answer;
         }
 
     }
