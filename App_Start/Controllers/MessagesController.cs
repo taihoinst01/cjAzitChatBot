@@ -37,8 +37,8 @@ namespace cjAzitChatBot
         public static int appID = Convert.ToInt32(rootWebConfig.ConnectionStrings.ConnectionStrings[chatBotAppID].ToString());
 
         //config 변수 선언
-        static public string[] LUIS_NM = new string[5];        //루이스 이름
-        static public string[] LUIS_APP_ID = new string[5];    //루이스 app_id
+        static public string[] LUIS_NM = new string[10];        //루이스 이름
+        static public string[] LUIS_APP_ID = new string[10];    //루이스 app_id
         static public string LUIS_SUBSCRIPTION = "";            //루이스 구독키
         static public int LUIS_TIME_LIMIT;                      //루이스 타임 체크
         static public string QUOTE = "";                        //견적 url
