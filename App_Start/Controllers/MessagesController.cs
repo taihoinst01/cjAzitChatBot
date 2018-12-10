@@ -203,6 +203,12 @@ namespace cjAzitChatBot
                         {
                             tempAttachment = dbutil.getAttachmentFromDialog(tempcard, activity);
                             initReply.Attachments.Add(tempAttachment);
+
+                            //2018-11-26:KSO:INIT Carousel 만드는부분 추가
+                            if (tempcard.card_order_no > 1)
+                            {
+                                initReply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+                            }
                         }
                     }
                     else

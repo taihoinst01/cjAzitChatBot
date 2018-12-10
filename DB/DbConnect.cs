@@ -106,7 +106,7 @@ namespace cjAzitChatBot.DB
                         {
                             cmd2.CommandText = "SELECT CARD_TITLE, CARD_SUBTITLE, CARD_TEXT, IMG_URL," +
                                     "BTN_1_TYPE, BTN_1_TITLE, BTN_1_CONTEXT, BTN_2_TYPE, BTN_2_TITLE, BTN_2_CONTEXT, BTN_3_TYPE, BTN_3_TITLE, BTN_3_CONTEXT, BTN_4_TYPE, BTN_4_TITLE, BTN_4_CONTEXT, " +
-                                    "CARD_DIVISION, CARD_VALUE " +
+                                    "CARD_DIVISION, CARD_VALUE, CARD_ORDER_NO " +
                                     "FROM TBL_DLG_CARD WHERE DLG_ID = @dlgID AND USE_YN = 'Y' ";
                             //if (channel.Equals("facebook"))
                             //{
@@ -137,6 +137,7 @@ namespace cjAzitChatBot.DB
                                 dlgCard.btn4Context = rdr2["BTN_4_CONTEXT"] as string;
                                 dlgCard.cardDivision = rdr2["CARD_DIVISION"] as string;
                                 dlgCard.cardValue = rdr2["CARD_VALUE"] as string;
+                                dlgCard.card_order_no = Convert.ToInt32(rdr2["CARD_ORDER_NO"]);
                                 dialogCards.Add(dlgCard);
                             }
                             dlg.dialogCard = dialogCards;
