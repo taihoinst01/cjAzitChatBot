@@ -546,7 +546,7 @@ namespace cjAzitChatBot
                     Debug.Print(e.StackTrace);
                     //int sorryMessageCheck = db.SelectUserQueryErrorMessageCheck(activity.Conversation.Id, MessagesController.chatBotID);
 
-                    //++MessagesController.sorryMessageCnt;
+
 
                     Activity sorryReply = activity.CreateReply();
 
