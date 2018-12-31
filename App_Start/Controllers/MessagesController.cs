@@ -346,9 +346,9 @@ namespace cjAzitChatBot
                         orgMent = Regex.Replace(orgMent, @"[^a-zA-Z0-9ㄱ-힣]", "", RegexOptions.Singleline);
                         orgMent = orgMent.Replace(" ", "").ToLower();
                         queryStr = orgMent;
-                        //cacheList = db.CacheChk(cashOrgMent.Replace(" ", ""));                     // 캐시 체크 (TBL_QUERY_ANALYSIS_RESULT 조회..)
+                        cacheList = db.CacheChk(orgMent.Replace(" ", ""));                     // 캐시 체크 (TBL_QUERY_ANALYSIS_RESULT 조회..)
                         //cacheList.luisIntent 초기화
-                        cacheList.luisIntent = null;
+                        //cacheList.luisIntent = null;
 
                         //smalltalk 문자 확인                        
                         String smallTalkSentenceConfirm = db.SmallTalkSentenceConfirm;
@@ -377,6 +377,13 @@ namespace cjAzitChatBot
                             luisEntities = cacheList.luisEntities;
                             luisIntentScore = cacheList.luisScore;
 
+                        }
+                        else
+                        {
+                            luisId = cacheList.luisId;
+                            luisIntent = cacheList.luisIntent;
+                            luisEntities = cacheList.luisEntities;
+                            luisIntentScore = cacheList.luisScore;
                         }
 
                         string smallTalkConfirm = "";
