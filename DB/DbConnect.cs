@@ -1258,7 +1258,7 @@ namespace cjAzitChatBot.DB
                 cmd.CommandText += " INSERT INTO TBL_HISTORY_QUERY ";
                 cmd.CommandText += " (USER_NUMBER, CUSTOMER_COMMENT_KR, CHATBOT_COMMENT_CODE, CHANNEL, RESPONSE_TIME, REG_DATE, ACTIVE_FLAG, APP_ID, LUIS_INTENT, LUIS_ENTITIES, LUIS_INTENT_SCORE, DLG_ID, RESULT) ";
                 cmd.CommandText += " VALUES ";
-                cmd.CommandText += " (@userNumber, @customerCommentKR, @chatbotCommentCode, @channel, @responseTime, CONVERT(VARCHAR,  GETDATE(), 101) + ' ' + CONVERT(VARCHAR,  DATEADD( HH, 9, GETDATE() ), 24), 0, @appID, @luis_intent, @luis_entities, @luis_intent_score, @dlg_id, @result) ";
+                cmd.CommandText += " (@userNumber, @customerCommentKR, @chatbotCommentCode, @channel, @responseTime, CONVERT(VARCHAR,  DATEADD( HH, 9, GETDATE() ), 101) + ' ' + CONVERT(VARCHAR,  DATEADD( HH, 9, GETDATE() ), 24), 0, @appID, @luis_intent, @luis_entities, @luis_intent_score, @dlg_id, @result) ";
 
                 cmd.Parameters.AddWithValue("@userNumber", userNumber);
                 cmd.Parameters.AddWithValue("@customerCommentKR", MessagesController.queryStr);
@@ -1336,43 +1336,7 @@ namespace cjAzitChatBot.DB
             return result;
         }
 
-        public string SelectArray(string entities)
-        {
-            SqlDataReader rdr = null;
-            string newMsg = "";
-
-            using (SqlConnection conn = new SqlConnection(connStr))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-
-                cmd.CommandText += "	SELECT ";
-                cmd.CommandText += "        ISNULL(MAX(CASE WHEN POS = 1 THEN VAL1 END), '') ";
-                cmd.CommandText += "        + ISNULL(MAX(CASE WHEN POS = 2 THEN ',' + VAL1 END), '') ";
-                cmd.CommandText += "        + ISNULL(MAX(CASE WHEN POS = 3 THEN ',' + VAL1 END), '') ";
-                cmd.CommandText += "        + ISNULL(MAX(CASE WHEN POS = 4 THEN ',' + VAL1 END), '') ";
-                cmd.CommandText += "        + ISNULL(MAX(CASE WHEN POS = 5 THEN ',' + VAL1 END), '') ";
-                cmd.CommandText += "        + ISNULL(MAX(CASE WHEN POS = 6 THEN ',' + VAL1 END), '') ";
-                cmd.CommandText += "        + ISNULL(MAX(CASE WHEN POS = 7 THEN ',' + VAL1 END), '') ";
-                cmd.CommandText += "        + ISNULL(MAX(CASE WHEN POS = 8 THEN ',' + VAL1 END), '') AS VAL ";
-                cmd.CommandText += "        FROM ";
-                cmd.CommandText += "            ( ";
-                cmd.CommandText += "                SELECT VAL1, POS ";
-                cmd.CommandText += "                FROM Split2(@entities, ',') ";
-                cmd.CommandText += "            ) A                             ";
-
-                cmd.Parameters.AddWithValue("@entities", entities);
-
-                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                while (rdr.Read())
-                {
-                    newMsg = rdr["VAL"] as string;
-                }
-            }
-            return newMsg;
-        }
+        
 
         
         

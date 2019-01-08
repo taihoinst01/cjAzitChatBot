@@ -69,22 +69,6 @@ namespace cjAzitChatBot.DB
                 string luisIntent = "";
                 try
                 {
-                    //for (int i = 0; i < MAX; i++)
-                    //{
-                    //    //엔티티 합치기
-                    //    if ((int)Luis_before[i]["entities"].Count() > 0)
-                    //    {
-                    //        for (int j = 0; j < (int)Luis_before[i]["entities"].Count(); j++)
-                    //        {
-                    //            MessagesController.cacheList.luisEntities += (string)Luis_before[i]["entities"][j]["type"].ToString() + ",";
-                    //        }
-                    //    }
-
-                    //}
-                    //luisIntent = Luis_before[0]["topScoringIntent"]["intent"].ToString();
-                    //MessagesController.cacheList.luisEntities = MessagesController.cacheList.luisEntities.Substring(0, MessagesController.cacheList.luisEntities.LastIndexOf(","));
-                    //MessagesController.cacheList.luisScore = Luis_before[0]["intents"][0]["score"].ToString();
-
                     //string luisIntent = "";
                     float luisScoreCompare = 0.0f;
 
@@ -136,80 +120,7 @@ namespace cjAzitChatBot.DB
                     Debug.WriteLine("error = " + e.Message);
                     return "";
                 }
-
-                //string luisEntities = "";
-                //string luisType = "";
-                //string luisIntent = "";
-
-                //if (MAX > 0)
-                //{
-                //    LuisName = returnLuisName[0];
-                //    Luis = Luis_before[0];
-                //    Debug.WriteLine("GetMultiLUIS() LuisName : " + LuisName);
-                //}
                 
-                //if (!String.IsNullOrEmpty(LuisName))
-                //{
-                //    if (Luis != null || Luis.Count > 0)
-                //    {
-                //        float luisScore = (float)Luis["intents"][0]["score"];
-                //        int luisEntityCount = (int)Luis["entities"].Count();
-
-                //        luisIntent = Luis["topScoringIntent"]["intent"].ToString();//add
-                //        Debug.WriteLine("GetMultiLUIS() LUIS luisIntent : " + luisIntent);
-                        
-                //        if (MessagesController.relationList != null)
-                //        {
-                //            Debug.WriteLine("GetMultiLUIS() relationList is not NULL");
-                //            if (MessagesController.relationList.Count() > 0)
-                //            {
-                //                MessagesController.relationList[0].luisScore = (int)Luis["intents"][0]["score"];
-                //            }
-                //            else
-                //            {
-                //                MessagesController.cacheList.luisScore = Luis["intents"][0]["score"].ToString();
-                //            }
-                //        }
-                //        /*
-                //        if (luisScore > Convert.ToDouble(MessagesController.LUIS_SCORE_LIMIT) && luisEntityCount > 0)
-                //        {
-                //            Debug.WriteLine("GetMultiLUIS() luisEntityCount > 0");
-                //            for (int i = 0; i < luisEntityCount; i++)
-                //            {
-                //                //luisEntities = luisEntities + Luis["entities"][i]["entity"] + ",";
-
-                //                //luisType = (string)Luis["entities"][i]["type"];
-                //                //luisType = Regex.Split(luisType, "::")[1];
-                //                //luisEntities = luisEntities + luisType + ",";
-                //            }
-                //        }
-                //        */
-                //    }
-
-                //    if (!string.IsNullOrEmpty(luisEntities) || luisEntities.Length > 0)
-                //    {
-                //        luisEntities = luisEntities.Substring(0, luisEntities.LastIndexOf(","));
-                //        luisEntities = Regex.Replace(luisEntities, " ", "");
-
-
-                //        luisEntities = MessagesController.db.SelectArray(luisEntities);
-
-                //        if (Luis["intents"] == null)
-                //        {
-                //            MessagesController.cacheList.luisIntent = "";
-                //        }
-                //        else
-                //        {
-                //            MessagesController.cacheList.luisIntent = (string)Luis["intents"][0]["intent"];
-                //        }
-
-                //        MessagesController.cacheList.luisEntities = luisEntities;
-                //    }
-
-                //    //MessagesController.cacheList.luisEntities = LuisName;
-
-                //}
-                //return LuisName;
                 return luisIntent;
             }
             catch (System.Exception e)
@@ -364,7 +275,7 @@ namespace cjAzitChatBot.DB
                 List<CardImage> cardImages = new List<CardImage>();
                 List<CardAction> cardButtons = new List<CardAction>();
 
-                HistoryLog("CARD IMG START");
+                //HistoryLog("CARD IMG START");
                 if (dlg.mediaUrl != null)
                 {
                     HistoryLog("FB CARD IMG " + dlg.mediaUrl);
@@ -372,7 +283,7 @@ namespace cjAzitChatBot.DB
                 }
 
 
-                HistoryLog("CARD BTN1 START");
+                //HistoryLog("CARD BTN1 START");
                 if (activity.ChannelId.Equals("facebook") && dlg.btn1Type == null && !string.IsNullOrEmpty(dlg.cardDivision) && dlg.cardDivision.Equals("play") && !string.IsNullOrEmpty(dlg.cardValue))
                 {
                     CardAction plButton = new CardAction();
@@ -401,7 +312,7 @@ namespace cjAzitChatBot.DB
                     if (!(activity.ChannelId == "facebook" && dlg.btn2Title == "나에게 맞는 모델 추천"))
                     {
                         CardAction plButton = new CardAction();
-                        HistoryLog("CARD BTN2 START");
+                        //HistoryLog("CARD BTN2 START");
                         plButton = new CardAction()
                         {
                             Value = dlg.btn2Context,
@@ -417,7 +328,7 @@ namespace cjAzitChatBot.DB
                     
                     CardAction plButton = new CardAction();
 
-                    HistoryLog("CARD BTN3 START");
+                    //HistoryLog("CARD BTN3 START");
                     plButton = new CardAction()
                     {
                         Value = dlg.btn3Context,
@@ -431,7 +342,7 @@ namespace cjAzitChatBot.DB
                 if (dlg.btn4Type != null)
                 {
                     CardAction plButton = new CardAction();
-                    HistoryLog("CARD BTN4 START");
+                    //HistoryLog("CARD BTN4 START");
                     plButton = new CardAction()
                     {
                         Value = dlg.btn4Context,
@@ -451,11 +362,11 @@ namespace cjAzitChatBot.DB
                     //cardVal = priceMediaDlgList[i].cardValue.Replace();
                     cardVal = dlg.cardValue;
                 }
-                HistoryLog("!!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1");
+                //HistoryLog("!!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1");
                 HeroCard plCard = new UserHeroCard();
                 if (activity.ChannelId == "facebook" && string.IsNullOrEmpty(dlg.cardTitle))
                 {
-                    HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)");
+                    //HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)");
                     plCard = new UserHeroCard()
                     {
                         Title = "선택해 주세요",
@@ -469,7 +380,7 @@ namespace cjAzitChatBot.DB
                 }
                 else if (activity.ChannelId == "facebook" && string.IsNullOrEmpty(dlg.cardValue))
                 {
-                    HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)");
+                    //HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)");
                     plCard = new UserHeroCard()
                     {
                         Title = dlg.cardTitle,
@@ -480,7 +391,7 @@ namespace cjAzitChatBot.DB
                 }
                 else
                 {
-                    HistoryLog("!!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)");
+                    //HistoryLog("!!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)");
                     plCard = new UserHeroCard()
                     {
                         Title = dlg.cardTitle,
@@ -520,7 +431,7 @@ namespace cjAzitChatBot.DB
             }
 
 
-            HistoryLog("CARD BTN1 START");
+            //HistoryLog("CARD BTN1 START");
 
 
             if (activity.ChannelId.Equals("facebook") && card.btn1Type == null && !string.IsNullOrEmpty(card.cardDivision) && card.cardDivision.Equals("play") && !string.IsNullOrEmpty(card.cardValue))
@@ -549,7 +460,7 @@ namespace cjAzitChatBot.DB
             if (card.btn2Type != null)
             {
                 CardAction plButton = new CardAction();
-                HistoryLog("CARD BTN2 START");
+                //HistoryLog("CARD BTN2 START");
                 plButton = new CardAction()
                 {
                     Value = card.btn2Context,
@@ -563,7 +474,7 @@ namespace cjAzitChatBot.DB
             {
                 CardAction plButton = new CardAction();
 
-                HistoryLog("CARD BTN3 START");
+                //HistoryLog("CARD BTN3 START");
                 plButton = new CardAction()
                 {
                     Value = card.btn3Context,
@@ -576,7 +487,7 @@ namespace cjAzitChatBot.DB
             if (card.btn4Type != null)
             {
                 CardAction plButton = new CardAction();
-                HistoryLog("CARD BTN4 START");
+                //HistoryLog("CARD BTN4 START");
                 plButton = new CardAction()
                 {
                     Value = card.btn4Context,
@@ -608,7 +519,7 @@ namespace cjAzitChatBot.DB
 
             if (activity.ChannelId.Equals("facebook") && cardButtons.Count < 1 && cardImages.Count < 1)
             {
-                HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1");
+                //HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1");
                 Activity reply_facebook = activity.CreateReply();
                 reply_facebook.Recipient = activity.From;
                 reply_facebook.Type = "message";
@@ -618,11 +529,11 @@ namespace cjAzitChatBot.DB
             }
             else
             {
-                HistoryLog("!!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1");
+                //HistoryLog("!!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1");
                 HeroCard plCard = new UserHeroCard();
                 if (activity.ChannelId == "facebook" && string.IsNullOrEmpty(card.cardValue))
                 {
-                    HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)");
+                    //HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)");
                     plCard = new UserHeroCard()
                     {
                         Title = card.cardTitle,
@@ -634,7 +545,7 @@ namespace cjAzitChatBot.DB
                 }
                 else
                 {
-                    HistoryLog("!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)");
+                    //HistoryLog("!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)");
                     if (activity.ChannelId == "facebook" && string.IsNullOrEmpty(card.cardTitle))
                     {
                         HistoryLog("FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)");
@@ -653,7 +564,7 @@ namespace cjAzitChatBot.DB
                     }
                     else
                     {
-                        HistoryLog("!!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)");
+                        //HistoryLog("!!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)");
                         plCard = new UserHeroCard()
                         {
                             Title = card.cardTitle,
@@ -715,95 +626,7 @@ namespace cjAzitChatBot.DB
 
             return heroCard.ToAttachment();
         }
-        //지도 맵 추가
-        public static Attachment GetHeroCard_Map(string title, string subtitle, string text, CardImage cardImage, CardAction cardAction /*List<CardAction> buttons*/, string latitude, string longitude)
-        {
-            var heroCard = new UserHeroCard
-            {
-                Title = title,
-                Subtitle = subtitle,
-                Text = text,
-                Images = new List<CardImage>() { cardImage },
-                Buttons = new List<CardAction>() { cardAction },
-                Latitude = latitude,
-                Longitude = longitude,
-            };
-
-            return heroCard.ToAttachment();
-        }
-
-        //현재 위치 이미지 저장
-        //clientId 및 URL 네이버개발자센터에서 확인 및 수정
-        public static void mapSave(string url1, string url2)
-        {
-            //로컬테스트
-            //string url = "https://openapi.naver.com/v1/map/staticmap.bin?clientId=dXUekyWEBhyYa2zD2s33&url=file:///C:/Users/user/Desktop&crs=EPSG:4326&center=" + url2 + "," + url1 + "&level=10&w=320&h=320&baselayer=default&markers="+ url2 +"," + url1;
-            //웹테스트
-            string url = "https://openapi.naver.com/v1/map/staticmap.bin?clientId=dXUekyWEBhyYa2zD2s33&url=https://cjAzitChatBot.azurewebsites.net&crs=EPSG:4326&center=" + url2 + "," + url1 + "&level=10&w=320&h=320&baselayer=default&markers=" + url2 + "," + url1;
-
-            System.Drawing.Image image = DownloadImageFromUrl(url);
-
-            string m_strLogPrefix = AppDomain.CurrentDomain.BaseDirectory + @"image\map\";
-            string m_strLogExt = @".png";
-            string strPath = String.Format("{0}{1}", m_strLogPrefix, m_strLogExt);
-            string strDir = Path.GetDirectoryName(strPath);
-            DirectoryInfo diDir = new DirectoryInfo(strDir);
-
-            //파일 있는지 확인 있을때(true), 없으면(false)
-            FileInfo fileInfo = new FileInfo(strPath + url2 + "," + url1 + ".png");
-
-            if (!fileInfo.Exists)
-            {
-                string fileName = System.IO.Path.Combine(strDir, url2 +","+ url1+".png");
-                try
-                {
-                    image.Save(fileName);
-                } catch(Exception ex)
-                {
-                    Debug.WriteLine("***error***" + ex.Message);
-                }
-            }
-
-        }
-
-        public static System.Drawing.Image DownloadImageFromUrl(string imageUrl)
-        {
-            System.Drawing.Image image = null;
-
-            try
-            {
-                System.Net.HttpWebRequest webRequest = (System.Net.HttpWebRequest)System.Net.HttpWebRequest.Create(imageUrl);
-                webRequest.AllowWriteStreamBuffering = true;
-                webRequest.Timeout = 30000;
-
-                System.Net.WebResponse webResponse = webRequest.GetResponse();
-
-                System.IO.Stream stream = webResponse.GetResponseStream();
-
-                image = System.Drawing.Image.FromStream(stream);
-
-                webResponse.Close();
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
-
-            return image;
-        }
-
-        public static Attachment GetHeroCard_facebookMore(string title, string subtitle, string text, CardAction cardAction)
-        {
-            var heroCard = new UserHeroCard
-            {
-                Title = title,
-                Subtitle = subtitle,
-                Text = text,
-                Buttons = new List<CardAction>() { cardAction },
-            };
-            return heroCard.ToAttachment();
-        }
-
+        
         //encode 추가
         public static string encode(string text)
         {
