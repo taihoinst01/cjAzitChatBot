@@ -460,7 +460,7 @@ namespace cjAzitChatBot
 
                         //}
                         //history table insert
-                        db.insertHistory(activity.Conversation.Id, activity.ChannelId, ((endTime - MessagesController.startTime).Milliseconds), "", "", "", "", replyresult);
+                        db.insertHistory(activity.Conversation.Id, activity.ChannelId, ((endTime - MessagesController.startTime).Milliseconds), luisIntent, luisEntities, luisIntentScore, dlgId, replyresult);
                         replyresult = "";
                         luisIntent = "";
                     }
