@@ -435,14 +435,26 @@ namespace cjAzitChatBot
                             sorryReply.Attachments = new List<Attachment>();
                             //sorryReply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
 
-                            List<TextList> text = new List<TextList>();
+                            List<CardList> text = new List<CardList>();
+                            List<CardAction> cardButtons = new List<CardAction>();
+
                             text = db.SelectSorryDialogText("5");
                             for (int i = 0; i < text.Count; i++)
                             {
-                                HeroCard plCard = new HeroCard()
+                                CardAction plButton = new CardAction();
+                                plButton = new CardAction()
                                 {
-                                    Title = text[i].cardTitle,
-                                    Text = text[i].cardText
+                                    Type = text[i].btn1Type,
+                                    Value = text[i].btn1Context,
+                                    Title = text[i].btn1Title
+                                };
+                                cardButtons.Add(plButton);
+
+                                UserHeroCard plCard = new UserHeroCard()
+                                {
+                                    //Title = text[i].cardTitle,
+                                    Text = text[i].cardText,
+                                    Buttons = cardButtons
                                 };
 
                                 Attachment plAttachment = plCard.ToAttachment();
@@ -479,22 +491,26 @@ namespace cjAzitChatBot
                     sorryReply.Attachments = new List<Attachment>();
                     //sorryReply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
 
-                    List<TextList> text = new List<TextList>();
-                    //if (sorryMessageCnt == 1)
-                    //{
-                        text = db.SelectSorryDialogText("5");
-                    //}
-                    //else
-                    //{
-                    //    text = db.SelectSorryDialogText("6");
-                    //}
+                    List<CardList> text = new List<CardList>();
+                    List<CardAction> cardButtons = new List<CardAction>();
 
+                    text = db.SelectSorryDialogText("5");
                     for (int i = 0; i < text.Count; i++)
                     {
-                        HeroCard plCard = new HeroCard()
+                        CardAction plButton = new CardAction();
+                        plButton = new CardAction()
                         {
-                            Title = text[i].cardTitle,
-                            Text = text[i].cardText
+                            Type = text[i].btn1Type,
+                            Value = text[i].btn1Context,
+                            Title = text[i].btn1Title
+                        };
+                        cardButtons.Add(plButton);
+
+                        UserHeroCard plCard = new UserHeroCard()
+                        {
+                            //Title = text[i].cardTitle,
+                            Text = text[i].cardText,
+                            Buttons = cardButtons
                         };
 
                         Attachment plAttachment = plCard.ToAttachment();

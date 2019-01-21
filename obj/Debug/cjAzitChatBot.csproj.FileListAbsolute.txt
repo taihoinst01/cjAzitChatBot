@@ -57,3 +57,62 @@ C:\Users\User\source\repos\cjAzitChatBot\bin\pt-BR\Microsoft.Bot.Builder.resourc
 C:\Users\User\source\repos\cjAzitChatBot\bin\ru\Microsoft.Bot.Builder.resources.dll
 C:\Users\User\source\repos\cjAzitChatBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
 C:\Users\User\source\repos\cjAzitChatBot\obj\Debug\cjAzitChatBot.csproj.CopyComplete
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Bot Application.dll.config
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Bot Application.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Bot Application.pdb
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Autofac.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Castle.Core.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Chronic.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.Bot.Builder.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.Bot.Connector.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Moq.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Newtonsoft.Json.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\System.Net.Http.Formatting.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\System.Web.Http.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\System.Web.Http.WebHost.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Autofac.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Castle.Core.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.Bot.Builder.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.Bot.Connector.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Moq.pdb
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Moq.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\Newtonsoft.Json.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\System.Net.Http.Formatting.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\System.Web.Http.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\System.Web.Http.WebHost.xml
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\it\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\nl\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\pt-BR\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\obj\Debug\cjAzitChatBot.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\cjAzitChatBot_20190108\obj\Debug\cjAzitChatBot.csproj.CopyComplete
+C:\Users\User\source\repos\cjAzitChatBot_20190108\obj\Debug\Bot Application.dll
+C:\Users\User\source\repos\cjAzitChatBot_20190108\obj\Debug\Bot Application.pdb
+C:\Users\User\source\repos\cjAzitChatBot_20190108\obj\Debug\cjAzitChatBot.csprojAssemblyReference.cache

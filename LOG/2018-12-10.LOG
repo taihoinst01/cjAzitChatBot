@@ -1,0 +1,593 @@
+12-10-2018 10:27:18.412: db connect !! 
+12-10-2018 10:27:18.507: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:27:18.511: db SelectConfig start !! 
+12-10-2018 10:27:18.880: db conn SelectConfig !!
+12-10-2018 10:27:18.901: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 10:27:18.906: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+12-10-2018 10:27:18.909: * cnfNm : 루이스스코어 || cnfValue : 0.1
+12-10-2018 10:27:18.913: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 10:27:18.918: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:27:18.922: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:27:18.924: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:27:28.476: db SelectConfig end!! 
+12-10-2018 10:27:28.491: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:27:28.562: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:27:28.568: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:27:28.569: * DB conn : conversationUpdate
+12-10-2018 10:27:28.579:  db SelectInitDialog !! 
+12-10-2018 10:27:31.085: CARD IMG START
+12-10-2018 10:27:31.091: CARD BTN1 START
+12-10-2018 10:27:31.092: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:27:31.093: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:27:31.093: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:27:31.095: CARD IMG START
+12-10-2018 10:27:31.096: CARD BTN1 START
+12-10-2018 10:27:31.097: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:27:31.097: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:27:31.098: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:27:31.100: CARD IMG START
+12-10-2018 10:27:31.101: CARD BTN1 START
+12-10-2018 10:27:31.102: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:27:31.102: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:27:31.102: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:27:31.103: CARD IMG START
+12-10-2018 10:27:31.104: CARD BTN1 START
+12-10-2018 10:27:31.105: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:27:31.105: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:27:31.106: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:27:31.107: CARD IMG START
+12-10-2018 10:27:31.107: CARD BTN1 START
+12-10-2018 10:27:31.107: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:27:31.108: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:27:31.108: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:27:31.125: * activity.Type : 
+12-10-2018 10:27:31.126: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 10:27:31.126: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 10:27:37.692: db connect !! 
+12-10-2018 10:27:37.710: orgMent : 대중음악장학사업 선택
+12-10-2018 10:27:37.831: cache none : 대중음악장학사업선택
+12-10-2018 10:27:41.600: dlg.dlgType : 2
+12-10-2018 10:27:41.613: * activity.ChannelId : emulator
+12-10-2018 10:27:49.695: db connect !! 
+12-10-2018 10:27:49.702: orgMent : 12345
+12-10-2018 10:27:49.737: cache none : 12345
+12-10-2018 10:27:50.746: dlg.dlgType : 2
+12-10-2018 10:27:50.755: * activity.ChannelId : emulator
+12-10-2018 10:36:53.406: db connect !! 
+12-10-2018 10:36:53.461: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:36:53.483: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:36:53.831: db conn SelectConfig !!
+12-10-2018 10:36:53.848: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 10:36:53.854: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+12-10-2018 10:36:53.861: * cnfNm : 루이스스코어 || cnfValue : 0.1
+12-10-2018 10:36:53.863: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 10:36:53.865: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:36:53.872: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:36:53.875: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:36:53.876: db SelectConfig end!! 
+12-10-2018 10:36:53.879: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:36:53.885: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:36:53.887: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:36:53.889: * DB conn : conversationUpdate
+12-10-2018 10:36:53.902:  db SelectInitDialog !! 
+12-10-2018 10:36:55.582: CARD IMG START
+12-10-2018 10:36:55.616: CARD BTN1 START
+12-10-2018 10:36:55.623: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:36:55.633: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:36:55.633: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:36:55.635: CARD IMG START
+12-10-2018 10:36:55.636: CARD BTN1 START
+12-10-2018 10:36:55.637: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:36:55.637: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:36:55.638: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:36:55.640: CARD IMG START
+12-10-2018 10:36:55.640: CARD BTN1 START
+12-10-2018 10:36:55.643: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:36:55.644: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:36:55.644: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:36:55.645: CARD IMG START
+12-10-2018 10:36:55.646: CARD BTN1 START
+12-10-2018 10:36:55.646: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:36:55.647: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:36:55.648: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:36:55.649: CARD IMG START
+12-10-2018 10:36:55.650: CARD BTN1 START
+12-10-2018 10:36:55.651: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:36:55.651: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:36:55.652: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:36:55.665: * activity.Type : 
+12-10-2018 10:36:55.666: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 10:36:55.666: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 10:36:59.451: db connect !! 
+12-10-2018 10:36:59.575: orgMent : 스토리업 시나리오 작가 지원 선택
+12-10-2018 10:36:59.612: cache none : 스토리업시나리오작가지원선택
+12-10-2018 10:37:03.883: dlg.dlgType : 2
+12-10-2018 10:37:03.889: * activity.ChannelId : emulator
+12-10-2018 10:37:11.266: db connect !! 
+12-10-2018 10:37:11.280: orgMent : 조기퇴근
+12-10-2018 10:37:11.317: cache none : 조기퇴근
+12-10-2018 10:37:13.640: dlg.dlgType : 2
+12-10-2018 10:37:13.644: * activity.ChannelId : emulator
+12-10-2018 10:44:30.094: db connect !! 
+12-10-2018 10:44:30.161: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:44:30.182: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:44:30.310: db conn SelectConfig !!
+12-10-2018 10:44:30.328: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 10:44:30.334: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+12-10-2018 10:44:30.336: * cnfNm : 루이스스코어 || cnfValue : 0.75
+12-10-2018 10:44:30.338: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 10:44:30.339: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:44:30.340: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:44:30.341: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:44:30.342: db SelectConfig end!! 
+12-10-2018 10:44:30.344: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:44:30.345: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:44:30.347: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:44:30.348: * DB conn : conversationUpdate
+12-10-2018 10:44:30.357:  db SelectInitDialog !! 
+12-10-2018 10:44:32.043: CARD IMG START
+12-10-2018 10:44:32.076: CARD BTN1 START
+12-10-2018 10:44:32.092: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:32.103: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:32.103: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:32.105: CARD IMG START
+12-10-2018 10:44:32.106: CARD BTN1 START
+12-10-2018 10:44:32.106: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:32.106: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:32.107: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:32.108: CARD IMG START
+12-10-2018 10:44:32.108: CARD BTN1 START
+12-10-2018 10:44:32.109: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:32.109: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:32.110: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:32.111: CARD IMG START
+12-10-2018 10:44:32.111: CARD BTN1 START
+12-10-2018 10:44:32.112: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:32.113: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:32.113: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:32.114: CARD IMG START
+12-10-2018 10:44:32.115: CARD BTN1 START
+12-10-2018 10:44:32.116: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:32.116: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:32.117: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:32.129: * activity.Type : 
+12-10-2018 10:44:32.130: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 10:44:32.131: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 10:44:36.530: db connect !! 
+12-10-2018 10:44:36.534: db connect !! 
+12-10-2018 10:44:36.541: db SelectConfig start !! 
+12-10-2018 10:44:36.552: db conn SelectConfig !!
+12-10-2018 10:44:36.623: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 10:44:36.637: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+12-10-2018 10:44:36.667: * cnfNm : 루이스스코어 || cnfValue : 0.75
+12-10-2018 10:44:36.676: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 10:44:36.680: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:44:36.694: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:44:36.700: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:44:36.701: db SelectConfig end!! 
+12-10-2018 10:44:36.704: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:44:36.707: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:44:36.728: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:44:36.756: * DB conn : conversationUpdate
+12-10-2018 10:44:36.765:  db SelectInitDialog !! 
+12-10-2018 10:44:36.858: CARD IMG START
+12-10-2018 10:44:36.859: CARD BTN1 START
+12-10-2018 10:44:36.860: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:36.860: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:36.861: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:36.862: CARD IMG START
+12-10-2018 10:44:36.863: CARD BTN1 START
+12-10-2018 10:44:36.864: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:36.865: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:36.866: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:36.868: CARD IMG START
+12-10-2018 10:44:36.869: CARD BTN1 START
+12-10-2018 10:44:36.870: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:36.870: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:36.871: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:36.872: CARD IMG START
+12-10-2018 10:44:36.874: CARD BTN1 START
+12-10-2018 10:44:36.874: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:36.876: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:36.877: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:36.878: CARD IMG START
+12-10-2018 10:44:36.879: CARD BTN1 START
+12-10-2018 10:44:36.881: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:44:36.883: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:44:36.884: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:44:36.904: * activity.Type : 
+12-10-2018 10:44:36.907: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 10:44:36.907: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 10:44:40.715: db connect !! 
+12-10-2018 10:44:40.832: orgMent : 대중음악장학사업 선택
+12-10-2018 10:44:41.060: cache none : 대중음악장학사업선택
+12-10-2018 10:46:03.730: db connect !! 
+12-10-2018 10:46:03.760: orgMent : 대중음악장학사업 선택
+12-10-2018 10:46:03.801: cache none : 대중음악장학사업선택
+12-10-2018 10:49:18.275: db connect !! 
+12-10-2018 10:49:18.276: db connect !! 
+12-10-2018 10:49:18.375: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:49:18.618: db conn SelectConfig !!
+12-10-2018 10:49:18.637: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 10:49:18.643: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-10-2018 10:49:18.649: * cnfNm : 루이스스코어 || cnfValue : 0.75
+12-10-2018 10:49:18.650: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 10:49:18.652: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:49:18.653: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:49:18.655: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:49:18.655: db SelectConfig end!! 
+12-10-2018 10:49:18.657: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:49:18.659: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:49:18.660: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:49:18.663: * DB conn : conversationUpdate
+12-10-2018 10:49:18.681:  db SelectInitDialog !! 
+12-10-2018 10:49:19.958: CARD IMG START
+12-10-2018 10:49:19.971: CARD BTN1 START
+12-10-2018 10:49:19.983: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:49:19.992: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:49:19.993: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:49:19.994: CARD IMG START
+12-10-2018 10:49:19.995: CARD BTN1 START
+12-10-2018 10:49:19.995: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:49:19.996: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:49:19.996: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:49:19.997: CARD IMG START
+12-10-2018 10:49:19.998: CARD BTN1 START
+12-10-2018 10:49:19.998: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:49:19.999: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:49:20.000: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:49:20.001: CARD IMG START
+12-10-2018 10:49:20.002: CARD BTN1 START
+12-10-2018 10:49:20.002: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:49:20.003: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:49:20.003: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:49:20.004: CARD IMG START
+12-10-2018 10:49:20.005: CARD BTN1 START
+12-10-2018 10:49:20.006: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:49:20.007: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:49:20.008: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:49:20.023: * activity.Type : 
+12-10-2018 10:49:20.023: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 10:49:20.024: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 10:49:21.460: db connect !! 
+12-10-2018 10:49:21.482: orgMent : 대중음악장학사업 선택
+12-10-2018 10:49:21.534: cache none : 대중음악장학사업선택
+12-10-2018 10:49:22.911: dlg.dlgType : 2
+12-10-2018 10:49:22.912: * activity.ChannelId : emulator
+12-10-2018 10:49:28.804: db connect !! 
+12-10-2018 10:49:28.814: orgMent : 조기퇴근
+12-10-2018 10:49:28.848: cache none : 조기퇴근
+12-10-2018 10:49:29.042: dlg.dlgType : 2
+12-10-2018 10:49:29.049: * activity.ChannelId : emulator
+12-10-2018 10:53:08.344: db connect !! 
+12-10-2018 10:53:08.402: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:53:08.421: db SelectConfig start !! 
+12-10-2018 10:53:08.578: db conn SelectConfig !!
+12-10-2018 10:53:08.598: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 10:53:08.604: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-10-2018 10:53:08.615: * cnfNm : 루이스스코어 || cnfValue : 0.75
+12-10-2018 10:53:08.617: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 10:53:08.618: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:53:08.621: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:53:08.624: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:53:08.625: db SelectConfig end!! 
+12-10-2018 10:53:08.627: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:53:08.629: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:53:08.631: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:53:08.634: * DB conn : conversationUpdate
+12-10-2018 10:53:08.643:  db SelectInitDialog !! 
+12-10-2018 10:53:10.344: CARD IMG START
+12-10-2018 10:53:10.353: CARD BTN1 START
+12-10-2018 10:53:10.371: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:53:10.386: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:53:10.394: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:53:10.397: CARD IMG START
+12-10-2018 10:53:10.397: CARD BTN1 START
+12-10-2018 10:53:10.398: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:53:10.398: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:53:10.399: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:53:10.400: CARD IMG START
+12-10-2018 10:53:10.400: CARD BTN1 START
+12-10-2018 10:53:10.401: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:53:10.401: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:53:10.402: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:53:10.403: CARD IMG START
+12-10-2018 10:53:10.404: CARD BTN1 START
+12-10-2018 10:53:10.404: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:53:10.405: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:53:10.405: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:53:10.406: CARD IMG START
+12-10-2018 10:53:10.410: CARD BTN1 START
+12-10-2018 10:53:10.411: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:53:10.412: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:53:10.412: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:53:10.445: * activity.Type : 
+12-10-2018 10:53:10.446: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 10:53:10.447: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 10:53:12.521: db connect !! 
+12-10-2018 10:53:12.540: orgMent : 대중음악장학사업 선택
+12-10-2018 10:53:12.559: cache none : 대중음악장학사업선택
+12-10-2018 10:53:25.089: db connect !! 
+12-10-2018 10:53:25.112: orgMent : 대중음악장학사업 선택
+12-10-2018 10:53:25.155: cache none : 대중음악장학사업선택
+12-10-2018 10:55:06.012: db connect !! 
+12-10-2018 10:55:06.045: orgMent : 티 켓매 진시현장에서구 입할수있나요?
+12-10-2018 10:55:06.100: cache none : 티켓매진시현장에서구입할수있나요
+12-10-2018 10:56:02.316: db connect !! 
+12-10-2018 10:56:02.345: orgMent : 티 켓매 진시현장에서구 입할수있나요?
+12-10-2018 10:56:02.381: cache none : 티켓매진시현장에서구입할수있나요
+12-10-2018 10:56:39.713: db connect !! 
+12-10-2018 10:56:39.715: db connect !! 
+12-10-2018 10:56:39.803: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:56:40.002: db conn SelectConfig !!
+12-10-2018 10:56:40.022: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 10:56:40.029: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-10-2018 10:56:40.035: * cnfNm : 루이스스코어 || cnfValue : 0.75
+12-10-2018 10:56:40.036: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 10:56:40.037: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:56:40.039: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:56:40.040: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:56:40.041: db SelectConfig end!! 
+12-10-2018 10:56:40.045: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:56:40.048: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:56:40.051: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:56:40.053: * DB conn : conversationUpdate
+12-10-2018 10:56:40.073:  db SelectInitDialog !! 
+12-10-2018 10:56:41.349: CARD IMG START
+12-10-2018 10:56:41.365: CARD BTN1 START
+12-10-2018 10:56:41.380: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:56:41.390: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:56:41.391: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:56:41.393: CARD IMG START
+12-10-2018 10:56:41.393: CARD BTN1 START
+12-10-2018 10:56:41.394: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:56:41.395: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:56:41.395: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:56:41.396: CARD IMG START
+12-10-2018 10:56:41.397: CARD BTN1 START
+12-10-2018 10:56:41.398: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:56:41.399: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:56:41.399: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:56:41.400: CARD IMG START
+12-10-2018 10:56:41.401: CARD BTN1 START
+12-10-2018 10:56:41.402: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:56:41.402: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:56:41.403: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:56:41.404: CARD IMG START
+12-10-2018 10:56:41.405: CARD BTN1 START
+12-10-2018 10:56:41.405: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:56:41.405: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:56:41.406: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:56:41.432: * activity.Type : 
+12-10-2018 10:56:41.439: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 10:56:41.440: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 10:56:53.703: db connect !! 
+12-10-2018 10:56:53.739: orgMent : 티켓매진시현장에서구입할수있나요?
+12-10-2018 10:56:53.848: cache none : 티켓매진시현장에서구입할수있나요
+12-10-2018 10:58:35.851: db connect !! 
+12-10-2018 10:58:35.851: db connect !! 
+12-10-2018 10:58:35.945: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:58:36.075: db conn SelectConfig !!
+12-10-2018 10:58:36.097: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 10:58:36.103: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-10-2018 10:58:36.110: * cnfNm : 루이스스코어 || cnfValue : 0.75
+12-10-2018 10:58:36.112: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 10:58:36.114: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:58:36.115: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:58:36.117: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:58:36.118: db SelectConfig end!! 
+12-10-2018 10:58:36.120: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:58:36.122: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:58:36.123: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:58:36.125: * DB conn : conversationUpdate
+12-10-2018 10:58:36.135:  db SelectInitDialog !! 
+12-10-2018 10:58:37.395: CARD IMG START
+12-10-2018 10:58:37.410: CARD BTN1 START
+12-10-2018 10:58:37.424: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:58:37.438: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:58:37.439: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:58:37.441: CARD IMG START
+12-10-2018 10:58:37.442: CARD BTN1 START
+12-10-2018 10:58:37.442: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:58:37.443: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:58:37.444: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:58:37.445: CARD IMG START
+12-10-2018 10:58:37.445: CARD BTN1 START
+12-10-2018 10:58:37.446: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:58:37.446: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:58:37.447: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:58:37.448: CARD IMG START
+12-10-2018 10:58:37.449: CARD BTN1 START
+12-10-2018 10:58:37.449: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:58:37.450: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:58:37.450: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:58:37.452: CARD IMG START
+12-10-2018 10:58:37.453: CARD BTN1 START
+12-10-2018 10:58:37.453: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:58:37.454: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:58:37.454: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:58:37.466: * activity.Type : 
+12-10-2018 10:58:37.468: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 10:58:37.468: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 10:58:46.120: db connect !! 
+12-10-2018 10:58:46.143: orgMent : 티 켓매 진시현장에서구 입할수있나요?
+12-10-2018 10:58:46.208: cache none : 티켓매진시현장에서구입할수있나요
+12-10-2018 10:59:10.280: db connect !! 
+12-10-2018 10:59:10.416: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 10:59:10.423: db SelectConfig start !! 
+12-10-2018 10:59:10.782: db conn SelectConfig !!
+12-10-2018 10:59:10.807: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 10:59:10.814: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-10-2018 10:59:10.820: * cnfNm : 루이스스코어 || cnfValue : 0.75
+12-10-2018 10:59:10.821: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 10:59:10.823: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:59:10.824: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:59:10.829: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:59:10.830: db SelectConfig end!! 
+12-10-2018 10:59:10.833: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 10:59:10.836: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 10:59:10.837: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 10:59:10.838: * DB conn : conversationUpdate
+12-10-2018 10:59:10.847:  db SelectInitDialog !! 
+12-10-2018 10:59:12.161: CARD IMG START
+12-10-2018 10:59:12.179: CARD BTN1 START
+12-10-2018 10:59:12.190: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:59:12.195: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:59:12.195: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:59:12.197: CARD IMG START
+12-10-2018 10:59:12.197: CARD BTN1 START
+12-10-2018 10:59:12.198: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:59:12.199: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:59:12.199: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:59:12.200: CARD IMG START
+12-10-2018 10:59:12.201: CARD BTN1 START
+12-10-2018 10:59:12.201: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:59:12.202: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:59:12.208: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:59:12.209: CARD IMG START
+12-10-2018 10:59:12.210: CARD BTN1 START
+12-10-2018 10:59:12.211: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:59:12.211: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:59:12.212: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:59:12.213: CARD IMG START
+12-10-2018 10:59:12.213: CARD BTN1 START
+12-10-2018 10:59:12.214: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 10:59:12.215: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 10:59:12.215: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 10:59:12.225: * activity.Type : 
+12-10-2018 10:59:12.226: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 10:59:12.227: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 10:59:13.481: db connect !! 
+12-10-2018 10:59:13.495: orgMent : 티 켓매 진시현장에서구 입할수있나요?
+12-10-2018 10:59:13.522: cache none : 티켓매진시현장에서구입할수있나요
+12-10-2018 10:59:23.799: dlg.dlgType : 2
+12-10-2018 10:59:23.810: * activity.ChannelId : emulator
+12-10-2018 10:59:33.521: db connect !! 
+12-10-2018 10:59:33.541: orgMent : 제일제당
+12-10-2018 11:00:17.714: db connect !! 
+12-10-2018 11:00:17.735: orgMent : 제일제당
+12-10-2018 11:03:26.392: db connect !! 
+12-10-2018 11:03:26.409: orgMent : 제일제당
+12-10-2018 11:04:48.859: db connect !! 
+12-10-2018 11:04:48.910: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 11:04:48.935: db SelectConfig start !! 
+12-10-2018 11:04:49.177: db conn SelectConfig !!
+12-10-2018 11:04:49.197: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 11:04:49.202: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-10-2018 11:04:49.209: * cnfNm : 루이스스코어 || cnfValue : 0.75
+12-10-2018 11:04:49.210: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 11:04:49.211: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 11:04:49.213: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 11:04:49.215: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 11:04:49.215: db SelectConfig end!! 
+12-10-2018 11:04:49.217: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 11:04:49.219: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 11:04:49.220: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 11:04:49.222: * DB conn : conversationUpdate
+12-10-2018 11:04:49.235:  db SelectInitDialog !! 
+12-10-2018 11:04:50.503: CARD IMG START
+12-10-2018 11:04:50.523: CARD BTN1 START
+12-10-2018 11:04:50.535: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:04:50.542: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:04:50.542: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:04:50.544: CARD IMG START
+12-10-2018 11:04:50.544: CARD BTN1 START
+12-10-2018 11:04:50.545: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:04:50.545: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:04:50.546: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:04:50.546: CARD IMG START
+12-10-2018 11:04:50.547: CARD BTN1 START
+12-10-2018 11:04:50.548: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:04:50.548: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:04:50.548: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:04:50.549: CARD IMG START
+12-10-2018 11:04:50.550: CARD BTN1 START
+12-10-2018 11:04:50.550: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:04:50.551: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:04:50.551: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:04:50.552: CARD IMG START
+12-10-2018 11:04:50.553: CARD BTN1 START
+12-10-2018 11:04:50.553: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:04:50.554: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:04:50.554: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:04:50.572: * activity.Type : 
+12-10-2018 11:04:50.572: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 11:04:50.573: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 11:04:52.083: db connect !! 
+12-10-2018 11:04:52.096: orgMent : 대중음악장학사업 선택
+12-10-2018 11:04:58.480: cache none : 대중음악장학사업선택
+12-10-2018 11:05:15.909: db connect !! 
+12-10-2018 11:05:15.943: orgMent : 티 켓매 진시현장에서구 입할수있나요?
+12-10-2018 11:05:15.986: cache none : 티켓매진시현장에서구입할수있나요
+12-10-2018 11:05:16.212: dlg.dlgType : 2
+12-10-2018 11:05:16.213: * activity.ChannelId : emulator
+12-10-2018 11:05:25.032: db connect !! 
+12-10-2018 11:05:25.140: orgMent : 제일제당
+12-10-2018 11:05:50.968: db connect !! 
+12-10-2018 11:05:50.977: orgMent : 대중음악장학사업 선택
+12-10-2018 11:05:51.009: cache none : 대중음악장학사업선택
+12-10-2018 11:06:20.577: db connect !! 
+12-10-2018 11:06:20.636: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 11:06:20.679: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-10.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-10-2018 11:06:20.828: db conn SelectConfig !!
+12-10-2018 11:06:20.847: * cnfNm : 루이스제한 || cnfValue : 3000
+12-10-2018 11:06:20.859: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-10-2018 11:06:20.867: * cnfNm : 루이스스코어 || cnfValue : 0.75
+12-10-2018 11:06:20.868: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-10-2018 11:06:20.870: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 11:06:20.871: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 11:06:20.873: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 11:06:20.875: db SelectConfig end!! 
+12-10-2018 11:06:20.877: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-10-2018 11:06:20.879: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-10-2018 11:06:20.882: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-10-2018 11:06:20.884: * DB conn : conversationUpdate
+12-10-2018 11:06:20.894:  db SelectInitDialog !! 
+12-10-2018 11:06:21.604: db connect !! 
+12-10-2018 11:06:21.621: orgMent : 대중음악장학사업 선택
+12-10-2018 11:06:21.654: cache none : 대중음악장학사업선택
+12-10-2018 11:06:22.211: CARD IMG START
+12-10-2018 11:06:22.219: CARD BTN1 START
+12-10-2018 11:06:22.227: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:06:22.231: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:06:22.232: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:06:22.234: CARD IMG START
+12-10-2018 11:06:22.235: CARD BTN1 START
+12-10-2018 11:06:22.236: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:06:22.236: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:06:22.237: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:06:22.238: CARD IMG START
+12-10-2018 11:06:22.238: CARD BTN1 START
+12-10-2018 11:06:22.239: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:06:22.240: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:06:22.240: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:06:22.241: CARD IMG START
+12-10-2018 11:06:22.242: CARD BTN1 START
+12-10-2018 11:06:22.243: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:06:22.243: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:06:22.244: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:06:22.245: CARD IMG START
+12-10-2018 11:06:22.245: CARD BTN1 START
+12-10-2018 11:06:22.246: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-10-2018 11:06:22.247: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-10-2018 11:06:22.247: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-10-2018 11:06:22.258: * activity.Type : 
+12-10-2018 11:06:22.259: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-10-2018 11:06:22.260: * activity.ServiceUrl : http://localhost:59271
+12-10-2018 11:06:34.153: db connect !! 
+12-10-2018 11:06:34.287: orgMent : 대중음악장학사업 선택
+12-10-2018 11:06:34.327: cache none : 대중음악장학사업선택
+12-10-2018 11:06:53.897: db connect !! 
+12-10-2018 11:06:53.911: orgMent : 대중음악장학사업 선택
+12-10-2018 11:06:53.952: cache none : 대중음악장학사업선택
+12-10-2018 11:08:04.621: db connect !! 
+12-10-2018 11:08:04.644: orgMent : 대중음악장학사업 선택
+12-10-2018 11:08:04.703: cache none : 대중음악장학사업선택
+12-10-2018 11:08:53.002: db connect !! 
+12-10-2018 11:08:53.049: orgMent : 대중음악장학사업 선택
+12-10-2018 11:08:53.084: cache none : 대중음악장학사업선택
+12-10-2018 11:12:10.355: db connect !! 
+12-10-2018 11:12:10.447: orgMent : 대중음악장학사업 선택
+12-10-2018 11:12:10.528: cache none : 대중음악장학사업선택
+12-10-2018 11:12:22.949: db connect !! 
+12-10-2018 11:12:22.978: orgMent : 제일제당

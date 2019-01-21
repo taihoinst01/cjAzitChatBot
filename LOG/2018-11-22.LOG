@@ -1,0 +1,102 @@
+11-22-2018 10:14:52.000: db connect !! 
+11-22-2018 10:14:52.102: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-11-22.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+11-22-2018 10:14:52.319: db SelectConfig start !! 
+11-22-2018 10:14:52.432: db conn SelectConfig !!
+11-22-2018 10:14:52.521: * cnfNm : 루이스제한 || cnfValue : 3000
+11-22-2018 10:14:52.528: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+11-22-2018 10:14:52.530: * cnfNm : 루이스스코어 || cnfValue : 0.1
+11-22-2018 10:14:52.532: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+11-22-2018 10:14:52.533: db SelectConfig end!! 
+11-22-2018 10:14:52.535: * DB conn : conversationUpdate
+11-22-2018 10:14:52.553:  db SelectInitDialog !! 
+11-22-2018 10:14:55.077: * activity.Type : 
+11-22-2018 10:14:55.083: * activity.Recipient.Id : 8c94d760-e8a6-11e8-84a3-25575dad9c9c
+11-22-2018 10:14:55.088: * activity.ServiceUrl : http://localhost:63156
+11-22-2018 10:15:10.495: db connect !! 
+11-22-2018 10:15:10.537: orgMent : 111!222@333# 444 555
+11-22-2018 10:15:10.603: cache none : 111!222@333# 444 555
+11-22-2018 10:15:16.464: luisId : 
+11-22-2018 10:15:16.475: luisIntent : 
+11-22-2018 10:15:16.483: luisEntities : 
+11-22-2018 10:15:16.573: fullentity : 
+11-22-2018 10:15:53.189: db connect !! 
+11-22-2018 10:15:53.233: orgMent : 타이호 인스트회사에 다닙니다
+11-22-2018 10:15:53.271: cache none : 타이호 인스트회사에 다닙니다
+11-22-2018 10:15:53.991: luisId : 
+11-22-2018 10:15:53.997: luisIntent : 
+11-22-2018 10:15:53.997: luisEntities : 
+11-22-2018 10:15:54.008: fullentity : 
+11-22-2018 10:17:00.894: db connect !! 
+11-22-2018 10:17:00.895: db connect !! 
+11-22-2018 10:17:00.911: db SelectConfig start !! 
+11-22-2018 10:17:01.444: db conn SelectConfig !!
+11-22-2018 10:17:01.457: * cnfNm : 루이스제한 || cnfValue : 3000
+11-22-2018 10:17:01.463: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+11-22-2018 10:17:01.468: * cnfNm : 루이스스코어 || cnfValue : 0.1
+11-22-2018 10:17:01.469: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+11-22-2018 10:17:01.470: db SelectConfig end!! 
+11-22-2018 10:17:01.472: * DB conn : conversationUpdate
+11-22-2018 10:17:01.487:  db SelectInitDialog !! 
+11-22-2018 10:18:41.778: db connect !! 
+11-22-2018 10:18:41.842: db SelectConfig start !! 
+11-22-2018 10:18:41.889: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-11-22.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+11-22-2018 10:18:42.049: db conn SelectConfig !!
+11-22-2018 10:18:42.068: * cnfNm : 루이스제한 || cnfValue : 3000
+11-22-2018 10:18:42.073: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+11-22-2018 10:18:42.081: * cnfNm : 루이스스코어 || cnfValue : 0.1
+11-22-2018 10:18:42.082: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+11-22-2018 10:18:42.083: db SelectConfig end!! 
+11-22-2018 10:18:42.085: * DB conn : conversationUpdate
+11-22-2018 10:18:42.094:  db SelectInitDialog !! 
+11-22-2018 10:18:43.449: * activity.Type : 
+11-22-2018 10:18:43.460: * activity.Recipient.Id : 8c94d760-e8a6-11e8-84a3-25575dad9c9c
+11-22-2018 10:18:43.466: * activity.ServiceUrl : http://localhost:63156
+11-22-2018 10:19:03.248: db connect !! 
+11-22-2018 10:19:03.350: orgMent : 111 222# 333# 444$
+11-22-2018 10:19:03.378: cache none : 111 222# 333# 444$
+11-22-2018 10:19:06.564: luisId : 
+11-22-2018 10:19:06.573: luisIntent : 
+11-22-2018 10:19:06.582: luisEntities : 
+11-22-2018 10:19:06.598: fullentity : 
+11-22-2018 10:22:27.956: db connect !! 
+11-22-2018 10:22:28.015: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-11-22.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+11-22-2018 10:22:28.116: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-11-22.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+11-22-2018 10:22:28.357: db conn SelectConfig !!
+11-22-2018 10:22:28.374: * cnfNm : 루이스제한 || cnfValue : 3000
+11-22-2018 10:22:28.380: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+11-22-2018 10:22:28.385: * cnfNm : 루이스스코어 || cnfValue : 0.1
+11-22-2018 10:22:28.386: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+11-22-2018 10:22:28.387: db SelectConfig end!! 
+11-22-2018 10:22:28.389: * DB conn : conversationUpdate
+11-22-2018 10:22:28.397:  db SelectInitDialog !! 
+11-22-2018 10:22:29.614: * activity.Type : 
+11-22-2018 10:22:29.640: * activity.Recipient.Id : 8c94d760-e8a6-11e8-84a3-25575dad9c9c
+11-22-2018 10:22:29.671: * activity.ServiceUrl : http://localhost:63156
+11-22-2018 10:22:31.544: db connect !! 
+11-22-2018 10:22:31.561: orgMent : 111 222# 333# 444$
+11-22-2018 10:22:31.585: cache none : 
+11-22-2018 10:22:32.688: luisId : 
+11-22-2018 10:22:32.693: luisIntent : 
+11-22-2018 10:22:32.699: luisEntities : 
+11-22-2018 10:22:32.712: fullentity : 
+11-22-2018 10:24:21.331: db connect !! 
+11-22-2018 10:24:21.398: db SelectConfig start !! 
+11-22-2018 10:24:21.414: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-11-22.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+11-22-2018 10:24:21.529: db conn SelectConfig !!
+11-22-2018 10:24:21.544: * cnfNm : 루이스제한 || cnfValue : 3000
+11-22-2018 10:24:21.554: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+11-22-2018 10:24:21.555: * cnfNm : 루이스스코어 || cnfValue : 0.1
+11-22-2018 10:24:21.556: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+11-22-2018 10:24:21.557: db SelectConfig end!! 
+11-22-2018 10:24:21.558: * DB conn : conversationUpdate
+11-22-2018 10:24:21.567:  db SelectInitDialog !! 
+11-22-2018 10:24:22.686: * activity.Type : 
+11-22-2018 10:24:22.698: * activity.Recipient.Id : 8c94d760-e8a6-11e8-84a3-25575dad9c9c
+11-22-2018 10:24:22.711: * activity.ServiceUrl : http://localhost:63156
+11-22-2018 10:24:24.768: db connect !! 
+11-22-2018 10:24:24.778: orgMent : 111 222# 333# 444$
+11-22-2018 10:24:32.430: cache none : 111222333444
+11-22-2018 10:24:33.355: luisId : 
+11-22-2018 10:24:33.367: luisIntent : 
+11-22-2018 10:24:33.382: luisEntities : 
+11-22-2018 10:24:33.399: fullentity : 

@@ -1,0 +1,67 @@
+01-21-2019 10:20:01.665: db connect !! 
+01-21-2019 10:20:01.759: db SelectConfig start !! 
+01-21-2019 10:20:01.775: 'C:\Users\User\source\repos\cjAzitChatBot_20190108\LOG\2019-01-21.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+01-21-2019 10:20:01.995: db conn SelectConfig !!
+01-21-2019 10:20:02.013: * cnfNm : 루이스제한 || cnfValue : 3000
+01-21-2019 10:20:02.020: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+01-21-2019 10:20:02.023: * cnfNm : 루이스스코어 || cnfValue : 0.65
+01-21-2019 10:20:02.031: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+01-21-2019 10:20:02.034: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-21-2019 10:20:02.036: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-21-2019 10:20:02.039: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-21-2019 10:20:02.040: db SelectConfig end!! 
+01-21-2019 10:20:02.042: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-21-2019 10:20:02.045: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-21-2019 10:20:02.049: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-21-2019 10:20:02.051: * DB conn : conversationUpdate
+01-21-2019 10:20:02.062:  db SelectInitDialog !! 
+01-21-2019 10:20:02.172: CARD IMG START
+01-21-2019 10:20:02.173: FB CARD IMG 
+01-21-2019 10:20:04.825: CARD IMG START
+01-21-2019 10:20:04.832: CARD IMG START
+01-21-2019 10:20:04.839: CARD IMG START
+01-21-2019 10:20:04.840: CARD IMG START
+01-21-2019 10:20:04.842: CARD IMG START
+01-21-2019 10:20:04.844: CARD IMG START
+01-21-2019 10:20:04.846: CARD IMG START
+01-21-2019 10:20:04.952: * activity.Type : 
+01-21-2019 10:20:04.953: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+01-21-2019 10:20:04.955: * activity.ServiceUrl : http://localhost:61778
+01-21-2019 10:20:14.270: db connect !! 
+01-21-2019 10:20:14.294: orgMent : CJ아지트 광흥창 가능방법
+01-21-2019 10:20:19.611: cache none : cj아지트광흥창가능방법
+01-21-2019 10:22:00.215: db connect !! 
+01-21-2019 10:22:00.229: orgMent : CJ아지트 광흥창 가능방법
+01-21-2019 10:22:03.746: cache none : cj아지트광흥창가능방법
+01-21-2019 10:34:38.732: db connect !! 
+01-21-2019 10:34:38.811: 'C:\Users\User\source\repos\cjAzitChatBot_20190108\LOG\2019-01-21.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+01-21-2019 10:34:38.823: db SelectConfig start !! 
+01-21-2019 10:34:38.984: db conn SelectConfig !!
+01-21-2019 10:34:39.004: * cnfNm : 루이스제한 || cnfValue : 3000
+01-21-2019 10:34:39.009: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+01-21-2019 10:34:39.015: * cnfNm : 루이스스코어 || cnfValue : 0.65
+01-21-2019 10:34:39.017: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+01-21-2019 10:34:39.018: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-21-2019 10:34:39.020: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-21-2019 10:34:39.022: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-21-2019 10:34:39.023: db SelectConfig end!! 
+01-21-2019 10:34:39.025: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-21-2019 10:34:39.027: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-21-2019 10:34:39.029: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-21-2019 10:34:39.031: * DB conn : conversationUpdate
+01-21-2019 10:34:39.040:  db SelectInitDialog !! 
+01-21-2019 10:34:39.170: CARD IMG START
+01-21-2019 10:34:39.178: FB CARD IMG 
+01-21-2019 10:34:40.057: CARD IMG START
+01-21-2019 10:34:40.073: CARD IMG START
+01-21-2019 10:34:40.133: CARD IMG START
+01-21-2019 10:34:40.139: CARD IMG START
+01-21-2019 10:34:40.141: CARD IMG START
+01-21-2019 10:34:40.142: CARD IMG START
+01-21-2019 10:34:40.144: CARD IMG START
+01-21-2019 10:34:40.155: * activity.Type : 
+01-21-2019 10:34:40.157: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+01-21-2019 10:34:40.158: * activity.ServiceUrl : http://localhost:61778
+01-21-2019 10:34:43.771: db connect !! 
+01-21-2019 10:34:43.785: orgMent : CJ아지트 광흥창 가능방법
+01-21-2019 10:34:46.187: cache none : cj아지트광흥창가능방법

@@ -1,0 +1,62 @@
+01-18-2019 05:48:45.138: db connect !! 
+01-18-2019 05:48:45.268: 'C:\Users\User\source\repos\cjAzitChatBot_20190108\LOG\2019-01-18.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+01-18-2019 05:48:45.269: db SelectConfig start !! 
+01-18-2019 05:48:45.461: db conn SelectConfig !!
+01-18-2019 05:48:45.471: * cnfNm : 루이스제한 || cnfValue : 3000
+01-18-2019 05:48:45.474: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+01-18-2019 05:48:45.477: * cnfNm : 루이스스코어 || cnfValue : 0.65
+01-18-2019 05:48:45.478: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+01-18-2019 05:48:45.480: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-18-2019 05:48:45.481: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-18-2019 05:48:45.483: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-18-2019 05:48:45.484: db SelectConfig end!! 
+01-18-2019 05:48:45.486: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-18-2019 05:48:45.488: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-18-2019 05:48:45.489: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-18-2019 05:48:45.491: * DB conn : conversationUpdate
+01-18-2019 05:48:45.506:  db SelectInitDialog !! 
+01-18-2019 05:48:45.642: CARD IMG START
+01-18-2019 05:48:47.787: CARD IMG START
+01-18-2019 05:48:47.789: CARD IMG START
+01-18-2019 05:48:47.792: CARD IMG START
+01-18-2019 05:48:47.798: CARD IMG START
+01-18-2019 05:48:47.799: CARD IMG START
+01-18-2019 05:48:47.801: CARD IMG START
+01-18-2019 05:48:47.802: CARD IMG START
+01-18-2019 05:48:47.899: * activity.Type : 
+01-18-2019 05:48:47.906: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+01-18-2019 05:48:47.907: * activity.ServiceUrl : http://localhost:49569
+01-18-2019 05:48:59.233: db connect !! 
+01-18-2019 05:48:59.276: orgMent : CJ음악장학사업이란 무엇이며, 누굴 뽑나요
+01-18-2019 05:49:13.565: cache none : cj음악장학사업이란무엇이며누굴뽑나요
+01-18-2019 05:53:36.825: db connect !! 
+01-18-2019 05:53:36.888: 'C:\Users\User\source\repos\cjAzitChatBot_20190108\LOG\2019-01-18.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+01-18-2019 05:53:36.894: db SelectConfig start !! 
+01-18-2019 05:53:37.114: db conn SelectConfig !!
+01-18-2019 05:53:37.131: * cnfNm : 루이스제한 || cnfValue : 3000
+01-18-2019 05:53:37.141: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+01-18-2019 05:53:37.146: * cnfNm : 루이스스코어 || cnfValue : 0.65
+01-18-2019 05:53:37.147: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+01-18-2019 05:53:37.149: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-18-2019 05:53:37.150: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-18-2019 05:53:37.153: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-18-2019 05:53:37.154: db SelectConfig end!! 
+01-18-2019 05:53:37.156: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-18-2019 05:53:37.158: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-18-2019 05:53:37.160: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-18-2019 05:53:37.161: * DB conn : conversationUpdate
+01-18-2019 05:53:37.171:  db SelectInitDialog !! 
+01-18-2019 05:53:37.297: CARD IMG START
+01-18-2019 05:53:38.181: CARD IMG START
+01-18-2019 05:53:38.188: CARD IMG START
+01-18-2019 05:53:38.199: CARD IMG START
+01-18-2019 05:53:38.204: CARD IMG START
+01-18-2019 05:53:38.209: CARD IMG START
+01-18-2019 05:53:38.210: CARD IMG START
+01-18-2019 05:53:38.211: CARD IMG START
+01-18-2019 05:53:38.227: * activity.Type : 
+01-18-2019 05:53:38.233: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+01-18-2019 05:53:38.233: * activity.ServiceUrl : http://localhost:49569
+01-18-2019 05:53:42.804: db connect !! 
+01-18-2019 05:53:42.828: orgMent : 분량제한있나요
+01-18-2019 05:53:53.616: cache none : 분량제한있나요

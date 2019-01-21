@@ -1,0 +1,64 @@
+01-11-2019 01:35:05.490: db connect !! 
+01-11-2019 01:35:05.646: 'C:\Users\User\source\repos\cjAzitChatBot_20190108\LOG\2019-01-11.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+01-11-2019 01:35:05.729: db SelectConfig start !! 
+01-11-2019 01:35:05.911: db conn SelectConfig !!
+01-11-2019 01:35:05.928: * cnfNm : 루이스제한 || cnfValue : 3000
+01-11-2019 01:35:05.931: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+01-11-2019 01:35:05.934: * cnfNm : 루이스스코어 || cnfValue : 0.65
+01-11-2019 01:35:05.937: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+01-11-2019 01:35:05.940: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-11-2019 01:35:05.943: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-11-2019 01:35:05.946: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-11-2019 01:35:05.946: db SelectConfig end!! 
+01-11-2019 01:35:05.950: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-11-2019 01:35:05.953: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-11-2019 01:35:05.955: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-11-2019 01:35:05.958: * DB conn : conversationUpdate
+01-11-2019 01:35:05.969:  db SelectInitDialog !! 
+01-11-2019 01:35:06.149: CARD IMG START
+01-11-2019 01:35:08.339: CARD IMG START
+01-11-2019 01:35:08.340: CARD IMG START
+01-11-2019 01:35:08.342: CARD IMG START
+01-11-2019 01:35:08.343: CARD IMG START
+01-11-2019 01:35:08.345: CARD IMG START
+01-11-2019 01:35:08.346: CARD IMG START
+01-11-2019 01:35:08.348: CARD IMG START
+01-11-2019 01:35:08.438: * activity.Type : 
+01-11-2019 01:35:08.448: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+01-11-2019 01:35:08.450: * activity.ServiceUrl : http://localhost:58432
+01-11-2019 01:35:36.275: db connect !! 
+01-11-2019 01:35:36.324: orgMent : 티켓환불을원합니다
+01-11-2019 01:35:39.560: dlg.dlgType : 2
+01-11-2019 01:35:39.561: * activity.ChannelId : emulator
+01-11-2019 01:57:54.142: db connect !! 
+01-11-2019 01:57:54.224: db SelectConfig start !! 
+01-11-2019 01:57:54.280: 'C:\Users\User\source\repos\cjAzitChatBot_20190108\LOG\2019-01-11.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+01-11-2019 01:57:54.515: db conn SelectConfig !!
+01-11-2019 01:57:54.531: * cnfNm : 루이스제한 || cnfValue : 3000
+01-11-2019 01:57:54.537: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+01-11-2019 01:57:54.543: * cnfNm : 루이스스코어 || cnfValue : 0.65
+01-11-2019 01:57:54.545: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+01-11-2019 01:57:54.546: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-11-2019 01:57:54.548: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-11-2019 01:57:54.549: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-11-2019 01:57:54.550: db SelectConfig end!! 
+01-11-2019 01:57:54.552: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+01-11-2019 01:57:54.554: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+01-11-2019 01:57:54.555: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+01-11-2019 01:57:54.557: * DB conn : conversationUpdate
+01-11-2019 01:57:54.566:  db SelectInitDialog !! 
+01-11-2019 01:57:54.698: CARD IMG START
+01-11-2019 01:57:55.673: CARD IMG START
+01-11-2019 01:57:55.688: CARD IMG START
+01-11-2019 01:57:55.698: CARD IMG START
+01-11-2019 01:57:55.708: CARD IMG START
+01-11-2019 01:57:55.709: CARD IMG START
+01-11-2019 01:57:55.711: CARD IMG START
+01-11-2019 01:57:55.712: CARD IMG START
+01-11-2019 01:57:55.724: * activity.Type : 
+01-11-2019 01:57:55.725: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+01-11-2019 01:57:55.726: * activity.ServiceUrl : http://localhost:58432
+01-11-2019 01:57:58.956: db connect !! 
+01-11-2019 01:57:58.977: orgMent : 티켓환불을원합니다
+01-11-2019 01:58:01.494: dlg.dlgType : 2
+01-11-2019 01:58:01.501: * activity.ChannelId : emulator

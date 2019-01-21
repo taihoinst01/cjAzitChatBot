@@ -1,0 +1,106 @@
+11-20-2018 04:10:52.303: db connect !! 
+11-20-2018 04:10:52.306: db connect !! 
+11-20-2018 04:10:52.321: db SelectConfig start !! 
+11-20-2018 04:10:53.034: db conn SelectConfig !!
+11-20-2018 04:10:53.044: * cnfNm : 루이스제한 || cnfValue : 3000
+11-20-2018 04:10:53.045: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+11-20-2018 04:10:53.046: * cnfNm : 루이스스코어 || cnfValue : 0.1
+11-20-2018 04:10:53.048: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+11-20-2018 04:10:53.049: db SelectConfig end!! 
+11-20-2018 04:10:53.051: * DB conn : conversationUpdate
+11-20-2018 04:10:53.060:  db SelectInitDialog !! 
+11-20-2018 04:10:55.152: * activity.Type : 
+11-20-2018 04:10:55.157: * activity.Recipient.Id : 8c94d760-e8a6-11e8-84a3-25575dad9c9c
+11-20-2018 04:10:55.163: * activity.ServiceUrl : http://localhost:60427
+11-20-2018 04:11:12.840: db connect !! 
+11-20-2018 04:11:12.849: orgMent : 'CJ아지트 광흥창' 공연 관람 시, 주차가 가능한가요?
+11-20-2018 04:11:12.912: cache none : 'CJ아지트 광흥창' 공연 관람 시, 주차가 가능한가요?
+11-20-2018 04:11:26.882: luisId : 47
+11-20-2018 04:11:26.890: luisIntent : 아지트_주차
+11-20-2018 04:11:26.896: luisEntities : 아지트,주차
+11-20-2018 04:11:26.905: fullentity : 
+11-20-2018 04:11:26.915: relationList 조건 in 
+11-20-2018 04:11:26.916: relationList[0].dlgApiDefine : D
+11-20-2018 04:11:26.935: dlg.dlgType : 2
+11-20-2018 04:11:26.936: * activity.ChannelId : emulator
+11-20-2018 04:11:36.743: db connect !! 
+11-20-2018 04:11:36.798: orgMent : 발매된 음원이 없어도 지원이 가능한가요?
+11-20-2018 04:11:36.838: luisId : 47
+11-20-2018 04:11:36.852: luisIntent : 아지트_주차
+11-20-2018 04:11:36.852: luisEntities : 아지트,주차
+11-20-2018 04:11:36.861: fullentity : 
+11-20-2018 04:11:36.877: relationList 조건 in 
+11-20-2018 04:11:36.877: relationList[0].dlgApiDefine : D
+11-20-2018 04:11:36.891: dlg.dlgType : 2
+11-20-2018 04:11:36.891: * activity.ChannelId : emulator
+11-20-2018 04:15:51.677: db connect !! 
+11-20-2018 04:15:51.741: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-11-20.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+11-20-2018 04:15:51.756: db SelectConfig start !! 
+11-20-2018 04:15:51.899: db conn SelectConfig !!
+11-20-2018 04:15:51.919: * cnfNm : 루이스제한 || cnfValue : 3000
+11-20-2018 04:15:51.928: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+11-20-2018 04:15:51.933: * cnfNm : 루이스스코어 || cnfValue : 0.1
+11-20-2018 04:15:51.935: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+11-20-2018 04:15:51.936: db SelectConfig end!! 
+11-20-2018 04:15:51.942: * DB conn : conversationUpdate
+11-20-2018 04:15:51.956:  db SelectInitDialog !! 
+11-20-2018 04:15:53.110: * activity.Type : 
+11-20-2018 04:15:53.122: * activity.Recipient.Id : 8c94d760-e8a6-11e8-84a3-25575dad9c9c
+11-20-2018 04:15:53.135: * activity.ServiceUrl : http://localhost:60427
+11-20-2018 04:15:57.023: db connect !! 
+11-20-2018 04:15:57.036: orgMent : 'CJ아지트 광흥창' 공연 관람 시, 주차가 가능한가요?
+11-20-2018 04:15:57.066: luisId : 47
+11-20-2018 04:15:57.070: luisIntent : 아지트_주차
+11-20-2018 04:15:57.070: luisEntities : none
+11-20-2018 04:15:57.079: fullentity : 
+11-20-2018 04:15:57.106: relationList 조건 in 
+11-20-2018 04:15:57.106: relationList[0].dlgApiDefine : D
+11-20-2018 04:15:57.121: dlg.dlgType : 2
+11-20-2018 04:15:57.122: * activity.ChannelId : emulator
+11-20-2018 04:16:05.752: db connect !! 
+11-20-2018 04:16:05.775: orgMent : 쇼케이스 실연 시, MR이나 하드레코더 사용이 가능한가요?
+11-20-2018 04:16:05.872: cache none : 쇼케이스 실연 시, MR이나 하드레코더 사용이 가능한가요?
+11-20-2018 04:16:31.861: luisId : 45
+11-20-2018 04:16:31.868: luisIntent : 튠업_쇼케이스MR
+11-20-2018 04:16:31.877: luisEntities : 쇼케이스,MR
+11-20-2018 04:16:31.893: fullentity : 
+11-20-2018 04:16:31.909: relationList 조건 in 
+11-20-2018 04:16:31.910: relationList[0].dlgApiDefine : D
+11-20-2018 04:16:31.925: dlg.dlgType : 2
+11-20-2018 04:16:31.929: * activity.ChannelId : emulator
+11-20-2018 04:18:46.545: db connect !! 
+11-20-2018 04:18:46.604: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-11-20.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+11-20-2018 04:18:46.628: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-11-20.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+11-20-2018 04:18:47.126: db conn SelectConfig !!
+11-20-2018 04:18:47.149: * cnfNm : 루이스제한 || cnfValue : 3000
+11-20-2018 04:18:47.157: * cnfNm : 루이스구독 || cnfValue : e53c8b3967a94a82bb3fc3b89dbccfae
+11-20-2018 04:18:47.164: * cnfNm : 루이스스코어 || cnfValue : 0.1
+11-20-2018 04:18:47.165: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+11-20-2018 04:18:47.165: db SelectConfig end!! 
+11-20-2018 04:18:47.167: * DB conn : conversationUpdate
+11-20-2018 04:18:47.177:  db SelectInitDialog !! 
+11-20-2018 04:18:48.556: * activity.Type : 
+11-20-2018 04:18:48.567: * activity.Recipient.Id : 8c94d760-e8a6-11e8-84a3-25575dad9c9c
+11-20-2018 04:18:48.584: * activity.ServiceUrl : http://localhost:60427
+11-20-2018 04:19:30.309: db connect !! 
+11-20-2018 04:19:30.361: orgMent : 'CJ아지트 광흥창' 공연 관람 시, 주차가 가능한가요?
+11-20-2018 04:19:30.408: cache none : 'CJ아지트 광흥창' 공연 관람 시, 주차가 가능한가요?
+11-20-2018 04:19:37.868: luisId : 47
+11-20-2018 04:19:37.879: luisIntent : 아지트_주차
+11-20-2018 04:19:37.892: luisEntities : 아지트,주차
+11-20-2018 04:19:37.914: fullentity : 
+11-20-2018 04:19:37.924: relationList 조건 in 
+11-20-2018 04:19:37.933: relationList[0].dlgApiDefine : D
+11-20-2018 04:19:37.952: dlg.dlgType : 2
+11-20-2018 04:19:37.952: * activity.ChannelId : emulator
+11-20-2018 04:19:40.685: db connect !! 
+11-20-2018 04:19:40.691: orgMent : 쇼케이스 실연 시, 세션 멤버 참여가 가능한가요?
+11-20-2018 04:19:40.723: cache none : 쇼케이스 실연 시, 세션 멤버 참여가 가능한가요?
+11-20-2018 04:19:44.061: luisId : 46
+11-20-2018 04:19:44.071: luisIntent : 튠업_쇼케이스세션
+11-20-2018 04:19:44.079: luisEntities : 쇼케이스,세션
+11-20-2018 04:19:44.132: fullentity : 
+11-20-2018 04:19:44.147: relationList 조건 in 
+11-20-2018 04:19:44.148: relationList[0].dlgApiDefine : D
+11-20-2018 04:19:44.161: dlg.dlgType : 2
+11-20-2018 04:19:44.161: * activity.ChannelId : emulator

@@ -414,16 +414,16 @@ namespace cjAzitChatBot.DB
         }
 
 
-        public List<TextList> SelectSorryDialogText(string dlgGroup)
+        public List<CardList> SelectSorryDialogText(string dlgGroup)
         {
             SqlDataReader rdr = null;
-            List<TextList> dialogText = new List<TextList>();
+            List<CardList> dialogCard = new List<CardList>();
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "SELECT TEXT_DLG_ID, DLG_ID, CARD_TITLE,CARD_TEXT FROM TBL_DLG_TEXT WHERE DLG_ID = (SELECT DLG_ID FROM TBL_DLG WHERE DLG_GROUP = @dlgGroup) AND USE_YN = 'Y'";
+                cmd.CommandText = "SELECT CARD_TEXT, BTN_1_TYPE, BTN_1_TITLE, BTN_1_CONTEXT FROM TBL_DLG_CARD WHERE DLG_ID = (SELECT DLG_ID FROM TBL_DLG WHERE DLG_GROUP = @dlgGroup) AND USE_YN = 'Y'";
                 //cmd.CommandText = "SELECT TEXT_DLG_ID, DLG_ID, CARD_TITLE, CARD_TEXT FROM TBL_SECCS_DLG_TEXT WHERE DLG_ID = @dlgID AND USE_YN = 'Y' AND DLG_ID > 999";
 
                 cmd.Parameters.AddWithValue("@dlgGroup", dlgGroup);
@@ -432,23 +432,24 @@ namespace cjAzitChatBot.DB
 
                 while (rdr.Read())
                 {
-                    int textDlgId = Convert.ToInt32(rdr["TEXT_DLG_ID"]);
-                    int dlgId = Convert.ToInt32(rdr["DLG_ID"]);
-                    string cardTitle = rdr["CARD_TITLE"] as string;
+                    //string cardTitle = rdr["CARD_TITLE"] as string;
                     string cardText = rdr["CARD_TEXT"] as string;
+                    string cardBtn1type = rdr["BTN_1_TYPE"] as string;
+                    string cardBtn1title = rdr["BTN_1_TITLE"] as string;
+                    string cardBtn1context = rdr["BTN_1_CONTEXT"] as string;
+
+                    CardList dlgCard = new CardList();
+                    //dlgCard.cardTitle = cardTitle;
+                    dlgCard.cardText = cardText;
+                    dlgCard.btn1Type = cardBtn1type;
+                    dlgCard.btn1Title = cardBtn1title;
+                    dlgCard.btn1Context = cardBtn1context;
 
 
-                    TextList dlgText = new TextList();
-                    dlgText.textDlgId = textDlgId;
-                    dlgText.dlgId = dlgId;
-                    dlgText.cardTitle = cardTitle;
-                    dlgText.cardText = cardText;
-
-
-                    dialogText.Add(dlgText);
+                    dialogCard.Add(dlgCard);
                 }
             }
-            return dialogText;
+            return dialogCard;
         }
 
 

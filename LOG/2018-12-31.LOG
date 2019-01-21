@@ -1,0 +1,152 @@
+12-31-2018 02:23:43.670: db connect !! 
+12-31-2018 02:23:43.685: db SelectConfig start !! 
+12-31-2018 02:23:43.780: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-31.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-31-2018 02:23:44.081: db connect !! 
+12-31-2018 02:23:44.088: db conn SelectConfig !!
+12-31-2018 02:23:44.106: db connect !! 
+12-31-2018 02:23:44.107: db SelectConfig start !! 
+12-31-2018 02:23:44.147: * cnfNm : 루이스제한 || cnfValue : 3000
+12-31-2018 02:23:44.150: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-31-2018 02:23:44.182: * cnfNm : 루이스스코어 || cnfValue : 0.65
+12-31-2018 02:23:44.196: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-31-2018 02:23:44.198: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:23:44.199: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:23:44.200: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:23:44.201: db SelectConfig end!! 
+12-31-2018 02:23:44.203: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:23:44.204: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:23:44.205: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:23:44.207: * DB conn : conversationUpdate
+12-31-2018 02:23:44.218:  db SelectInitDialog !! 
+12-31-2018 02:23:44.241: db conn SelectConfig !!
+12-31-2018 02:23:44.249: * cnfNm : 루이스제한 || cnfValue : 3000
+12-31-2018 02:23:44.251: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-31-2018 02:23:44.253: * cnfNm : 루이스스코어 || cnfValue : 0.65
+12-31-2018 02:23:44.255: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-31-2018 02:23:44.257: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:23:44.259: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:23:44.260: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:23:44.262: db SelectConfig end!! 
+12-31-2018 02:23:44.264: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:23:44.265: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:23:44.267: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:23:44.269: * DB conn : conversationUpdate
+12-31-2018 02:23:44.283:  db SelectInitDialog !! 
+12-31-2018 02:23:44.334: CARD IMG START
+12-31-2018 02:23:44.335: CARD BTN1 START
+12-31-2018 02:23:44.336: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-31-2018 02:23:44.337: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-31-2018 02:23:44.338: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-31-2018 02:23:44.403: CARD IMG START
+12-31-2018 02:23:44.408: CARD BTN1 START
+12-31-2018 02:23:44.409: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-31-2018 02:23:44.409: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-31-2018 02:23:44.410: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-31-2018 02:23:46.124: * activity.Type : 
+12-31-2018 02:23:46.124: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-31-2018 02:23:46.125: * activity.ServiceUrl : http://localhost:49470
+12-31-2018 02:23:46.410: * activity.Type : 
+12-31-2018 02:23:46.417: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-31-2018 02:23:46.426: * activity.ServiceUrl : http://localhost:49470
+12-31-2018 02:25:23.801: db connect !! 
+12-31-2018 02:25:23.886: db SelectConfig start !! 
+12-31-2018 02:25:24.167: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-31.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-31-2018 02:25:24.290: db conn SelectConfig !!
+12-31-2018 02:25:24.309: * cnfNm : 루이스제한 || cnfValue : 3000
+12-31-2018 02:25:24.343: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-31-2018 02:25:24.344: * cnfNm : 루이스스코어 || cnfValue : 0.65
+12-31-2018 02:25:24.346: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-31-2018 02:25:24.347: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:25:24.349: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:25:24.351: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:25:24.352: db SelectConfig end!! 
+12-31-2018 02:25:24.354: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:25:24.355: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:25:24.356: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:25:24.358: * DB conn : conversationUpdate
+12-31-2018 02:25:24.369:  db SelectInitDialog !! 
+12-31-2018 02:25:24.495: CARD IMG START
+12-31-2018 02:25:24.496: CARD BTN1 START
+12-31-2018 02:25:24.496: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-31-2018 02:25:24.497: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-31-2018 02:25:24.498: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-31-2018 02:25:25.374: * activity.Type : 
+12-31-2018 02:25:25.381: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-31-2018 02:25:25.387: * activity.ServiceUrl : http://localhost:49470
+12-31-2018 02:25:34.794: db connect !! 
+12-31-2018 02:25:34.850: orgMent : 대학포트폴리오
+12-31-2018 02:25:59.229: db connect !! 
+12-31-2018 02:25:59.361: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-31.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-31-2018 02:25:59.362: db SelectConfig start !! 
+12-31-2018 02:25:59.533: db conn SelectConfig !!
+12-31-2018 02:25:59.548: * cnfNm : 루이스제한 || cnfValue : 3000
+12-31-2018 02:25:59.550: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-31-2018 02:25:59.553: * cnfNm : 루이스스코어 || cnfValue : 0.65
+12-31-2018 02:25:59.554: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-31-2018 02:25:59.556: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:25:59.557: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:25:59.559: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:25:59.560: db SelectConfig end!! 
+12-31-2018 02:25:59.562: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:25:59.564: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:25:59.566: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:25:59.567: * DB conn : conversationUpdate
+12-31-2018 02:25:59.575:  db SelectInitDialog !! 
+12-31-2018 02:25:59.688: CARD IMG START
+12-31-2018 02:25:59.699: CARD BTN1 START
+12-31-2018 02:25:59.705: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-31-2018 02:25:59.718: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-31-2018 02:25:59.719: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-31-2018 02:26:00.611: * activity.Type : 
+12-31-2018 02:26:00.622: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-31-2018 02:26:00.632: * activity.ServiceUrl : http://localhost:49470
+12-31-2018 02:26:05.494: db connect !! 
+12-31-2018 02:26:05.547: orgMent : 대학포트폴리오
+12-31-2018 02:26:17.533: db connect !! 
+12-31-2018 02:26:17.552: orgMent : 대학포트폴리오
+12-31-2018 02:26:34.958: cache none : 대학포트폴리오
+12-31-2018 02:26:36.405: dlg.dlgType : 2
+12-31-2018 02:26:36.406: * activity.ChannelId : emulator
+12-31-2018 02:26:43.114: db connect !! 
+12-31-2018 02:26:43.135: orgMent : 발매된음원이없어도지원이가능한가요
+12-31-2018 02:27:04.797: db connect !! 
+12-31-2018 02:27:04.825: orgMent : 발매된음원이없어도지원이가능한가요
+12-31-2018 02:27:07.689: cache none : 발매된음원이없어도지원이가능한가요
+12-31-2018 02:27:07.969: dlg.dlgType : 2
+12-31-2018 02:27:07.986: * activity.ChannelId : emulator
+12-31-2018 02:27:41.746: db connect !! 
+12-31-2018 02:27:41.785: orgMent : 라이브영상이없어도지원이가능한가요
+12-31-2018 02:30:30.556: db connect !! 
+12-31-2018 02:30:30.631: db SelectConfig start !! 
+12-31-2018 02:30:30.751: 'C:\Users\User\Source\Repos\cjAzitChatBot\LOG\2018-12-31.LOG' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+12-31-2018 02:30:30.981: db conn SelectConfig !!
+12-31-2018 02:30:31.005: * cnfNm : 루이스제한 || cnfValue : 3000
+12-31-2018 02:30:31.025: * cnfNm : 루이스구독 || cnfValue : 5193a586b5e446629ff5d82475d5d413
+12-31-2018 02:30:31.041: * cnfNm : 루이스스코어 || cnfValue : 0.65
+12-31-2018 02:30:31.043: * cnfNm : cjAzitCB || cnfValue : c05c9e45-3cce-4a73-9918-1abf52c9c3f9
+12-31-2018 02:30:31.045: * cnfNm : 11111 || cnfValue : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:30:31.048: * cnfNm : 2222 || cnfValue : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:30:31.057: * cnfNm : 3333 || cnfValue : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:30:31.058: db SelectConfig end!! 
+12-31-2018 02:30:31.062: *conf type : API* conf value : 1ㄴㅇㄻㄴㄹㅇㄴㄻ
+12-31-2018 02:30:31.064: *conf type : API* conf value : ㄴㅁㅇㄻㄴㅇㄻㄴㅇ
+12-31-2018 02:30:31.066: *conf type : API* conf value : ㅁㄴㅇㄻㄴㄹㄴㅁㅇㄹ
+12-31-2018 02:30:31.068: * DB conn : conversationUpdate
+12-31-2018 02:30:31.078:  db SelectInitDialog !! 
+12-31-2018 02:30:31.205: CARD IMG START
+12-31-2018 02:30:31.214: CARD BTN1 START
+12-31-2018 02:30:31.221: !!!!!FB CARD BTN1 START channelID.Equals(facebook) && cardButtons.Count < 1 && cardImages.Count < 1
+12-31-2018 02:30:31.225: !!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardValue)
+12-31-2018 02:30:31.226: !!!!!!!!FB CARD BTN1 START channelID.Equals(facebook) && string.IsNullOrEmpty(card.cardTitle)
+12-31-2018 02:30:32.120: * activity.Type : 
+12-31-2018 02:30:32.129: * activity.Recipient.Id : 183db430-f95a-11e8-b11a-0d528288b1d3
+12-31-2018 02:30:32.136: * activity.ServiceUrl : http://localhost:49470
+12-31-2018 02:30:34.876: db connect !! 
+12-31-2018 02:30:34.891: orgMent : 라이브영상이없어도지원이가능한가요
+12-31-2018 02:30:44.913: db connect !! 
+12-31-2018 02:30:44.941: orgMent : 라이브영상이없어도지원이가능한가요
+12-31-2018 02:30:46.490: cache none : 라이브영상이없어도지원이가능한가요
+12-31-2018 02:30:53.055: dlg.dlgType : 2
+12-31-2018 02:30:53.060: * activity.ChannelId : emulator
+12-31-2018 02:31:14.915: db connect !! 
+12-31-2018 02:31:14.973: orgMent : 라이브영상이없어도지원이가능한가요
