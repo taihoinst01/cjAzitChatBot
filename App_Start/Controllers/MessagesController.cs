@@ -320,7 +320,7 @@ namespace cjAzitChatBot
                         {
                             relationList = null;
                             //smalltalk 답변가져오기
-                            if (orgMent.Length < 9)
+                            if (orgMent.Length < 11)    // 2019-04-30 smalltalk 길이제한 10으로 변경 (epkim)
                             {
                                 smallTalkConfirm = db.SmallTalkConfirm;
                             }
